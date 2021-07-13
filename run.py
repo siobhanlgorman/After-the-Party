@@ -1,6 +1,6 @@
 import time
 
-# introduces game and gets user's name
+# gets user's name
 
 print("Hello there!")
 time.sleep(1)
@@ -13,7 +13,7 @@ time.sleep(1)
 # set scene and start game
 
 def intro_bedroom():
-    print("You wake up in an unfamiliar room as dawn is breaking.\n Bit of a headache.\n Whose house is this again? \n Great party last night though.\n")
+    print("You wake up in an unfamiliar room as dawn is breaking.\nBit of a headache.\nWhose house is this again? \nGreat party last night though.\n")
     print("You stretch.\n Probably shouldn't have gone to the party what with that virus spreading and everything. \n Sure it'll never reach us here ")
     print("Where the hell is Jay anyway? They crashed here too, didn't they\n")
     print("You hear some groaning from outside. You look out the window and see a couple of people from the party shuffling around the driveway near your car.\n Must've had too much to drink.\n")
@@ -21,10 +21,10 @@ def intro_bedroom():
     print("There are two doors in the bedroom. One is on the left and one on the right.\n")
     
     door_choice = (input("Which do you choose? Left or Right\n").lower())
-    if door_choice == "left":
+    if "l" in door_choice:
         print("You chose the door on the left")
         left_bathroom()
-    elif door_choice == "right":
+    elif "r" in door_choice:
         print("You chose the door on the right")
     else:
         print(input("Please enter left or right"))
@@ -32,9 +32,9 @@ def intro_bedroom():
 def left_bathroom():
     print("You open the door. Just the bathroom. Before you go back out you notice a shape behind the shower curtain.\n")
     choice = (input("Do you open the curtain? Yes or No\n").lower())
-    if choice == "yes":
+    if "y" in choice:
         you_die("Looks like you found Jay … except it’s not Jay any more....AGGGGHHHHHHH... Their skin is rotting and their eyes are white… they sink their teeth into your neck… YOU DIE")
-    elif choice == "no":
+    elif "n" in choice:
         print("You picked no")
     else:
         print("Please choose yes or no")
@@ -50,6 +50,8 @@ def play_again():
     if "y" in answer:
         print("Good decision.\n You can definitely make it out! Good luck!\n")
         intro()
+    elif "n" in answer:
+        print("No worries. Come back soon!")
 
 
 #def bathroom():
