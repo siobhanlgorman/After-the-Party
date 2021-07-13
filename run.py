@@ -1,16 +1,18 @@
 import time
 
 # introduces game and gets user's name
-def intro():
-    print("Hello there\n")
-    player_name = input("What's your name?\n")
-    print(f"Hi {player_name}!")
-    time.sleep(3)
-    bedroom()
 
-# set scene
+print("Hello there!")
+time.sleep(1)
+player_name = input("What's your name?\n")
+time.sleep(1)
+print(f"Hi {player_name}!\n")
+time.sleep(1)
 
-def bedroom():
+
+# set scene and start game
+
+def intro_bedroom():
     print("You wake up in an unfamiliar room as dawn is breaking.\n Bit of a headache.\n Whose house is this again? \n Great party last night though.\n")
     print("You stretch.\n Probably shouldn't have gone to the party what with that virus spreading and everything. \n Sure it'll never reach us here ")
     print("Where the hell is Jay anyway? They crashed here too, didn't they\n")
@@ -65,4 +67,4 @@ def play_again():
     #intro()
     #bedroom()
 
-intro()
+intro_bedroom()
