@@ -1,8 +1,11 @@
+import time
+
 # introduces game and gets user's name
 def intro():
     print("Hello there\n")
     player_name = input("What's your name?\n")
     print(f"Hi {player_name}!")
+    time.sleep(3)
     bedroom()
 
 # set scene
@@ -45,7 +48,6 @@ def play_again():
     if "y" in answer:
         print("Good decision.\n You can definitely make it out! Good luck!\n")
         intro()
-
 
 
 #def bathroom():
