@@ -4,7 +4,7 @@ import time
 
 print("Hello there!")
 time.sleep(1)
-player_name = input("What's your name?\n(Type your name)\n")
+player_name = input("What's your name?\n(Type your name)\n").capitalize()
 time.sleep(2)
 print(f"Hi {player_name}!\n")
 time.sleep(2)
@@ -32,7 +32,7 @@ def intro_bedroom():
 
     #user assigns global friend name
     global friend_name
-    friend_name = input(f"{player_name}, who did you come to the party with?\n (Enter a name)\n")
+    friend_name = input(f"{player_name}, who did you come to the party with?\n (Enter a name)\n").capitalize()
     time.sleep(2)
     print(f"Where has {friend_name} got to??\n")
     time.sleep(2)
@@ -50,7 +50,7 @@ def intro_bedroom():
     time.sleep(2)
     print("Better head off anyway.\n")
     time.sleep(2)
-    print("(You pull on your clothes and look around the room\n")
+    print("You pull on your clothes and look around the room\n")
     time.sleep(2)
     print("Which way out?\n")
     time.sleep(2)
@@ -59,7 +59,8 @@ def intro_bedroom():
     # user chooses left or right door
     door_choice = (input("Which do you choose? Left or Right\n").lower())
     if "l" in door_choice:
-        print("You chose the door on the left")
+        print("You chose the door on the left\n")
+        time.sleep(2)
         left_bathroom()
     elif "r" in door_choice:
         print("You chose the door on the right")
@@ -67,10 +68,25 @@ def intro_bedroom():
         print(input("Please enter left or right"))
 
 def left_bathroom():
-    print("You open the door. Just the bathroom. Before you go back out you notice a shape behind the shower curtain.\nWhat the ...??")
-    choice = (input("Do you open the curtain? Yes or No\n").lower())
+    print("You open the door.\n")
+    time.sleep(2)
+    print("Just the bathroom.\n")
+    time.sleep(2)
+    print("Before you go back out you notice a shape behind the shower curtain.\n")
+    time.sleep(1)
+    print("What the ...??")
+    choice = (input("Do you open the curtain? Yes or No\n"))
     if "y" in choice:
-        you_die(f"Looks like you found {friend_name} … except it’s not {friend_name} any more....AGGGGHHHHHHH... Their skin is rotting and their eyes are white… they sink their teeth into your neck… YOU DIE")
+        print(f"Looks like you found {friend_name} …\n")
+        time.sleep(2)
+        print(f"except it’s not {friend_name} any more....\n")
+        time.sleep(2)
+        print("AGGGGHHHHHHH...\n")
+        time.sleep(1.5)
+        print("Their skin is rotting and their eyes are white…\n")
+        time.sleep(2)
+        #attack or run choice?
+        you_die(f"{friend_name} sinks their teeth into your neck… YOU DIE")
     elif "n" in choice:
         print("You picked no. \n")
         time.sleep(2)
@@ -84,11 +100,14 @@ def left_bathroom():
 # function for when user dies and game ends
 def you_die(reason):
     print(reason)
+    time.sleep(2)
     play_again()
 
 #function to ask user to play game again
 def play_again():
-    answer = input("Sorry you didn't make it out. Do you want to try again? Yes or No").lower()
+    print("Sorry you didn't make it home from the party.\n")
+    time.sleep(2)
+    answer = input(" Do you want to try again? Yes or No").lower()
     if "y" in answer:
         print("Good decision.\n You can definitely make it out! Good luck!\n")
         intro_bedroom()
