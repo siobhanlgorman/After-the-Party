@@ -9,6 +9,8 @@ time.sleep(1)
 print(f"Hi {player_name}!\n")
 time.sleep(1)
 
+friend_name = {}
+host_name = {}
 
 # set scene and start game
 
@@ -17,13 +19,16 @@ def intro_bedroom():
     time.sleep(1)
     print("You stretch.\n Probably shouldn't have gone to the party what with that virus spreading and everything. \n Sure it'll never reach us here ")
     time.sleep(1)
-    print("Where the hell is Jay anyway? They crashed here too, didn't they\n")
+    global friend_name
+    friend_name = input(f"{player_name}, who did you come to the party with?")
+    print(f"Where the hell is {friend_name} anyway?\n")
     time.sleep(1)
     print("You hear some groaning from outside. You look out the window and see a couple of people from the party shuffling around the driveway near your car.\n Must've had too much to drink.\n")
     time.sleep(1)
     print("Better head off anyway.\n You pull on your clothes and look around the room\n")
     time.sleep(1)
     print("There are two doors in the bedroom. One is on the left and one on the right.\n")
+    print(player_name)
     
     door_choice = (input("Which do you choose? Left or Right\n").lower())
     if "l" in door_choice:
@@ -38,7 +43,7 @@ def left_bathroom():
     print("You open the door. Just the bathroom. Before you go back out you notice a shape behind the shower curtain.\n")
     choice = (input("Do you open the curtain? Yes or No\n").lower())
     if "y" in choice:
-        you_die("Looks like you found Jay … except it’s not Jay any more....AGGGGHHHHHHH... Their skin is rotting and their eyes are white… they sink their teeth into your neck… YOU DIE")
+        you_die(f"Looks like you found {friend_name} … except it’s not {friend_name} any more....AGGGGHHHHHHH... Their skin is rotting and their eyes are white… they sink their teeth into your neck… YOU DIE")
     elif "n" in choice:
         print("You picked no")
     else:
