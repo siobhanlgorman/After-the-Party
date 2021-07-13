@@ -3,10 +3,7 @@ def intro():
     print("Hello there\n")
     player_name = input("What's your name?\n")
     print(f"Hi {player_name}!")
-
-# function for when user dies and game ends
-def you_die(reason):
-    print(reason)
+    bedroom()
 
 # set scene
 
@@ -37,6 +34,18 @@ def left_bathroom():
     else:
         print("Please choose yes or no")
     
+# function for when user dies and game ends
+def you_die(reason):
+    print(reason)
+    play_again()
+
+#function to ask user to play game again
+def play_again():
+    answer = input("Sorry you didn't make it out. Do you want to try again? Yes or No").lower()
+    if "y" in answer:
+        print("Good decision.\n You can definitely make it out! Good luck!\n")
+        intro()
+
 
 
 #def bathroom():
@@ -50,8 +59,8 @@ def left_bathroom():
 #def downstairs():
 
 
-def run_game():
-    intro()
-    bedroom()
+#def run_game():
+    #intro()
+    #bedroom()
 
-run_game()
+intro()
