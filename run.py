@@ -11,13 +11,13 @@ time.sleep(2)
 print("OK, let's start the game.\n")
 
 time.sleep(2)
-
+weapons = []
 friend_name = {}
 
 
 # function to set scene and start game
 
-def intro_bedroom():
+def intro():
     print("You wake up in an unfamiliar room as dawn is breaking.\n")
     time.sleep(2)
     print("Bit of a headache.\n")
@@ -28,6 +28,18 @@ def intro_bedroom():
     time.sleep(2)
     print("Hmmm..Shouldn't really have been partying what with that virus spreading and everything. \n")
     time.sleep(2)
+    print("You hear some groaning from outside.\n")
+    time.sleep(2)
+    print("You look out the window and see a couple of people from the party shuffling around the driveway near your car.\n")
+    time.sleep(2)
+    print("Must've had too much to drink.\n")
+    time.sleep(2)
+    print("They don't look at all well.\n")
+    time.sleep(2)
+    print("Very pale.\n")
+    bedroom()
+
+def bedroom():
     print("You realise the bed beside you is empty.\n")
 
     #user assigns global friend name
@@ -38,15 +50,7 @@ def intro_bedroom():
     time.sleep(2)
     print("Sleepwalking again probably.\n")
     time.sleep(2)
-    print("You hear some groaning from outside.\n")
-    time.sleep(2)
-    print("You look out the window and see a couple of people from the party shuffling around the driveway near your car.\n")
-    time.sleep(2)
-    print("Must've had too much to drink.\n")
-    time.sleep(2)
-    print("They don't look at all well.\n")
-    time.sleep(2)
-    print("Very pale.\n")
+    
     time.sleep(2)
     print("Better head off anyway.\n")
     time.sleep(2)
@@ -107,10 +111,10 @@ def you_die(reason):
 def play_again():
     print("Sorry you didn't make it home from the party.\n")
     time.sleep(2)
-    answer = input(" Do you want to try again? Yes or No").lower()
+    answer = input(" Do you want to try again? Yes or No")
     if "y" in answer:
         print("Good decision.\n You can definitely make it out! Good luck!\n")
-        intro_bedroom()
+        intro()
     elif "n" in answer:
         print("No worries. Come back soon!")
 
@@ -129,4 +133,4 @@ def play_again():
     #intro()
     #bedroom()
 
-intro_bedroom()
+intro()
