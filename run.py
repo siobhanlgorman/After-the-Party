@@ -14,10 +14,15 @@ time.sleep(1)
 
 def intro_bedroom():
     print("You wake up in an unfamiliar room as dawn is breaking.\nBit of a headache.\nWhose house is this again? \nGreat party last night though.\n")
+    time.sleep(1)
     print("You stretch.\n Probably shouldn't have gone to the party what with that virus spreading and everything. \n Sure it'll never reach us here ")
+    time.sleep(1)
     print("Where the hell is Jay anyway? They crashed here too, didn't they\n")
+    time.sleep(1)
     print("You hear some groaning from outside. You look out the window and see a couple of people from the party shuffling around the driveway near your car.\n Must've had too much to drink.\n")
-    print("Better head off anyway.\n You pull on your clothes\n")
+    time.sleep(1)
+    print("Better head off anyway.\n You pull on your clothes and look around the room\n")
+    time.sleep(1)
     print("There are two doors in the bedroom. One is on the left and one on the right.\n")
     
     door_choice = (input("Which do you choose? Left or Right\n").lower())
