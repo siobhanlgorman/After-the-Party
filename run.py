@@ -30,7 +30,9 @@ def intro():
     time.sleep(2)
     print("You hear some groaning from outside.\n")
     time.sleep(2)
-    print("You look out the window and see a couple of people from the party shuffling around the driveway near your car.\n")
+    print("You look out the window.\n")
+    time.sleep(1)
+    print("There's a couple of people from the party shuffling around the driveway near your car.\n")
     time.sleep(2)
     print("Must've had too much to drink.\n")
     time.sleep(2)
@@ -46,6 +48,8 @@ def bedroom():
     global friend_name
     friend_name = input(f"{player_name}, who did you come to the party with?\n (Enter a name)\n").capitalize()
     time.sleep(2)
+    print("That's funny...")
+    time.sleep(1)
     print(f"Where has {friend_name} got to??\n")
     time.sleep(2)
     print("Sleepwalking again probably.\n")
@@ -53,7 +57,8 @@ def bedroom():
     
     time.sleep(2)
     print("Better head off anyway.\n")
-    time.sleep(2)
+    time.sleep(1)
+    print(f"{friend_name}'s probably downstairs\n")
     print("You pull on your clothes and look around the room\n")
     time.sleep(2)
     print("Which way out?\n")
@@ -68,6 +73,7 @@ def bedroom():
         left_bathroom()
     elif "r" in door_choice:
         print("You chose the door on the right")
+        landing()
     else:
         print(input("Please enter left or right"))
 
@@ -78,8 +84,8 @@ def left_bathroom():
     time.sleep(2)
     print("Before you go back out you notice a shape behind the shower curtain.\n")
     time.sleep(1)
-    print("What the ...??")
-    choice = (input("Do you open the curtain? Yes or No\n"))
+    print("What the ...??\n")
+    choice = (input("Do you open the curtain? (Yes or No) \n"))
     if "y" in choice:
         print(f"Looks like you found {friend_name} …\n")
         time.sleep(2)
@@ -97,9 +103,22 @@ def left_bathroom():
         print("You go back into the bedroom and open the other door")
         bedroom_1()
         time.sleep
-
     else:
         print("Please choose yes or no")
+
+def landing():
+    print("You are now on the landing\n")
+    camping_box = ["knife", "hammer", "tent peg", "rope", "frying pan", "nail scissors"]
+    print("You come out of the bedroom onto the landing\n")
+    print("There's a cardboard box marked 'camping equipment' just by the door.\n")
+    answer = input("What do you do?\n")
+    #if answer.lower() in ["box", "open", "look", "inside", "see"] :
+        #print("you decided to open the box")
+    #else:
+        #input("I really think you should open the box")
+
+def bedroom1():
+    print("you are in bedroom1")
     
 # function for when user dies and game ends
 def you_die(reason):
@@ -111,26 +130,25 @@ def you_die(reason):
 def play_again():
     print("Sorry you didn't make it home from the party.\n")
     time.sleep(2)
-    answer = input(" Do you want to try again? Yes or No")
+    answer = input(" Do you want to try again? Yes or No\n")
     if "y" in answer:
-        print("Good decision.\n You can definitely make it out! Good luck!\n")
+        print("Good decision.\nYou can definitely make it out this time!\n")
+        print("Good luck!\n")
         intro()
     elif "n" in answer:
         print("No worries. Come back soon!")
 
 
 
-#def bedroom_1():
 
 #def camping_box():
 
 #def upstairs():
+    # print("you are upstairs")
 
 #def downstairs():
+    # print("you are downstairs")
 
 
-#def run_game():
-    #intro()
-    #bedroom()
-
+# function to start game
 intro()
