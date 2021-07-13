@@ -1,4 +1,16 @@
-def set_scene():
+def intro():
     player_name = input("What's your name?\n")
     print(f"Hi {player_name}!")
-set_scene()
+
+#def bedroom()
+
+#def bathroom():
+
+
+#def bedroom_1():
+
+
+def run_game():
+    intro()
+
+run_game()
