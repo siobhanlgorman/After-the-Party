@@ -46,6 +46,7 @@ def intro():
     time.sleep(2)
     print("Very pale.\n")
     bedroom()
+    
 
 def bedroom():
     print("You notice the bed is empty.\n")
@@ -105,8 +106,8 @@ def left_bathroom():
         print("You picked no. \n")
         time.sleep(2)
         print("You go back into the bedroom and open the other door")
-        bedroom_1()
-        time.sleep
+        landing()
+        time.sleep(1)
     else:
         print("Please choose yes or no")
 
@@ -115,11 +116,11 @@ def landing():
     camping_box = ["knife", "hammer", "tent peg", "rope", "frying pan", "nail scissors"]
     print("You come out of the bedroom onto the landing\n")
     print("There's a cardboard box marked 'camping equipment' just by the door.\n")
-    answer = input("What do you do?\n")
-    #if answer.lower() in ["box", "open", "look", "inside", "see"] :
-        #print("you decided to open the box")
-    #else:
-        #input("I really think you should open the box")
+    user_answer = input("What do you do?\n")
+    if user_answer.lower() in ["box", "open", "look", "inside", "see"]:
+        print("you decided to open the box")
+    else:
+        input("I really think you should open the box")
 
 def bedroom1():
     print("you are in bedroom1")
