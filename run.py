@@ -135,30 +135,51 @@ def landing():
         time.sleep(1)
         print("You open the box.\n")
         print("Inside the box there's a")
-        for x in camping_box: print(x)
+        for x in camping_box: 
+            print(x)
         time.sleep(1.5)
         user_choice = (input("Which item do you grab?\n"))
         print(user_choice)
         inventory.append(user_choice)
         user_choice = (input("Might as well grab one more just in case\n"))
-        for x in inventory: (print(x))
+        for x in inventory: 
+            print(x)
   
     else:
         input("I really think you should open the box")
 
-
-
-
 def bedroom1():
     print("you are in bedroom1")
-    
+
+# say hi
+# if weapon in inventory --> kill --> stairs
+# if no weapon -- > window
+# if no weapon --> if rope --> win -- > if no rope die
+
+# def stairs():
+# hide or attack: if radio die
+# if weapon --> downstairs()
+
+# def bedroom_2
+# dog attracts zombies
+# if rope --- window --> win
+# if no rope ---> die
+
+# def living_room
+# if weapon get to locked front door
+# if tool pick lock --> win
+
+# def kitchen
+# host in cupboard with key --> open cupboard win
+
+
 # function for when user dies and game ends
 def you_die(reason):
     print(reason)
     time.sleep(2)
     play_again()
 
-#function to ask user to play game again
+# function to ask user to play game again
 def play_again():
     print("\nSorry you didn't make it home from the party.\n")
     time.sleep(2)
@@ -171,14 +192,13 @@ def play_again():
         print("No worries. Come back soon!")
 
 
+# def living_room():
+#
 
-
-#def camping_box():
-
-#def upstairs():
+# def kitchen():
     # print("you are upstairs")
 
-#def downstairs():
+# def downstairs():
     # print("you are downstairs")
 
 
