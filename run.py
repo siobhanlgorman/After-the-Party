@@ -1,18 +1,22 @@
 import time
 
-# gets user's name
+# Empty list to hold weapons and tools selected by player
+inventory = []
+# Friend's name will be selected by player
+friend_name = {}
+# Party host name to be selected by player
+host_name = {}
+
+# welcome and get user's name
 
 print("Hello there!")
 time.sleep(1)
-player_name = input("What's your name?\n(Type your name)\n").capitalize()
+player_name = input("What's your name?\n>\n").capitalize()
 time.sleep(2)
 print(f"Hi {player_name}!\n")
 time.sleep(2)
 print("OK, let's start the game.\n")
-
-time.sleep(2)
-weapons = []
-friend_name = {}
+time.sleep(1)
 
 
 # function to set scene and start game
@@ -22,8 +26,10 @@ def intro():
     time.sleep(2)
     print("Bit of a headache.\n")
     print("Whose house is this again?\n")
-    time.sleep(2)
-    print("Oh yes ... that new guy ... Jay, wasn't it?\n") 
+    time.sleep(0.5)
+    global host_name
+    host_name = (input(f"{player_name} who's party was it?\n").capitalize())
+    print(f"Oh yes {host_name}'s party - they just moved here ...\n")
     print("Great party last night though.\n")
     time.sleep(2)
     print("Hmmm..Shouldn't really have been partying what with that virus spreading and everything. \n")
@@ -42,19 +48,17 @@ def intro():
     bedroom()
 
 def bedroom():
-    print("You realise the bed beside you is empty.\n")
+    print("You notice the bed is empty.\n")
 
-    #user assigns global friend name
+    # user assigns global friend name
     global friend_name
-    friend_name = input(f"{player_name}, who did you come to the party with?\n (Enter a name)\n").capitalize()
+    friend_name = input(f"{player_name}, who did you come to the party with?\n").capitalize()
     time.sleep(2)
     print("That's funny...")
     time.sleep(1)
     print(f"Where has {friend_name} got to??\n")
     time.sleep(2)
     print("Sleepwalking again probably.\n")
-    time.sleep(2)
-    
     time.sleep(2)
     print("Better head off anyway.\n")
     time.sleep(1)
@@ -91,11 +95,11 @@ def left_bathroom():
         time.sleep(2)
         print(f"except it’s not {friend_name} any more....\n")
         time.sleep(2)
-        print("AGGGGHHHHHHH...\n")
+        print("AGGGGGGGGHHHHHHHHHH...\n")
         time.sleep(1.5)
         print("Their skin is rotting and their eyes are white…\n")
         time.sleep(2)
-        #attack or run choice?
+        # attack or run choice?
         you_die(f"{friend_name} sinks their teeth into your neck… YOU DIE")
     elif "n" in choice:
         print("You picked no. \n")
@@ -128,9 +132,9 @@ def you_die(reason):
 
 #function to ask user to play game again
 def play_again():
-    print("Sorry you didn't make it home from the party.\n")
+    print("\nSorry you didn't make it home from the party.\n")
     time.sleep(2)
-    answer = input(" Do you want to try again? Yes or No\n")
+    answer = input("Do you want to try again? Yes or No\n")
     if "y" in answer:
         print("Good decision.\nYou can definitely make it out this time!\n")
         print("Good luck!\n")
