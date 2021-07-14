@@ -28,7 +28,7 @@ def intro():
     print("Whose house is this again?\n")
     time.sleep(0.5)
     global host_name
-    host_name = (input(f"{player_name} who's party was it?\n").capitalize())
+    host_name = (input(f"{player_name} whose party was it?\n").capitalize())
     print(f"Oh yes {host_name}'s party - they just moved here ...\n")
     print("Great party last night though.\n")
     time.sleep(2)
@@ -136,6 +136,12 @@ def landing():
         print("You open the box.\n")
         print("Inside the box there's a")
         for x in camping_box: print(x)
+        time.sleep(1.5)
+        user_choice = (input("Which item do you grab?\n"))
+        print(user_choice)
+        inventory.append(user_choice)
+        user_choice = (input("Might as well grab one more just in case\n"))
+        for x in inventory: (print(x))
   
     else:
         input("I really think you should open the box")
