@@ -111,16 +111,37 @@ def left_bathroom():
     else:
         print("Please choose yes or no")
 
+# function for user 
 def landing():
-    print("You are now on the landing\n")
     camping_box = ["knife", "hammer", "tent peg", "rope", "frying pan", "nail scissors"]
     print("You come out of the bedroom onto the landing\n")
-    print("There's a cardboard box marked 'camping equipment' just by the door.\n")
+    print("From behind you, you hear a crash and a groan")
+    time.sleep(1.5)
+    print("Sounds like someone's in the bathroom")
+    time.sleep(1)
+    print(f"{friend_name}??")
+    time.sleep(1.5)
+    print(f"You turn around and see {friend_name} staggering towards you with green rotting flesh and rolling eyes")
+    time.sleep(1.5)
+    print("Their arms are outstretched and it is not for a warm hug")
+    time.sleep(1.5)
+    print("Waaaaah, the stories about that virus spreading at household gatherings .... should have listened...")
+    time.sleep(1.5)
+    print("No time to think about that now. Need some kind of weapon")
+    print("You see a cardboard box marked 'camping equipment' just by the door.\n")
     user_answer = input("What do you do?\n")
     if user_answer.lower() in ["box", "open", "look", "inside", "see"]:
         print("you decided to open the box")
+        time.sleep(1)
+        print("You open the box.\n")
+        print("Inside the box there's a")
+        for x in camping_box: print(x)
+  
     else:
         input("I really think you should open the box")
+
+
+
 
 def bedroom1():
     print("you are in bedroom1")
