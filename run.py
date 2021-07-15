@@ -122,7 +122,7 @@ def left_bathroom(friend_name):
     print("What the ...??\n")
     time.sleep(1.5)
     choice = (input("Do you open the curtain? (Yes or No)\n"))
-    if "y" in choice:
+    if "y" in choice.lower():
         print(f"Looks like you found {friend_name} …\n")
         time.sleep(2)
         print(f"except it’s not {friend_name} any more....\n")
@@ -132,7 +132,7 @@ def left_bathroom(friend_name):
         print("AGGGGGGGGHHHHHHHHHH...\n")
         time.sleep(2)
         you_die(f"{friend_name} sinks their teeth into your neck… YOU DIE")
-    elif "n" in choice:
+    elif "n" in choice.lower():
         print("You picked no. \n")
         time.sleep(2)
         print("You go back into the bedroom and open the other door")
@@ -178,10 +178,23 @@ def landing(friend_name):
         for x in camping_box:
             print(x)
         time.sleep(1.5)
-        user_choice = (input("Which item do you grab?\n"))
-        print(user_choice)
-        inventory.append(user_choice)
-        user_choice = (input("Might as well grab one more just in case\n"))
+        user_choice1 = (input("Which item do you grab?\n"))
+        print(user_choice1)
+        if user_choice1 in camping_box:
+            inventory.append(user_choice1)
+            print(inventory)
+        else:
+            print(input("That's not in the box! Pick something from the box!"
+                        " And make it snappy!\n)"))
+        user_choice2 = (input("Might as well grab one more just in case\n"))
+        if user_choice2 in camping_box:
+            inventory.append(user_choice2)
+            print(inventory)
+        else:
+            print(input("That's not in the box! Pick something from the box!"
+                        " And make it snappy!\n)"))
+            print(inventory)
+
         for x in inventory:
             print(x)
 
