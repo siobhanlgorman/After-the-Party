@@ -147,9 +147,9 @@ def landing():
     time.sleep(1)
     print(f"{friend_name}??")
     time.sleep(1.5)
-    print(f"You turn around and see {friend_name} staggering towards you."
+    print(f"You turn around and see {friend_name} staggering towards you.")
     time.sleep(1)
-    print("their skin is green and ....rotting...euch..."
+    print("their skin is green and ....rotting...euch...")
     time.sleep(1) 
     print("and their eyes... rolling in their sockets")
     time.sleep(1.5)
