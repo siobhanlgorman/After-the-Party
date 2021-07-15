@@ -2,26 +2,25 @@ import time
 
 # Empty list to hold weapons and tools selected by player
 inventory = []
-# Friend's name will be selected by player
-friend_name = {}
-# Party host name to be selected by player
-host_name = {}
 
-# welcome and get user's name
 
-print("Hello there!")
-time.sleep(1)
-player_name = input("What's your name?\n>\n").capitalize()
-time.sleep(2)
-print(f"Hi {player_name}!\n")
-time.sleep(2)
-print("OK, let's start the game.\n")
-time.sleep(1)
+def welcome():
+    """
+    welcome and get user's name
+    """
+    print("Hello there!")
+    time.sleep(1)
+    player_name = input("What's your name?\n>\n").capitalize()
+    time.sleep(2)
+    print(f"Hi {player_name}!\n")
+    time.sleep(2)
+    print("OK, let's start the game.\n")
+    time.sleep(1)
 
 
 # function to set scene and start game
 
-def intro():
+def intro(player_name):
     """
     set scene
     start game
@@ -54,10 +53,10 @@ def intro():
     print("They don't look at all well.")
     time.sleep(2)
     print("Very pale.\n")
-    bedroom(host_name)
+    bedroom(host_name, player_name)
     
 
-def bedroom(host_name):
+def bedroom(host_name, player_name):
     """
     get friend name from player for global use
 
@@ -239,5 +238,5 @@ def play_again():
 
 # function to start game
 
-# intro()
-you_die("bbb")
+welcome()
+intro()
