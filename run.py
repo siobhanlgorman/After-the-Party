@@ -206,20 +206,24 @@ def bedroom1():
 # if no weapon -- > window
 # if no weapon --> if rope --> win -- > if no rope die
 
-# def stairs():
+def stairs():
+    print("You are on the stairs")
 # hide or attack: if radio die
 # if weapon --> downstairs()
 
-# def bedroom_2
+def bedroom_2():
+    print("you are in bedroom 2 with a dog")
 # dog attracts zombies
 # if rope --- window --> win
 # if no rope ---> die
 
-# def living_room
+def living_room():
+    print("you are in the living room and can see the front door")
 # if weapon get to locked front door
 # if tool pick lock --> win
 
-# def kitchen
+#def kitchen():
+    
 # host in cupboard with key --> open cupboard win
 
 
