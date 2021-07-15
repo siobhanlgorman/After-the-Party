@@ -10,7 +10,7 @@ def welcome():
     """
     print("Hello there!")
     time.sleep(1)
-    player_name = input("What's your name?\n>\n").capitalize()
+    player_name = input("What's your name?:\n").capitalize()
     time.sleep(2)
     print(f"Hi {player_name}!\n")
     time.sleep(2)
@@ -39,14 +39,16 @@ def intro(player_name):
     print("Good crowd.")
     print("Wonder how many crashed here?")
     time.sleep(2)
-    print("Hmmm..probably shouldn't have been partying with that virus spreading and everything.")
+    print("Hmmm..probably shouldn't have been partying with that virus"
+          " spreading and everything.")
     time.sleep(2)
     print("They say it could be deadly.\n")
     print("You hear some groaning from outside.\n")
     time.sleep(2)
     print("You look out the window.\n")
     time.sleep(1)
-    print("There's a couple of people from the party shuffling around the driveway near your car.\n")
+    print("There's a couple of people from the party shuffling around"
+          " the driveway near your car.\n")
     time.sleep(2)
     print("Must've had too much to drink.\n")
     time.sleep(2)
@@ -54,9 +56,9 @@ def intro(player_name):
     time.sleep(2)
     print("Very pale.\n")
     bedroom(host_name, player_name)
-    
 
-def bedroom(friend_name, player_name):
+
+def bedroom(host_name, player_name):
     """
     get friend name from player for global use
 
@@ -64,8 +66,9 @@ def bedroom(friend_name, player_name):
     print("You notice the bed is empty.\n")
 
     # user assigns global friend name
-    
-    friend_name = input(f"{player_name}, who did you come to the party with?\n").capitalize()
+
+    friend_name = input(f"{player_name}, who did you come to the party with?"
+                        "\n").capitalize()
     time.sleep(2)
     print("That's weird...\n")
     time.sleep(1)
@@ -84,7 +87,7 @@ def bedroom(friend_name, player_name):
     print("There are two doors in the bedroom."
           "One is on the left and one on the right.")
     time.sleep(1)
- 
+
     """
     user chooses left or right door
     convert choice to lower case
@@ -112,7 +115,8 @@ def left_bathroom(friend_name):
     time.sleep(2)
     print("Just the bathroom.\n")
     time.sleep(2)
-    print("Before you go back out you notice a shape behind the shower curtain.")
+    print("Before you go back out you notice a shape behind the "
+          "shower curtain.")
     time.sleep(1)
     print("Did it just move...?")
     time.sleep(1)
@@ -138,9 +142,11 @@ def left_bathroom(friend_name):
     else:
         print("Please choose yes or no")
 
-# function for user 
+
+# function for user
 def landing(friend_name):
-    camping_box = ["knife", "hammer", "tent peg", "rope", "frying pan", "nail scissors"]
+    camping_box = [
+        "knife", "hammer", "tent peg", "rope", "frying pan", "nail scissors"]
     print("You come out of the bedroom onto the landing\n")
     print("From behind you, you hear a crash and a groan")
     time.sleep(1.5)
@@ -151,34 +157,38 @@ def landing(friend_name):
     print(f"You turn around and see {friend_name} staggering towards you.")
     time.sleep(1)
     print("their skin is green and ....rotting...euch...")
-    time.sleep(1) 
+    time.sleep(1)
     print("and their eyes... rolling in their sockets")
     time.sleep(1.5)
-    print("Their arms are outstretched and it is not for a warm hug by the looks of it")
+    print("Their arms are outstretched and it is not for a warm hug "
+          "by the looks of it")
     time.sleep(1.5)
-    print("Arrrggghh, that virus .... household gatherings .... should have listened...")
+    print("Arrrggghh, that virus .... household gatherings .... should have "
+          "listened...")
     time.sleep(1.5)
     print("No time to think about that now. Need a weapon")
     time.sleep(1)
-    print("You see a cardboard box marked 'camping equipment' just by the door.\n")
+    print("You see a cardboard box marked 'camping equipment' "
+          "just by the door.\n")
     user_answer = input("What do you do?\n")
     if user_answer.lower() in ["box", "open", "look", "inside", "see"]:
         print("you decided to open the box")
         time.sleep(1)
         print("You open the box.\n")
         print("Inside the box there's a")
-        for x in camping_box: 
+        for x in camping_box:
             print(x)
         time.sleep(1.5)
         user_choice = (input("Which item do you grab?\n"))
         print(user_choice)
         inventory.append(user_choice)
         user_choice = (input("Might as well grab one more just in case\n"))
-        for x in inventory: 
+        for x in inventory:
             print(x)
-  
+
     else:
         input("I really think you should open the box")
+
 
 def bedroom1():
     print("you are in bedroom1")
@@ -211,6 +221,7 @@ def you_die(reason):
     time.sleep(2)
     play_again()
 
+
 # function to ask user to play game again
 def play_again():
     print("\nSorry you didn't make it home from the party.\n")
@@ -221,7 +232,7 @@ def play_again():
         time.sleep(1)
         print("Good luck!\n")
         time.sleep(2.5)
-        intro()
+        welcome()
     elif "n" in answer:
         print("No worries. Come back soon!")
 
@@ -239,4 +250,3 @@ def play_again():
 # function to start game
 
 welcome()
-intro()
