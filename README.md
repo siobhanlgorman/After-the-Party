@@ -11,6 +11,8 @@ After the Party Live Link [here](https://after-the-party.herokuapp.com/)
 * Git
 * Heroku
 ## Known Issues
+
+  * in landing function user answer is incorrect if more than one word entered e.g open it instead of just open so added prompt 'enter one word'
 ## Testing
 ### [PEP8](http://pep8online.com/)
 ### Manual Testing
