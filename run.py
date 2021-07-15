@@ -57,7 +57,7 @@ def intro():
 def bedroom():
     """
     get friend name from player for global use
-    
+
     """
     print("You notice the bed is empty.\n")
 
@@ -81,7 +81,11 @@ def bedroom():
     time.sleep(2)
     print("There are two doors in the bedroom. One is on the left and one on the right.\n")
     
-    # user chooses left or right door
+    """
+    user chooses left or right door
+    convert choice to lower case
+    if / else statement for door choice to move to bathroom or landing
+    """
     door_choice = (input("Which do you choose? Left or Right\n").lower())
     if "l" in door_choice:
         print("You chose the door on the left\n")
@@ -94,6 +98,11 @@ def bedroom():
         print(input("Please enter left or right"))
 
 def left_bathroom():
+    """
+    player is in bathroom
+    if statement for player choice to open shower curtain
+
+    """
     print("You open the door.\n")
     time.sleep(2)
     print("Just the bathroom.\n")
@@ -111,7 +120,6 @@ def left_bathroom():
         time.sleep(1.5)
         print("AGGGGGGGGHHHHHHHHHH...\n")
         time.sleep(2)
-        # attack or run choice?
         you_die(f"{friend_name} sinks their teeth into your neck… YOU DIE")
     elif "n" in choice:
         print("You picked no. \n")
