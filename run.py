@@ -60,12 +60,11 @@ def intro(player_name):
 
 def bedroom(host_name, player_name):
     """
-    get friend name from player for global use
-
+    get friend name from player
     """
     print("You notice the bed is empty.\n")
 
-    # user assigns global friend name
+    # user assigns friend name
 
     friend_name = input(f"{player_name}, who did you come to the party with?"
                         "\n").capitalize()
@@ -98,7 +97,7 @@ def bedroom(host_name, player_name):
         print("You chose the door on the left\n")
         time.sleep(2)
         left_bathroom(friend_name)
-    elif "r" in door_choice:
+    elif "r".lower in door_choice:
         print("You chose the door on the right")
         landing(friend_name)
     else:
