@@ -97,7 +97,7 @@ def bedroom(host_name, player_name):
         print("You chose the door on the left\n")
         time.sleep(2)
         left_bathroom(friend_name)
-    elif "r".lower in door_choice:
+    elif "r".lower() in door_choice:
         print("You chose the door on the right")
         landing(friend_name)
     else:
@@ -146,44 +146,44 @@ def left_bathroom(friend_name):
 def landing(friend_name):
     camping_box = [
         "knife", "hammer", "tent peg", "rope", "frying pan", "nail scissors"]
-    # print("You come out of the bedroom onto the landing\n")
-    # print("From behind you, you hear a crash and a groan")
-    # time.sleep(1.5)
-    # print("Sounds like someone's in the bathroom")
-    # time.sleep(1)
-    # print(f"{friend_name}??")
-    # time.sleep(1.5)
-    # print(f"You turn around and see {friend_name} staggering towards you.")
-    # time.sleep(1)
-    # print("their skin is green and ....rotting...euch...")
-    # time.sleep(1)
-    # print("and their eyes... rolling in their sockets")
-    # time.sleep(1.5)
-    # print("Their arms are outstretched and it is not for a warm hug "
-    #       "by the looks of it")
-    # time.sleep(1.5)
-    # print("Arrrggghh, that virus .... household gatherings .... should have "
-    #       "listened...")
-    # time.sleep(1.5)
-    # print("No time to think about that now. Need a weapon")
-    # time.sleep(1)
+    print("You come out of the bedroom onto the landing\n")
+    print("From behind you, you hear a crash and a groan")
+    time.sleep(1.5)
+    print("Sounds like someone's in the bathroom")
+    time.sleep(1)
+    print(f"{friend_name}??")
+    time.sleep(1.5)
+    print(f"You turn around and see {friend_name} staggering towards you.")
+    time.sleep(1)
+    print("their skin is green and ....rotting...euch...")
+    time.sleep(1)
+    print("and their eyes... rolling in their sockets")
+    time.sleep(1.5)
+    print("Their arms are outstretched and it is not for a warm hug "
+          "by the looks of it")
+    time.sleep(1.5)
+    print("Arrrggghh, that virus .... household gatherings .... should have "
+          "listened...")
+    time.sleep(1.5)
+    print("No time to think about that now. Need a weapon")
+    time.sleep(1)
     print("You see a cardboard box marked 'camping equipment' "
           "just by the door.\n")
     time.sleep(1)
-    print("What do you do?\n")
+    print("What do you do?")
     time.sleep(1)
-    user_answer = input("No time! Type one word!: ")
+    user_answer = input("Hurry! Type one word!: ")
     if user_answer.lower() in ["box", "open", "open it", "look", "inside", "see"]:
-        print("you decided to open the box")
-    
+        print("You decided to open the box")
         time.sleep(1)
-        print("You open the box.\n")
-        print("Inside the box there's a")
+        print("Quickly you tear open the lid.")
+        time.sleep(1)
+        print("Inside the box there's a:")
         for x in camping_box:
             print(x)
         time.sleep(1.5)
-        user_choice1 = (input("Which item do you grab?\n"))
-        print(user_choice1).lower()
+        user_choice1 = input("\nWhich item do you grab?\n")
+        print(user_choice1.lower())
         if user_choice1 in camping_box:
             inventory.append(user_choice1)
             print(inventory)
@@ -234,7 +234,7 @@ def you_die(reason):
 def play_again():
     print("\nSorry you didn't make it home from the party.\n")
     time.sleep(2)
-    answer = input("Do you want to try again? Yes or No\n")
+    answer = input("Do you want to play again? Yes or No\n")
     if "y" in answer:
         print("Good decision.\nYou can definitely make it out this time!\n")
         time.sleep(1)
@@ -257,5 +257,4 @@ def play_again():
 
 # function to start game
 
-# welcome()
-landing("bla")
+welcome()
