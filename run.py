@@ -22,6 +22,12 @@ time.sleep(1)
 # function to set scene and start game
 
 def intro():
+    """
+    set scene
+    start game
+    get host name from player for global use
+
+    """
     print("You wake up in an unfamiliar room as dawn is breaking.\n")
     time.sleep(2)
     print("Bit of a headache.\n")
@@ -49,6 +55,10 @@ def intro():
     
 
 def bedroom():
+    """
+    get friend name from player for global use
+    
+    """
     print("You notice the bed is empty.\n")
 
     # user assigns global friend name
