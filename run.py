@@ -16,6 +16,7 @@ def welcome():
     time.sleep(2)
     print("OK, let's start the game.\n")
     time.sleep(1)
+    intro(player_name)
 
 
 # function to set scene and start game
@@ -32,7 +33,6 @@ def intro(player_name):
     print("Bit of a headache.\n")
     print("Whose house is this again?\n")
     time.sleep(0.5)
-    global host_name
     host_name = (input(f"{player_name} who had the party?\n").capitalize())
     print(f"Oh yes {host_name}'s party - just moved back from abroad...\n")
     print("Great night anyway.")
@@ -56,7 +56,7 @@ def intro(player_name):
     bedroom(host_name, player_name)
     
 
-def bedroom(host_name, player_name):
+def bedroom(friend_name, player_name):
     """
     get friend name from player for global use
 
@@ -94,15 +94,15 @@ def bedroom(host_name, player_name):
     if "l".lower() in door_choice:
         print("You chose the door on the left\n")
         time.sleep(2)
-        left_bathroom()
+        left_bathroom(friend_name)
     elif "r" in door_choice:
         print("You chose the door on the right")
-        landing()
+        landing(friend_name)
     else:
         print(input("Please enter left or right"))
 
 
-def left_bathroom():
+def left_bathroom(friend_name):
     """
     player is in bathroom
     if statement for player choice to open shower curtain
@@ -133,13 +133,13 @@ def left_bathroom():
         print("You picked no. \n")
         time.sleep(2)
         print("You go back into the bedroom and open the other door")
-        landing()
+        landing(friend_name)
         time.sleep(1)
     else:
         print("Please choose yes or no")
 
 # function for user 
-def landing():
+def landing(friend_name):
     camping_box = ["knife", "hammer", "tent peg", "rope", "frying pan", "nail scissors"]
     print("You come out of the bedroom onto the landing\n")
     print("From behind you, you hear a crash and a groan")
