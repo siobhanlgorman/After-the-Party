@@ -54,10 +54,10 @@ def intro():
     print("They don't look at all well.")
     time.sleep(2)
     print("Very pale.\n")
-    bedroom()
+    bedroom(host_name)
     
 
-def bedroom():
+def bedroom(host_name):
     """
     get friend name from player for global use
 
@@ -65,7 +65,7 @@ def bedroom():
     print("You notice the bed is empty.\n")
 
     # user assigns global friend name
-    global friend_name
+    
     friend_name = input(f"{player_name}, who did you come to the party with?\n").capitalize()
     time.sleep(2)
     print("That's weird...\n")
@@ -82,16 +82,17 @@ def bedroom():
     time.sleep(2)
     print("Which way out?\n")
     time.sleep(2)
-    print("There are two doors in the bedroom. One is on the left and one on the right.")
+    print("There are two doors in the bedroom."
+          "One is on the left and one on the right.")
     time.sleep(1)
-    
+ 
     """
     user chooses left or right door
     convert choice to lower case
     if / else statement for door choice to move to bathroom or landing
     """
-    door_choice = (input("Which do you choose? Left or Right\n").lower())
-    if "l" in door_choice:
+    door_choice = input("Which do you choose? Left or Right\n")
+    if "l".lower() in door_choice:
         print("You chose the door on the left\n")
         time.sleep(2)
         left_bathroom()
@@ -100,6 +101,7 @@ def bedroom():
         landing()
     else:
         print(input("Please enter left or right"))
+
 
 def left_bathroom():
     """
@@ -236,4 +238,6 @@ def play_again():
 
 
 # function to start game
-intro()
+
+# intro()
+you_die("bbb")
