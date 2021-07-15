@@ -35,11 +35,14 @@ def intro():
     time.sleep(0.5)
     global host_name
     host_name = (input(f"{player_name} who had the party?\n").capitalize())
-    print(f"Oh yes {host_name}'s party - they just moved here ...\n")
-    print("Great party last night though.\n")
+    print(f"Oh yes {host_name}'s party - just moved back from abroad...\n")
+    print("Great night anyway.")
+    print("Good crowd.")
+    print("Wonder how many crashed here?")
     time.sleep(2)
-    print("Hmmm..Shouldn't really have been partying what with that virus spreading and everything. \n")
+    print("Hmmm..probably shouldn't have been partying with that virus spreading and everything.")
     time.sleep(2)
+    print("They say it could be deadly.\n")
     print("You hear some groaning from outside.\n")
     time.sleep(2)
     print("You look out the window.\n")
@@ -79,7 +82,8 @@ def bedroom():
     time.sleep(2)
     print("Which way out?\n")
     time.sleep(2)
-    print("There are two doors in the bedroom. One is on the left and one on the right.\n")
+    print("There are two doors in the bedroom. One is on the left and one on the right.")
+    time.sleep(1)
     
     """
     user chooses left or right door
@@ -107,10 +111,13 @@ def left_bathroom():
     time.sleep(2)
     print("Just the bathroom.\n")
     time.sleep(2)
-    print("Before you go back out you notice a shape behind the shower curtain.\n")
+    print("Before you go back out you notice a shape behind the shower curtain.")
+    time.sleep(1)
+    print("Did it just move...?")
     time.sleep(1)
     print("What the ...??\n")
-    choice = (input("Do you open the curtain? (Yes or No) \n"))
+    time.sleep(1.5)
+    choice = (input("Do you open the curtain? (Yes or No)\n"))
     if "y" in choice:
         print(f"Looks like you found {friend_name} …\n")
         time.sleep(2)
@@ -140,13 +147,18 @@ def landing():
     time.sleep(1)
     print(f"{friend_name}??")
     time.sleep(1.5)
-    print(f"You turn around and see {friend_name} staggering towards you with green rotting flesh and rolling eyes")
+    print(f"You turn around and see {friend_name} staggering towards you."
+    time.sleep(1)
+    print("their skin is green and ....rotting...euch..."
+    time.sleep(1) 
+    print("and their eyes... rolling in their sockets")
     time.sleep(1.5)
-    print("Their arms are outstretched and it is not for a warm hug")
+    print("Their arms are outstretched and it is not for a warm hug by the looks of it")
     time.sleep(1.5)
-    print("Waaaaah, the stories about that virus spreading at household gatherings .... should have listened...")
+    print("Arrrggghh, that virus .... household gatherings .... should have listened...")
     time.sleep(1.5)
-    print("No time to think about that now. Need some kind of weapon")
+    print("No time to think about that now. Need a weapon")
+    time.sleep(1)
     print("You see a cardboard box marked 'camping equipment' just by the door.\n")
     user_answer = input("What do you do?\n")
     if user_answer.lower() in ["box", "open", "look", "inside", "see"]:
@@ -205,7 +217,9 @@ def play_again():
     answer = input("Do you want to try again? Yes or No\n")
     if "y" in answer:
         print("Good decision.\nYou can definitely make it out this time!\n")
+        time.sleep(1)
         print("Good luck!\n")
+        time.sleep(2.5)
         intro()
     elif "n" in answer:
         print("No worries. Come back soon!")
