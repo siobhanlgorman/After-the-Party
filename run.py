@@ -175,7 +175,6 @@ def landing(friend_name):
           "just by the door.\n")
     time.sleep(1)
     print("What do you do?")
-    time.sleep(1)
     user_answer = input("Hurry! No time! Type one word!: ")
     if user_answer.lower() in ["box", "open", "open it",
                                "look", "inside", "see"]:
@@ -207,12 +206,12 @@ def bedroom1():
     print("SLAM. Two people in bed. Looks like Erin and Denis.\n")
     print("Could they be ALIVE?")
     while True:
-        user_answer = input("Do you say Hi? (Yes or No)")
-        if "y".lower in user_answer:
+        user_answer = input("Do you say Hi? (Yes or No)\n")
+        if "y".lower() in user_answer:
             print("You picked yes")
             say_hi()
             break
-        elif "n".lower in user_answer:
+        elif "n".lower() in user_answer:
             print("You picked no. we're going to call a"
                   " function to attack friend")
             break
