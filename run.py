@@ -177,7 +177,8 @@ def landing(friend_name):
     print("What do you do?")
     time.sleep(1)
     user_answer = input("Hurry! No time! Type one word!: ")
-    if user_answer.lower() in ["box", "open", "open it", "look", "inside", "see"]:
+    if user_answer.lower() in ["box", "open", "open it",
+                               "look", "inside", "see"]:
         print("You decided to open the box")
         time.sleep(1)
         print("Quickly you tear open the lid.")
@@ -192,12 +193,13 @@ def landing(friend_name):
             if user_choice1 in camping_box:
                 inventory.append(user_choice1)
                 print(inventory)
-                bedroom()
+                bedroom1()
                 break
             else:
-                print("That's not in the box! Be Quick, your former friend is getting closer!")
+                print("That's not in the box! Be quick, your former friend is"
+                      " getting closer!")
                 continue
-  
+
 
 def bedroom1():
     print("you are in bedroom1")
@@ -207,10 +209,12 @@ def bedroom1():
 # if no weapon -- > window
 # if no weapon --> if rope --> win -- > if no rope die
 
+
 def stairs():
     print("You are on the stairs")
 # hide or attack: if radio die
 # if weapon --> downstairs()
+
 
 def bedroom_2():
     print("you are in bedroom 2 with a dog")
@@ -218,13 +222,14 @@ def bedroom_2():
 # if rope --- window --> win
 # if no rope ---> die
 
+
 def living_room():
     print("you are in the living room and can see the front door")
 # if weapon get to locked front door
 # if tool pick lock --> win
 
-#def kitchen():
-    
+# def kitchen():
+
 # host in cupboard with key --> open cupboard win
 
 
