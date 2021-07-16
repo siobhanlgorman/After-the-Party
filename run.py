@@ -181,21 +181,20 @@ def landing(friend_name):
         print("Inside the box there's a:")
         for x in camping_box:
             print(x)
-        time.sleep(1.5)
-        user_choice1 = input("\nWhich item do you grab?\n")
-        print(user_choice1.lower())
-        if user_choice1 in camping_box:
-            inventory.append(user_choice1)
-            print(inventory)
-        else:
-            print("That's not in the box! I'm afraid you're out of time")
-            you_die(f"{friend_name} got you")
+        while True:
+            time.sleep(1.5)
+            user_choice1 = input("\nWhich item do you grab?\n")
+            print(user_choice1.lower())
+            if user_choice1 in camping_box:
+                inventory.append(user_choice1)
+                print(inventory)
+                break
+            else:
+                print("That's not in the box! Be Quick, your former friend is getting closer!")
+                continue
+      
 
-        for x in inventory:
-            print(x)
-
-    else:
-        input("I really think you should open the box")
+bedroom()    
 
 
 def bedroom1():
