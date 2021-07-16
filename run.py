@@ -192,6 +192,7 @@ def landing(friend_name):
             print(user_choice1.lower())
             if user_choice1 in camping_box:
                 inventory.append(user_choice1)
+                camping_box.remove(user_choice1)
                 print(inventory)
                 bedroom1()
                 break
@@ -209,19 +210,30 @@ def bedroom1():
         user_answer = input("Do you say Hi? (Yes or No)")
         if "y".lower in user_answer:
             print("You picked yes")
+            say_hi()
             break
         elif "n".lower in user_answer:
-            print("You picked no")
+            print("You picked no. we're going to call a"
+                  " function to attack friend")
             break
         else:
             print("Better choose quickly the door handle's turning")
             continue
-  
 
+def say_hi():
+    print("Erin?? Are you...?\n")
     print(" Are they... ALIVE??\n No such luck. \nThey heard the door slam behind you and are stirring."
-          " They start to get out of the bed with that familiar groan and putrid stench.")
-
-
+          " They start to get out of the bed with "
+          "that familiar groan and putrid stench.")
+    user_answer = input("Do you want to fight? (Yes or No)\n")
+    if "y".lower in user_answer:
+        if "knife" in inventory:
+            print("Live go to next room")
+        else:
+            you_die("You don't have a weapon! Erin and Denis grab you and take"
+                    " chunks of flesh out of your face. YOU DIE")
+    elif "n".lower in user_answer:
+        print("Window?")
 
 # say hi
 # if weapon in inventory --> kill --> stairs
