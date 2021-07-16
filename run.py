@@ -40,7 +40,7 @@ def intro(player_name):
     print("Wonder how many crashed here?")
     time.sleep(2)
     print("Hmmm..probably shouldn't have been partying with that virus"
-          " spreading and everything.")
+          " spreading\n and everything.")
     time.sleep(2)
     print("They say it could be deadly.\n")
     print("You hear some groaning from outside.\n")
@@ -48,7 +48,7 @@ def intro(player_name):
     print("You look out the window.\n")
     time.sleep(1)
     print("There's a couple of people from the party shuffling around"
-          " the driveway near your car.\n")
+          " the driveway \n near your car.\n")
     time.sleep(2)
     print("Must've had too much to drink.\n")
     time.sleep(2)
@@ -220,25 +220,30 @@ def bedroom1():
             print("Better choose quickly the door handle's turning")
             continue
 
+
 def say_hi():
     print("Erin?? Are you...?\n")
-    print(" Are they... ALIVE??\n No such luck. \nThey heard the door slam behind you and are stirring."
+    print(" Are they... ALIVE??\n No such luck. \nThey heard the door slam"
+          " behind you and are stirring."
           " They start to get out of the bed with "
           "that familiar groan and putrid stench.")
-    user_answer = input("Do you want to fight? (Yes or No)\n")
-    if "y".lower in user_answer:
-        if "knife" in inventory:
-            print("Live go to next room")
-        else:
-            you_die("You don't have a weapon! Erin and Denis grab you and take"
-                    " chunks of flesh out of your face. YOU DIE")
-    elif "n".lower in user_answer:
-        print("Window?")
+    while True:
+        user_answer = input("Do you want to fight? (Yes or No)\n")
+        if "y".lower in user_answer:
+            if "knife" in inventory:
+                print("Another function - Live go to next room")
+            else:
+                you_die("You don't have a weapon! Erin and Denis grab you and"
+                        " take chunks of flesh out of your face. YOU DIE")
+        elif "n".lower in user_answer:
+            print("Window? another function")
 
 # say hi
 # if weapon in inventory --> kill --> stairs
 # if no weapon -- > window
 # if no weapon --> if rope --> win -- > if no rope die
+def window():
+    print ("this is the window function")
 
 
 def stairs():
