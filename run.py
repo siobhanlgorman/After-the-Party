@@ -83,7 +83,7 @@ def bedroom(host_name, player_name):
     time.sleep(2)
     print("Which way out?\n")
     time.sleep(2)
-    print("There are two doors in the bedroom."
+    print("There are two doors in the bedroom. "
           "One is on the left and one on the right.")
     time.sleep(1)
 
@@ -121,25 +121,29 @@ def left_bathroom(friend_name):
     time.sleep(1)
     print("What the ...??\n")
     time.sleep(1.5)
-    choice = (input("Do you open the curtain? (Yes or No)\n"))
-    if "y" in choice.lower():
-        print(f"Looks like you found {friend_name} …\n")
-        time.sleep(2)
-        print(f"except it’s not {friend_name} any more....\n")
-        time.sleep(2)
-        print("Their skin is rotting and their eyes are white…\n")
-        time.sleep(1.5)
-        print("AGGGGGGGGHHHHHHHHHH...\n")
-        time.sleep(2)
-        you_die(f"{friend_name} sinks their teeth into your neck… YOU DIE")
-    elif "n" in choice.lower():
-        print("You picked no. \n")
-        time.sleep(2)
-        print("You go back into the bedroom and open the other door")
-        landing(friend_name)
-        time.sleep(1)
-    else:
-        print("Please choose yes or no")
+    while True:
+        choice = (input("Do you open the curtain? (Yes or No)\n"))
+        if "y" in choice.lower():
+            print(f"Looks like you found {friend_name} …\n")
+            time.sleep(2)
+            print(f"except it’s not {friend_name} any more....\n")
+            time.sleep(2)
+            print("Their skin is rotting and their eyes are white…\n")
+            time.sleep(1.5)
+            print("AGGGGGGGGHHHHHHHHHH...\n")
+            time.sleep(2)
+            you_die(f"{friend_name} sinks their teeth into your neck… YOU DIE")
+            break
+        elif "n" in choice.lower():
+            print("You picked no. \n")
+            time.sleep(2)
+            print("You go back into the bedroom and open the other door")
+            landing(friend_name)
+            time.sleep(1)
+            break
+        else:
+            print("What was that? If you're lazy you can enter y or n!")
+            continue
 
 
 # function for user
@@ -172,7 +176,7 @@ def landing(friend_name):
     time.sleep(1)
     print("What do you do?")
     time.sleep(1)
-    user_answer = input("Hurry! Type one word!: ")
+    user_answer = input("Hurry! No time! Type one word!: ")
     if user_answer.lower() in ["box", "open", "open it", "look", "inside", "see"]:
         print("You decided to open the box")
         time.sleep(1)
@@ -188,14 +192,12 @@ def landing(friend_name):
             if user_choice1 in camping_box:
                 inventory.append(user_choice1)
                 print(inventory)
+                bedroom()
                 break
             else:
                 print("That's not in the box! Be Quick, your former friend is getting closer!")
                 continue
-      
-
-bedroom()    
-
+  
 
 def bedroom1():
     print("you are in bedroom1")
