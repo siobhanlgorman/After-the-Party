@@ -202,7 +202,26 @@ def landing(friend_name):
 
 
 def bedroom1():
-    print("you are in bedroom1")
+    print("There's a door beside you. You open it and run in")
+    print("SLAM. Two people in bed. Looks like Erin and Denis.\n")
+    print("Could they be ALIVE?")
+    while True:
+        user_answer = input("Do you say Hi? (Yes or No)")
+        if "y".lower in user_answer:
+            print("You picked yes")
+            break
+        elif "n".lower in user_answer:
+            print("You picked no")
+            break
+        else:
+            print("Better choose quickly the door handle's turning")
+            continue
+  
+
+    print(" Are they... ALIVE??\n No such luck. \nThey heard the door slam behind you and are stirring."
+          " They start to get out of the bed with that familiar groan and putrid stench.")
+
+
 
 # say hi
 # if weapon in inventory --> kill --> stairs
