@@ -243,7 +243,17 @@ def say_hi(friend_name):
         if "y".lower() in user_answer:
             print("You want to fight")
             if "knife" in inventory:
-                print("Another function - Live go to next thing")
+                print("Good thing you got that knife. Now 'stick 'em with the"
+                      " pointy end' as little Stark says")
+                print("You stab Denis between the eyes and green goo pours "
+                      "out. Euchh. ")
+                print("Denis falls on top of Erin and she is trapped")
+                print(f"{friend_name} grabs your arm from behind and you swing"
+                      " the knife round with your other hand and jab her in"
+                      " the forehead. More slime.")
+                print("Quickly. Back out of this room anyway before Erin gets"
+                      " out. Have to find a way out")
+                bedroom2()
                 break
             else:
                 you_die("You don't have a weapon! Erin and Denis grab you and"
@@ -278,7 +288,7 @@ def stairs():
 # if weapon --> downstairs()
 
 
-def bedroom_2():
+def bedroom2():
     print("you are in bedroom 2 with a dog")
 # dog attracts zombies
 # if rope --- window --> win
