@@ -316,19 +316,47 @@ def landing2(camping_box):
         user_choice = input("Do you open the door? (Yes or No)")
         if "y".lower() in user_choice:
             print("you picked yes")
+            bedroom2()
             break
         elif "n".lower() in user_choice:
             print("you picked no")
-            print(call stairs function)
+            print("call stairs")
             break
         else:
             continue
 
-    
 
+def bedroom2():
     print("You open the door cautiously. Something white flies at you")
+    print(f"Just a dog!! {host_name} said he put his dog upstairs "
+          "when the party got crazy. No dead people anyway The dog starts"
+          " barking. Noooo! Sssshhh!")
+    print("Too late. You hear more footsteps on the stairs")
+    print("What are you going to do?")
+    print("You look around the room. There's a window.")
+    print("Could you get out that way?")
+    while True:
+        user_choice = input("Do you want to try the window? (Yes or No?")
+        if "y".lower() in user_choice:
+            if "rope" in inventory:
+                you_win("You tie the rope around the window handle and climb"
+                        "  down. (And the dog jumps down into your arms!) Double WIN")
+            else:
+                you_die("You're not a rubber ball!! You jump out the window "
+                        "and break your neck")
+        elif "n".lower() in user_choice:
+            print("Hope you've got a weapon then.")
+            if "knife" in inventory:
+                print("stairs()")
+            elif "hammer" in inventory:
+                print("stairs()")
+            elif "sewing scissors" in inventory:
+                print("stairs") 
+        else:
+            print("Well? Which is it?")
+            continue
+
     
-    print("you are in bedroom 2 with a dog")
 # dog attracts zombies
 # if rope --- window --> win
 # if no rope ---> die
@@ -346,6 +374,7 @@ def living_room():
 
 def you_win(reason):
     print(reason)
+    time.sleep(2)
     play_again()
 
 
