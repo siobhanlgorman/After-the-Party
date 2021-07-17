@@ -28,33 +28,33 @@ def intro(player_name):
     get host name from player for global use
 
     """
-    print("You wake up in an unfamiliar room as dawn is breaking.\n")
-    time.sleep(2)
-    print("Bit of a headache.\n")
-    print("Whose house is this again?\n")
+    # print("You wake up in an unfamiliar room as dawn is breaking.\n")
+    # time.sleep(2)
+    # print("Bit of a headache.\n")
+    # print("Whose house is this again?\n")
     time.sleep(0.5)
     host_name = (input(f"{player_name} who had the party?\n").capitalize())
     print(f"Oh yes {host_name}'s party - just moved back from abroad...\n")
-    print("Great night anyway.")
-    print("Good crowd.")
-    print("Wonder how many crashed here?")
-    time.sleep(2)
-    print("Hmmm..probably shouldn't have been partying with that virus"
-          " spreading\n and everything.")
-    time.sleep(2)
-    print("They say it could be deadly.\n")
-    print("You hear some groaning from outside.\n")
-    time.sleep(2)
-    print("You look out the window.\n")
-    time.sleep(1)
-    print("There's a couple of people from the party shuffling around"
-          " the driveway \n near your car.\n")
-    time.sleep(2)
-    print("Must've had too much to drink.\n")
-    time.sleep(2)
-    print("They don't look at all well.")
-    time.sleep(2)
-    print("Very pale.\n")
+    # print("Great night anyway.")
+    # print("Good crowd.")
+    # print("Wonder how many crashed here?")
+    # time.sleep(2)
+    # print("Hmmm..probably shouldn't have been partying with that virus"
+    #       " spreading\n and everything.")
+    # time.sleep(2)
+    # print("They say it could be deadly.\n")
+    # print("You hear some groaning from outside.\n")
+    # time.sleep(2)
+    # print("You look out the window.\n")
+    # time.sleep(1)
+    # print("There's a couple of people from the party shuffling around"
+    #       " the driveway \n near your car.\n")
+    # time.sleep(2)
+    # print("Must've had too much to drink.\n")
+    # time.sleep(2)
+    # print("They don't look at all well.")
+    # time.sleep(2)
+    # print("Very pale.\n")
     bedroom(host_name, player_name)
 
 
@@ -62,7 +62,7 @@ def bedroom(host_name, player_name):
     """
     get friend name from player
     """
-    print("You notice the bed is empty.\n")
+    # print("You notice the bed is empty.\n")
 
     # user assigns friend name
 
@@ -72,19 +72,19 @@ def bedroom(host_name, player_name):
     print("That's weird...\n")
     time.sleep(1)
     print(f"Where has {friend_name} got to??\n")
-    time.sleep(2)
-    print("Sleepwalking again probably.\n")
-    time.sleep(2)
-    print("Better head off anyway.")
-    time.sleep(1)
-    print(f"{friend_name}'s probably downstairs\n")
-    print("You pull on your clothes and look around the room.")
-    print("Don't remember going to bed at all...")
-    time.sleep(2)
-    print("Which way out?\n")
-    time.sleep(2)
-    print("There are two doors in the bedroom. "
-          "One is on the left and one on the right.")
+    # time.sleep(2)
+    # print("Sleepwalking again probably.\n")
+    # time.sleep(2)
+    # print("Better head off anyway.")
+    # time.sleep(1)
+    # print(f"{friend_name}'s probably downstairs\n")
+    # print("You pull on your clothes and look around the room.")
+    # print("Don't remember going to bed at all...")
+    # time.sleep(2)
+    # print("Which way out?\n")
+    # time.sleep(2)
+    # print("There are two doors in the bedroom. "
+    #       "One is on the left and one on the right.")
     time.sleep(1)
 
     """
@@ -241,6 +241,10 @@ def say_hi():
                         " take chunks of flesh out of your face. YOU DIE")
                 break
         elif "n".lower() in user_answer:
+            print("You don't want to fight. Oh dear. Hope you have a better idea.")
+            print(f"{friend_name} is coming through the door now. Looks like there's a window past the bed. You make a run for it")
+            print("It's open!")
+            you_win("You shimmy down the drainpipe. You're out. YOU WIN!")
             if "rope" in inventory:
                 print("you win out the window")
             break
@@ -278,6 +282,7 @@ def living_room():
 # def kitchen():
 
 # host in cupboard with key --> open cupboard win
+
 
 
 # function for when user dies and game ends
