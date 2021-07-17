@@ -150,7 +150,7 @@ def left_bathroom():
 # function for user
 def landing():
     camping_box = [
-        "knife", "hammer", "tent peg", "rope", "nail scissors", "screwdriver"]
+        "knife", "hammer", "rope", "nail scissors", "screwdriver"]
     print("You come out of the bedroom onto the landing\n")
     print("From behind you, you hear a crash and a groan")
     time.sleep(1.5)
@@ -337,20 +337,15 @@ def bedroom2():
                 you_win("You tie the rope around the window handle and climb"
                         "  down. (And the dog jumps down into your arms!)"
                         " Double WIN")
+                break
             else:
                 you_die("You're not a rubber ball!! You jump out the window "
                         "and break your neck")
+                break
         elif "n".lower() in user_choice:
             print("Hope you've got a weapon then.")
-            if "knife" in inventory:
-                print("stairs()")
-            elif "hammer" in inventory:
-                print("stairs()")
-            elif "sewing scissors" in inventory:
-                print("stairs")
-            else:
-                you_die("Dead party-goers swarm into the room. And ...well"
-                        " it's not pretty...YOU DIE!")
+            stairs()
+            break
         else:
             print("Well? Which is it?")
             continue
@@ -364,8 +359,27 @@ def stairs():
         user_choice = input("Are you going to attack?")
         if "y".lower() in user_choice:
             print("attack with weapon")
-            break
+            output = ("Good job! It falls back and the rest topple down "
+                      "like dominoes. You climb over the pile of"
+                      " bodies and reach the bottom of the stairs.")  
+            if "hammer" in inventory:
+                print("You smash the hammer into its head and slime"
+                      " and skull splat everywhere.")
+                print(output)
+                print("call next function")
+            elif "knife" in inventory:
+                print("You knife it in the forehead and slime and"
+                      " skull splat everywhere.")
+                print(output)
+            elif "screwdriver" in inventory:
+                print("You ram the screwdriver through its eye and"
+                      " slime and skull splat everywhere.")
+            else:
+                print("You give it a good hard shove.")
+                print(output)          
         elif "n".lower() in user_choice:
+            you_die("There's no escape. The horde swarms up the stairs"
+                    " and it ain't pretty. YOU DIE")
             break
         else:
             print("Better be quick!")
