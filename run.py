@@ -254,7 +254,7 @@ def say_hi(friend_name, camping_box):
                       " the forehead. More slime.")
                 print("Quickly. Back out of this room anyway before Erin gets"
                       " out. Have to find a way out")
-                bedroom2(camping_box)
+                landing2(camping_box)
                 break
             else:
                 you_die("You don't have a weapon! Erin and Denis grab you and"
@@ -289,7 +289,7 @@ def stairs():
 # if weapon --> downstairs()
 
 
-def bedroom2(camping_box):
+def landing2(camping_box):
     print("Back out on the landing")
     print("Better grab something else from the camping box")
     print("Inside the box there's a:")
@@ -305,10 +305,29 @@ def bedroom2(camping_box):
             print(inventory)
             break
         else:
-            print("That's not in the box! Be quick, your former friend is"
-                  " getting closer!")
+            print("That's not in the box! Be quick!")
             continue
     print(camping_box)
+    print(inventory)
+    print("You hear thumping footsteps on the stairs. Oh no... more of those"
+          " things..")
+    print("You see another door")
+    while True:
+        user_choice = input("Do you open the door? (Yes or No)")
+        if "y".lower() in user_choice:
+            print("you picked yes")
+            break
+        elif "n".lower() in user_choice:
+            print("you picked no")
+            print(call stairs function)
+            break
+        else:
+            continue
+
+    
+
+    print("You open the door cautiously. Something white flies at you")
+    
     print("you are in bedroom 2 with a dog")
 # dog attracts zombies
 # if rope --- window --> win
