@@ -324,9 +324,11 @@ def landing2(camping_box):
 
 def bedroom2():
     print("You open the door cautiously. Something white flies at you")
-    print(f"Just a dog!! {host_name} said he put his dog upstairs "
-          "when the party got crazy. No dead people anyway The dog starts"
-          " barking. Noooo! Sssshhh!")
+    print("What the ....!!!")
+    print(f"Phew, just a dog!! {host_name} said he put his dog upstairs "
+          "when the party got crazy. \nAt least there's no dead people anyway.
+    print("The dog starts barking")
+    print("Noooo! Sssshhh!")
     print("Too late. You hear more footsteps on the stairs")
     print("What are you going to do?")
     print("You look around the room. There's a window.")
