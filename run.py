@@ -245,7 +245,6 @@ def say_hi(friend_name, camping_box):
     #       "that familiar groan and putrid stench.")
     # print("Is everybody in this house zombiefied??")
     while True:
-        output = print(
         user_answer = input("Do you want to fight? (Yes or No)\n")
         if "y".lower() in user_answer:
             print("You want to fight")
@@ -254,7 +253,7 @@ def say_hi(friend_name, camping_box):
                        " 'stick 'em with the pointy end' as they say"
                        "You stab Denis between the eyes and green goo pours "
                        "out. Euchh. Denis falls on top of Erin and she"
-                       " is trapped"))
+                       " is trapped")
                 print(f"{friend_name} grabs your arm from behind and you swing"
                       " around and jab her in the forehead. More slime.")
                 print("Quickly. Back out of this room anyway before Erin gets"
@@ -315,7 +314,8 @@ def landing2(camping_box):
             break
         elif "n".lower() in user_choice:
             print("you picked no")
-            print("call stairs")
+            print("You turn to the stairs")
+            stairs()
             break
         else:
             continue
