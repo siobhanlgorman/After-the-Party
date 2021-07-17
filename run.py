@@ -175,14 +175,19 @@ def landing():
     print("You see a cardboard box marked 'camping equipment' "
           "just by the door.\n")
     time.sleep(1)
-    print("What do you do?")
-    user_answer = input("Hurry! No time! Type one word!: ")
-    if user_answer.lower() in ["box", "open", "open it",
-                               "look", "inside", "look inside", "see"]:
-        print("You decided to open the box")
-        print("Quickly you tear open the lid.")
-        time.sleep(1)
-        open_camping_box(camping_box)
+    print("What do you do? \nHurry! No time! ")
+    while True:
+        user_answer = input("Type one word!: \n")
+        if user_answer.lower() in ["box", "open", "open it", "look", "inside",
+                                   "look inside", "see"]:
+                                   print("You decided to open the box")
+                                   print("Quickly you tear open the lid.")
+                                   time.sleep(1)
+                                   open_camping_box(camping_box)
+                                   break
+        else:
+            print("Pardon")
+            continue
 
 
 def open_camping_box(camping_box):
@@ -276,18 +281,6 @@ def say_hi(friend_name, camping_box):
             continue
 
 
-# if weapon in inventory --> kill --> stairs
-# if no weapon -- > window
-# if no weapon --> if rope --> win -- > if no rope die
-def window():
-    print("this is the window function")
-
-
-def stairs():
-    print("You are on the stairs")
-# hide or attack: if radio die
-# if weapon --> downstairs()
-
 
 def landing2(camping_box):
     print("Back out on the landing")
@@ -336,11 +329,12 @@ def bedroom2():
     print("You look around the room. There's a window.")
     print("Could you get out that way?")
     while True:
-        user_choice = input("Do you want to try the window? (Yes or No?")
+        user_choice = input("Do you want to try the window? (Yes or No?)\n")
         if "y".lower() in user_choice:
             if "rope" in inventory:
                 you_win("You tie the rope around the window handle and climb"
-                        "  down. (And the dog jumps down into your arms!) Double WIN")
+                        "  down. (And the dog jumps down into your arms!)"
+                        " Double WIN")
             else:
                 you_die("You're not a rubber ball!! You jump out the window "
                         "and break your neck")
@@ -352,14 +346,20 @@ def bedroom2():
                 print("stairs()")
             elif "sewing scissors" in inventory:
                 print("stairs") 
+            else:
+                you_die("Dead party-goers swarm into the room. And ...well it's not pretty...YOU DIE!")
         else:
             print("Well? Which is it?")
             continue
 
-    
-# dog attracts zombies
-# if rope --- window --> win
-# if no rope ---> die
+def stairs():
+    print("You are on the stairs")
+    print("You ")
+
+# hide or attack: if radio die
+# if weapon --> downstairs()
+
+
 
 
 def living_room():
@@ -409,5 +409,4 @@ def play_again():
 
 
 # function to start game
-
 welcome()
