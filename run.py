@@ -354,10 +354,10 @@ def bedroom2():
 
 def stairs():
     print("You are on the stairs")
-    print("Dead party-goers are trooping up the stairs.\n The first one is"
+    print("Dead party-goers are trooping up the stairs.\nThe first one is"
           " at the top")
     while True:
-        user_choice = input("Are you going to attack?")
+        user_choice = input("Are you going to attack?\n")
         if "y".lower() in user_choice:
             print("attack with weapon")
             output = ("Good job! It falls back and the rest topple down "
