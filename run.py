@@ -178,13 +178,14 @@ def landing():
     print("What do you do? \nHurry! No time! ")
     while True:
         user_answer = input("Type one word!: \n")
-        if user_answer.lower() in ["box", "open", "open it", "look", "inside",
-                                   "look inside", "see"]:
-                                   print("You decided to open the box")
-                                   print("Quickly you tear open the lid.")
-                                   time.sleep(1)
-                                   open_camping_box(camping_box)
-                                   break
+        if user_answer.lower(
+        ) in [
+             "box", "open", "open it", "look", "inside", "look inside", "see"]:
+            print("You decided to open the box")
+            print("Quickly you tear open the lid.")
+            time.sleep(1)
+            open_camping_box(camping_box)
+            break
         else:
             print("Pardon")
             continue
@@ -250,15 +251,15 @@ def say_hi(friend_name, camping_box):
             print("You want to fight")
             if "knife" or "screwdriver" in inventory:
                 print("Good thing you picked that from the box!\nNow"
-                       " 'stick 'em with the pointy end' as they say. "
+                      " 'stick 'em with the pointy end' as they say. ")
                 print("You stab Denis between the eyes and green goo pours "
-                       "out. \nEuchh. \nDenis falls on top of Erin and she"
-                       " is trapped")
+                      "out. \nEuchh. \nDenis falls on top of Erin and she"
+                      " is trapped")
                 print(f"{friend_name} grabs your arm from behind and you swing"
                       " around and jab her in the forehead. More slime.")
                 print("Quickly. Back out of this room anyway before Erin gets"
                       " out. Have to find a way out")
-                landing2(camping_box)     
+                landing2(camping_box)
                 break
             else:
                 you_die("You don't have a weapon! Erin and Denis grab you and"
@@ -361,7 +362,7 @@ def stairs():
             print("attack with weapon")
             output = ("Good job! It falls back and the rest topple down "
                       "like dominoes. You climb over the pile of"
-                      " bodies and reach the bottom of the stairs.")  
+                      " bodies and reach the bottom of the stairs.")
             if "hammer" in inventory:
                 print("You smash the hammer into its head and slime"
                       " and skull splat everywhere.")
@@ -377,8 +378,8 @@ def stairs():
                 print(output)
             else:
                 print("You give it a good hard shove.")
-                print(output)  
-            break        
+                print(output)
+            break
         elif "n".lower() in user_choice:
             you_die("There's no escape. The horde swarms up the stairs"
                     " and it ain't pretty. YOU DIE")
