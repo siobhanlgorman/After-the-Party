@@ -17,12 +17,12 @@ def welcome():
     time.sleep(2)
     print("OK, let's start the game.\n")
     time.sleep(1)
-    intro(player_name)
+    intro()
 
 
 # function to set scene and start game
 
-def intro(player_name):
+def intro():
     """
     set scene
     start game
@@ -57,10 +57,10 @@ def intro(player_name):
     # print("They don't look at all well.")
     # time.sleep(2)
     # print("Very pale.\n")
-    bedroom(player_name)
+    bedroom()
 
 
-def bedroom(player_name):
+def bedroom():
     """
     get friend name from player
     """
