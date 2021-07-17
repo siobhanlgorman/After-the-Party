@@ -33,6 +33,7 @@ def intro(player_name):
     # print("Bit of a headache.\n")
     # print("Whose house is this again?\n")
     time.sleep(0.5)
+    global host_name
     host_name = (input(f"{player_name} who had the party?\n").capitalize())
     print(f"Oh yes {host_name}'s party - just moved back from abroad...\n")
     # print("Great night anyway.")
@@ -55,17 +56,17 @@ def intro(player_name):
     # print("They don't look at all well.")
     # time.sleep(2)
     # print("Very pale.\n")
-    bedroom(host_name, player_name)
+    bedroom(player_name)
 
 
-def bedroom(host_name, player_name):
+def bedroom(player_name):
     """
     get friend name from player
     """
     # print("You notice the bed is empty.\n")
 
     # user assigns friend name
-
+    global friend_name
     friend_name = input(f"{player_name}, who did you come to the party with?"
                         "\n").capitalize()
     time.sleep(2)
@@ -96,15 +97,15 @@ def bedroom(host_name, player_name):
     if "l".lower() in door_choice:
         print("You chose the door on the left\n")
         time.sleep(2)
-        left_bathroom(friend_name)
+        left_bathroom()
     elif "r".lower() in door_choice:
         print("You chose the door on the right")
-        landing(friend_name)
+        landing()
     else:
         print(input("Please enter left or right"))
 
 
-def left_bathroom(friend_name):
+def left_bathroom():
     """
     player is in bathroom
     if statement for player choice to open shower curtain
@@ -138,7 +139,7 @@ def left_bathroom(friend_name):
             print("You picked no. \n")
             time.sleep(2)
             print("You go back into the bedroom and open the other door")
-            landing(friend_name)
+            landing()
             time.sleep(1)
             break
         else:
@@ -147,7 +148,7 @@ def left_bathroom(friend_name):
 
 
 # function for user
-def landing(friend_name):
+def landing():
     camping_box = [
         "knife", "hammer", "tent peg", "rope", "frying pan", "nail scissors"]
     print("You come out of the bedroom onto the landing\n")
@@ -212,7 +213,7 @@ def bedroom1():
         user_answer = input("Do you say Hi? (Yes or No)\n")
         if "y".lower() in user_answer:
             print("You picked yes")
-            say_hi()
+            say_hi(friend_name)
             break
         elif "n".lower() in user_answer:
             print("You picked no. we're going to call a"
@@ -223,7 +224,15 @@ def bedroom1():
             continue
 
 
-def say_hi():
+def say_hi(friend_name):
+    """
+    function for player to choose whether to fight or not
+    if player chooses to fight there are two outcomes.
+    if they have the knife is ithey can move on
+    if they don't have the knife they die
+    if the player chooses not to fight they escape out the window
+    """
+
     # print("Hello...??\n")
     # print(" Are they... ALIVE??\n")
     # print("They start to get out of the bed with "
@@ -234,19 +243,21 @@ def say_hi():
         if "y".lower() in user_answer:
             print("You want to fight")
             if "knife" in inventory:
-                print("Another function - Live go to next room")
+                print("Another function - Live go to next thing")
                 break
             else:
                 you_die("You don't have a weapon! Erin and Denis grab you and"
                         " take chunks of flesh out of your face. YOU DIE")
                 break
         elif "n".lower() in user_answer:
-            print("You don't want to fight. Oh dear. Hope you have a better idea.")
-            print(f"{friend_name} is coming through the door now. Looks like there's a window past the bed. You make a run for it")
-            print("It's open!")
+            print("You don't want to fight. Oh dear. Hope you have a better"
+                  " idea.")
+            print(f"{friend_name} is coming through the door now...")
+            print("And Erin and Dennis are standing up...")
+            print("There's no way out....but wait")
+            print("There's a window past the bed. You make a run for it")
+            print("It's open! (That was lucky!")
             you_win("You shimmy down the drainpipe. You're out. YOU WIN!")
-            if "rope" in inventory:
-                print("you win out the window")
             break
         else:
             print("Make up your mind!")
@@ -283,9 +294,11 @@ def living_room():
 
 # host in cupboard with key --> open cupboard win
 
+
 def you_win(reason):
     print(reason)
     play_again()
+
 
 # function for when user dies and game ends
 def you_die(reason):
