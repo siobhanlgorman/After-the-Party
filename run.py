@@ -102,7 +102,7 @@ def bedroom(player_name):
         print("You chose the door on the right")
         landing()
     else:
-        print(input("Please enter left or right"))
+        print(input("Please enter left or right\n"))
 
 
 def left_bathroom():
@@ -393,6 +393,33 @@ def stairs():
 
 def living_room():
     print("you are in the living room and can see the front door")
+    print("But the way is blocked by a good dozen dead creatures")
+    print("They haven't seen you yet.")
+    print("How to get through...")
+    
+    while True:
+        user_choice = input("Do you have the energy to fight your way through? (Yes or No)\n")
+        if "y".lower() in user_choice:
+            print("attack with weapon")
+            if "hammer" or "knife" or "screwdriver" in inventory:
+                print("You fight your way bravely with your last drops of energy")
+                print("You reach the front door")
+                print("Thank the lord!!")
+                print("But wait...it's LOCKED????")
+                print("Where the hell is the key???")
+                print("call next function")
+            break
+        elif "n".lower() in user_choice:
+            you_die("The dead turn towrds you. You turn to go back up"
+                    "But Erin is coming down the stairs.
+                    "There's no escape. Sorry YOU DIE")
+                    
+            break
+        else:
+            print("Well, which is it to be?")
+            continue
+
+
 # if weapon get to locked front door
 # if tool pick lock --> win
 
