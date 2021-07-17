@@ -158,27 +158,27 @@ def landing():
     time.sleep(1)
     print(f"{friend_name}??")
     time.sleep(1.5)
-    print(f"You turn around and see {friend_name} staggering towards you.")
-    time.sleep(1)
-    print("their skin is green and ....rotting...euch...")
-    time.sleep(1)
-    print("and their eyes... rolling in their sockets")
-    time.sleep(1.5)
-    print("Their arms are outstretched and it is not for a warm hug "
-          "by the looks of it")
-    time.sleep(1.5)
-    print("Arrrggghh, that virus .... household gatherings .... should have "
-          "listened...")
-    time.sleep(1.5)
-    print("No time to think about that now. Need a weapon")
-    time.sleep(1)
+    # print(f"You turn around and see {friend_name} staggering towards you.")
+    # time.sleep(1)
+    # print("their skin is green and ....rotting...euch...")
+    # time.sleep(1)
+    # print("and their eyes... rolling in their sockets")
+    # time.sleep(1.5)
+    # print("Their arms are outstretched and it is not for a warm hug "
+    #       "by the looks of it")
+    # time.sleep(1.5)
+    # print("Arrrggghh, that virus .... household gatherings .... should have "
+    #       "listened...")
+    # time.sleep(1.5)
+    # print("No time to think about that now. Need a weapon")
+    # time.sleep(1)
     print("You see a cardboard box marked 'camping equipment' "
           "just by the door.\n")
     time.sleep(1)
     print("What do you do?")
     user_answer = input("Hurry! No time! Type one word!: ")
     if user_answer.lower() in ["box", "open", "open it",
-                               "look", "inside", "see"]:
+                               "look", "inside", "look inside", "see"]:
         print("You decided to open the box")
         print("Quickly you tear open the lid.")
         time.sleep(1)
@@ -197,7 +197,8 @@ def open_camping_box(camping_box):
             inventory.append(user_choice1)
             camping_box.remove(user_choice1)
             print(inventory)
-            bedroom1()
+            print(camping_box)
+            bedroom1(camping_box)
             break
         else:
             print("That's not in the box! Be quick, your former friend is"
@@ -205,7 +206,7 @@ def open_camping_box(camping_box):
             continue
 
 
-def bedroom1():
+def bedroom1(camping_box):
     print("There's a door beside you. You open it and run in")
     print("SLAM. Two people in bed. Looks like that couple Erin and Denis\n")
     print("Could they be ALIVE?")
@@ -213,7 +214,7 @@ def bedroom1():
         user_answer = input("Do you say Hi? (Yes or No)\n")
         if "y".lower() in user_answer:
             print("You picked yes")
-            say_hi(friend_name)
+            say_hi(friend_name, camping_box)
             break
         elif "n".lower() in user_answer:
             print("You picked no. we're going to call a"
@@ -224,7 +225,7 @@ def bedroom1():
             continue
 
 
-def say_hi(friend_name):
+def say_hi(friend_name, camping_box):
     """
     function for player to choose whether to fight or not
     if player chooses to fight there are two outcomes.
@@ -253,7 +254,7 @@ def say_hi(friend_name):
                       " the forehead. More slime.")
                 print("Quickly. Back out of this room anyway before Erin gets"
                       " out. Have to find a way out")
-                bedroom2()
+                bedroom2(camping_box)
                 break
             else:
                 you_die("You don't have a weapon! Erin and Denis grab you and"
@@ -288,7 +289,26 @@ def stairs():
 # if weapon --> downstairs()
 
 
-def bedroom2():
+def bedroom2(camping_box):
+    print("Back out on the landing")
+    print("Better grab something else from the camping box")
+    print("Inside the box there's a:")
+    for x in camping_box:
+        print(x)
+    while True:
+        time.sleep(1.5)
+        user_choice1 = input("\nWhich item do you grab?\n")
+        print(user_choice1.lower())
+        if user_choice1 in camping_box:
+            inventory.append(user_choice1)
+            camping_box.remove(user_choice1)
+            print(inventory)
+            break
+        else:
+            print("That's not in the box! Be quick, your former friend is"
+                  " getting closer!")
+            continue
+    print(camping_box)
     print("you are in bedroom 2 with a dog")
 # dog attracts zombies
 # if rope --- window --> win
