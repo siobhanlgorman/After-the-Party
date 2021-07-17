@@ -10,6 +10,7 @@ def welcome():
     """
     print("Hello there!")
     time.sleep(1)
+    global player_name
     player_name = input("What's your name?:\n").capitalize()
     time.sleep(2)
     print(f"Hi {player_name}!\n")
@@ -421,6 +422,7 @@ def living_room():
             print("Well, which is it to be?")
             continue
 
+
 def front_door():
     print("I don't believe it... what used to be Erin is coming across "
           "the living room now. Should have finished her off upstairs.")
@@ -432,14 +434,16 @@ def front_door():
     else:
         while True:
             print("You're out of energy and ideas.")
-            print("Maybe a rest will help before you tackle the rest of the dead")
+            print("Maybe a rest will help before you tackle the rest "
+                  "of the dead")
             print("There's a cupboard over there. With a latch on the outside")
             user_choice = input("You could rest in there. Do you open it? "
                                 "Yes or No?\n")
             if "y".lower() in user_choice:
                 print(f"You lift the latch and a voice says '{player_name}??'")
                 print(f"{host_name}?")
-                you_win(f"{host_name} has the key to the from door! You can get out! YOU WIN!")
+                you_win(f"{host_name} has the key to the from door! "
+                        "You can get out! YOU WIN!")
                 break
             elif "n".lower in user_choice:
                 you_die("So close....and yet so far. Erin reaches you and"
