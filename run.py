@@ -249,10 +249,10 @@ def say_hi(friend_name, camping_box):
         if "y".lower() in user_answer:
             print("You want to fight")
             if "knife" or "screwdriver" in inventory:
-                print("Good thing you picked that from the box! Now"
-                       " 'stick 'em with the pointy end' as they say"
-                       "You stab Denis between the eyes and green goo pours "
-                       "out. Euchh. Denis falls on top of Erin and she"
+                print("Good thing you picked that from the box!\nNow"
+                       " 'stick 'em with the pointy end' as they say. "
+                print("You stab Denis between the eyes and green goo pours "
+                       "out. \nEuchh. \nDenis falls on top of Erin and she"
                        " is trapped")
                 print(f"{friend_name} grabs your arm from behind and you swing"
                       " around and jab her in the forehead. More slime.")
@@ -303,11 +303,11 @@ def landing2(camping_box):
             continue
     print(camping_box)
     print(inventory)
-    print("You hear thumping footsteps on the stairs. Oh no... more of those"
-          " things..")
+    print("You hear thumping footsteps on the stairs. \nOh no... more of those"
+          " things..people must've crashed downstairs...")
     print("You see another door")
     while True:
-        user_choice = input("Do you open the door? (Yes or No)")
+        user_choice = input("Do you open the door? (Yes or No)\n")
         if "y".lower() in user_choice:
             print("you picked yes")
             bedroom2()
