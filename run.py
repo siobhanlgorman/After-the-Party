@@ -404,27 +404,52 @@ def living_room():
         if "y".lower() in user_choice:
             print("attack with weapon")
             if "hammer" or "knife" or "screwdriver" in inventory:
-                print("You fight your way bravely with your last "
-                      "drops of energy")
+                print("You battle your way bravely with your last "
+                      "drop of energy and clear a path.")
                 print("You reach the front door")
                 print("Thank the lord!!")
                 print("But wait...it's LOCKED????")
                 print("Where the hell is the key???")
-                print("call next function")
+                front_door()
             break
         elif "n".lower() in user_choice:
-            you_die("The dead turn towrds you. You turn to go back up"
+            you_die("The dead turn towards you. You turn to go back up"
                     "But Erin is coming down the stairs."
                     "There's no escape. Sorry YOU DIE")
-
             break
         else:
             print("Well, which is it to be?")
             continue
 
+def front_door():
+    print("I don't believe it... what used to be Erin is coming across "
+          "the living room now. Should have finished her off upstairs.")
+    print("Do you have anything to open a locked door?")
+    if "screwdriver" in inventory:
+        you_win("You pick the lock ")
+    elif "nail scissors" in inventory:
+        you_win("You unscrew the lock")
+    else:
+        while True:
+            print("You're out of energy and ideas.")
+            print("Maybe a rest will help before you tackle the rest of the dead")
+            print("There's a cupboard over there. With a latch on the outside")
+            user_choice = input("You could rest in there. Do you open it? "
+                                "Yes or No?\n")
+            if "y".lower() in user_choice:
+                print(f"You lift the latch and a voice says '{player_name}??'")
+                print(f"{host_name}?")
+                you_win(f"{host_name} has the key to the from door! You can get out! YOU WIN!")
+                break
+            elif "n".lower in user_choice:
+                you_die("So close....and yet so far. Erin reaches you and"
+                        "before you can strike she bites off your hand.."
+                        "YOU DIE")
+                break
+            else:
+                print("Better decide fast!")
+                continue
 
-# if weapon get to locked front door
-# if tool pick lock --> win
 
 # def kitchen():
 
