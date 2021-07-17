@@ -283,7 +283,9 @@ def living_room():
 
 # host in cupboard with key --> open cupboard win
 
-
+def you_win(reason):
+    print(reason)
+    play_again()
 
 # function for when user dies and game ends
 def you_die(reason):
@@ -294,8 +296,6 @@ def you_die(reason):
 
 # function to ask user to play game again
 def play_again():
-    print("\nSorry you didn't make it home from the party.\n")
-    time.sleep(2)
     answer = input("Do you want to play again? Yes or No\n")
     if "y" in answer:
         print("Good decision.\nYou can definitely make it out this time!\n")
