@@ -245,21 +245,21 @@ def say_hi(friend_name, camping_box):
     #       "that familiar groan and putrid stench.")
     # print("Is everybody in this house zombiefied??")
     while True:
+        output = print(
         user_answer = input("Do you want to fight? (Yes or No)\n")
         if "y".lower() in user_answer:
             print("You want to fight")
-            if "knife" in inventory:
-                print("Good thing you got that knife. Now 'stick 'em with the"
-                      " pointy end' as little Stark says")
-                print("You stab Denis between the eyes and green goo pours "
-                      "out. Euchh. ")
-                print("Denis falls on top of Erin and she is trapped")
+            if "knife" or "screwdriver" in inventory:
+                print("Good thing you picked that from the box! Now"
+                       " 'stick 'em with the pointy end' as they say"
+                       "You stab Denis between the eyes and green goo pours "
+                       "out. Euchh. Denis falls on top of Erin and she"
+                       " is trapped"))
                 print(f"{friend_name} grabs your arm from behind and you swing"
-                      " the knife round with your other hand and jab her in"
-                      " the forehead. More slime.")
+                      " around and jab her in the forehead. More slime.")
                 print("Quickly. Back out of this room anyway before Erin gets"
                       " out. Have to find a way out")
-                landing2(camping_box)
+                landing2(camping_box)     
                 break
             else:
                 you_die("You don't have a weapon! Erin and Denis grab you and"
@@ -374,9 +374,11 @@ def stairs():
             elif "screwdriver" in inventory:
                 print("You ram the screwdriver through its eye and"
                       " slime and skull splat everywhere.")
+                print(output)
             else:
                 print("You give it a good hard shove.")
-                print(output)          
+                print(output)  
+            break        
         elif "n".lower() in user_choice:
             you_die("There's no escape. The horde swarms up the stairs"
                     " and it ain't pretty. YOU DIE")
