@@ -150,7 +150,7 @@ def left_bathroom():
 # function for user
 def landing():
     camping_box = [
-        "knife", "hammer", "tent peg", "rope", "frying pan", "nail scissors"]
+        "knife", "hammer", "tent peg", "rope", "nail scissors", "screwdriver"]
     print("You come out of the bedroom onto the landing\n")
     print("From behind you, you hear a crash and a groan")
     time.sleep(1.5)
@@ -281,8 +281,10 @@ def say_hi(friend_name, camping_box):
             continue
 
 
-
 def landing2(camping_box):
+    """
+    """
+
     print("Back out on the landing")
     print("Better grab something else from the camping box")
     print("Inside the box there's a:")
@@ -345,21 +347,29 @@ def bedroom2():
             elif "hammer" in inventory:
                 print("stairs()")
             elif "sewing scissors" in inventory:
-                print("stairs") 
+                print("stairs")
             else:
-                you_die("Dead party-goers swarm into the room. And ...well it's not pretty...YOU DIE!")
+                you_die("Dead party-goers swarm into the room. And ...well"
+                        " it's not pretty...YOU DIE!")
         else:
             print("Well? Which is it?")
             continue
 
+
 def stairs():
     print("You are on the stairs")
-    print("You ")
-
-# hide or attack: if radio die
-# if weapon --> downstairs()
-
-
+    print("Dead party-goers are trooping up the stairs.\n The first one is"
+          " at the top")
+    while True:
+        user_choice = input("Are you going to attack?")
+        if "y".lower() in user_choice:
+            print("attack with weapon")
+            break
+        elif "n".lower() in user_choice:
+            break
+        else:
+            print("Better be quick!")
+            continue
 
 
 def living_room():
