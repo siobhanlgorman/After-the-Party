@@ -179,31 +179,33 @@ def landing(friend_name):
     if user_answer.lower() in ["box", "open", "open it",
                                "look", "inside", "see"]:
         print("You decided to open the box")
-        time.sleep(1)
         print("Quickly you tear open the lid.")
         time.sleep(1)
-        print("Inside the box there's a:")
-        for x in camping_box:
-            print(x)
-        while True:
-            time.sleep(1.5)
-            user_choice1 = input("\nWhich item do you grab?\n")
-            print(user_choice1.lower())
-            if user_choice1 in camping_box:
-                inventory.append(user_choice1)
-                camping_box.remove(user_choice1)
-                print(inventory)
-                bedroom1()
-                break
-            else:
-                print("That's not in the box! Be quick, your former friend is"
-                      " getting closer!")
-                continue
+        open_camping_box()
+
+def open_camping_box():
+    print("Inside the box there's a:")
+    for x in camping_box:
+        print(x)
+    while True:
+        time.sleep(1.5)
+        user_choice1 = input("\nWhich item do you grab?\n")
+        print(user_choice1.lower())
+        if user_choice1 in camping_box:
+            inventory.append(user_choice1)
+            camping_box.remove(user_choice1)
+            print(inventory)
+            bedroom1()
+            break
+        else:
+            print("That's not in the box! Be quick, your former friend is"
+                  " getting closer!")
+            continue
 
 
 def bedroom1():
     print("There's a door beside you. You open it and run in")
-    print("SLAM. Two people in bed. Looks like Erin and Denis.\n")
+    print("SLAM. Two people in bed.\n")
     print("Could they be ALIVE?")
     while True:
         user_answer = input("Do you say Hi? (Yes or No)\n")
@@ -221,11 +223,11 @@ def bedroom1():
 
 
 def say_hi():
-    print("Erin?? Are you...?\n")
-    print(" Are they... ALIVE??\n No such luck. \nThey heard the door slam"
-          " behind you and are stirring."
-          " They start to get out of the bed with "
+    print("Hello...??\n")
+    print(" Are they... ALIVE??\n"
+    print("They start to get out of the bed with "
           "that familiar groan and putrid stench.")
+    print("Is everybody in this house zombiefied??")
     while True:
         user_answer = input("Do you want to fight? (Yes or No)\n")
         if "y".lower in user_answer:
@@ -237,7 +239,7 @@ def say_hi():
         elif "n".lower in user_answer:
             print("Window? another function")
 
-# say hi
+
 # if weapon in inventory --> kill --> stairs
 # if no weapon -- > window
 # if no weapon --> if rope --> win -- > if no rope die
