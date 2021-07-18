@@ -12,9 +12,9 @@ def welcome():
     time.sleep(1)
     global player_name
     player_name = input("What's your name?:\n").capitalize()
-    time.sleep(2)
+    time.sleep(1)
     print(f"Hi {player_name}!\n")
-    time.sleep(2)
+    time.sleep(1.5)
     print("OK, let's start the game.\n")
     time.sleep(1)
     intro()
@@ -30,34 +30,39 @@ def intro():
 
     """
     print("You wake up in an unfamiliar room as dawn is breaking.\n")
-    time.sleep(2)
+    time.sleep(1.5)
     print("Bit of a headache.\n")
+    time.sleep(1.5)
     print("Great night anyway.")
+    time.sleep(1.5)
     print("Good crowd.")
+    time.sleep(1.5)
     print("Wonder how many crashed here?\n")
+    time.sleep(1.5)
     print("Whose house is this again?\n")
-    time.sleep(0.5)
+    time.sleep(1.5)
     global host_name
     host_name = (input(f"{player_name} who was the host of the party?\n").capitalize())
     print(f"Oh yes {host_name}'s party - just moved back from abroad...\n")
-    
-    time.sleep(2)
+    time.sleep(1.5)
     print("Hmmm..probably shouldn't have been partying with that virus"
           " spreading\n and everything.")
-    time.sleep(2)
+    time.sleep(1.5)
     print("They say it could be deadly.\n")
+    time.sleep(0.5)
     print("You hear some groaning from outside.\n")
-    time.sleep(2)
+    time.sleep(1.5)
     print("You look out the window.\n")
-    time.sleep(1)
+    time.sleep(1.5)
     print("There's a couple of people from the party shuffling around"
           " the driveway \nnear your car.\n")
-    time.sleep(2)
+    time.sleep(1.5)
     print("Must've had too much to drink.\n")
-    time.sleep(2)
+    time.sleep(1.5)
     print("They don't look at all well.")
-    time.sleep(2)
+    time.sleep(1.5)
     print("Very pale.\n")
+    time.sleep(1.5)
     bedroom()
 
 
@@ -71,24 +76,25 @@ def bedroom():
     global friend_name
     friend_name = input(f"{player_name}, who did you come to the party with?"
                         "\n").capitalize()
-    time.sleep(2)
+    time.sleep(1.5)
     print("That's weird...\n")
-    time.sleep(1)
+    time.sleep(1.5)
     print(f"Where has {friend_name} got to??\n")
-    time.sleep(2)
+    time.sleep(1.5)
     print("Sleepwalking again probably.\n")
-    time.sleep(2)
+    time.sleep(1.5)
     print("Better head off anyway.")
-    time.sleep(1)
+    time.sleep(1.5)
     print(f"{friend_name}'s probably downstairs\n")
     print("You pull on your clothes and look around the room.")
+    time.sleep(1.5)
     print("Don't remember going to bed at all...")
-    time.sleep(2)
+    time.sleep(1.5)
     print("Which way out?\n")
-    time.sleep(2)
+    time.sleep(1.5)
     print("There are two doors in the bedroom. "
           "One is on the left and one on the right.")
-    time.sleep(1)
+    time.sleep(0.5)
 
     """
     user chooses left or right door
@@ -98,10 +104,11 @@ def bedroom():
     door_choice = input("Which do you choose? Left or Right\n")
     if "l".lower() in door_choice:
         print("You chose the door on the left\n")
-        time.sleep(2)
+        time.sleep(1.5)
         left_bathroom()
     elif "r".lower() in door_choice:
         print("You chose the door on the right")
+        time.sleep(1.5)
         landing()
     else:
         print(input("Please enter left or right\n"))
@@ -114,35 +121,35 @@ def left_bathroom():
 
     """
     print("You open the door.\n")
-    time.sleep(2)
+    time.sleep(1.5)
     print("Just the bathroom.\n")
-    time.sleep(2)
+    time.sleep(1.5)
     print("Before you go back out you notice a shape behind the "
           "shower curtain.")
-    time.sleep(1)
+    time.sleep(1.5)
     print("Did it just move...?")
-    time.sleep(1)
+    time.sleep(1.5)
     print("What the ...??\n")
     time.sleep(1.5)
     while True:
         choice = (input("Do you open the curtain? (Yes or No)\n"))
         if "y" in choice.lower():
             print(f"Looks like you found {friend_name} …\n")
-            time.sleep(2)
+            time.sleep(1.5)
             print(f"except it’s not {friend_name} any more....\n")
-            time.sleep(2)
+            time.sleep(1.5)
             print("Their skin is rotting and their eyes are white…\n")
             time.sleep(1.5)
             print("AGGGGGGGGHHHHHHHHHH...\n")
-            time.sleep(2)
+            time.sleep(1.5)
             you_die(f"{friend_name} sinks their teeth into your neck… YOU DIE")
             break
         elif "n" in choice.lower():
             print("You picked no. \n")
-            time.sleep(2)
+            time.sleep(1.5)
             print("You go back into the bedroom and open the other door")
             landing()
-            time.sleep(1)
+            time.sleep(1.5)
             break
         else:
             print("What was that? If you're lazy you can enter y or n!")
@@ -157,13 +164,13 @@ def landing():
     print("From behind you, you hear a crash and a groan")
     time.sleep(1.5)
     print("Sounds like someone's in the bathroom")
-    time.sleep(1)
+    time.sleep(1.5)
     print(f"{friend_name}??")
     time.sleep(1.5)
     print(f"You turn around and see {friend_name} staggering towards you.")
-    time.sleep(1)
+    time.sleep(1.5)
     print("their skin is green and ....rotting...euch...")
-    time.sleep(1)
+    time.sleep(1.5)
     print("and their eyes... rolling in their sockets")
     time.sleep(1.5)
     print("Their arms are outstretched and it is not for a warm hug "
@@ -176,14 +183,16 @@ def landing():
     time.sleep(1)
     print("You see a cardboard box marked 'camping equipment' "
           "just by the door.\n")
-    time.sleep(1)
-    print("What do you do? \nHurry! No time! ")
+    time.sleep(1.5)
+    print("The box might have something useful in it")
+    print("What do you want to do? \n ")
     while True:
         user_answer = input("Type one word!: \n")
         if user_answer.lower(
         ) in [
              "box", "open", "open it", "look", "inside", "look inside", "see"]:
             print("You decided to open the box")
+            time.sleep(1.5)
             print("Quickly you tear open the lid.")
             time.sleep(1)
             open_camping_box(camping_box)
