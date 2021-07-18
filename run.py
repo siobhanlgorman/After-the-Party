@@ -39,7 +39,7 @@ def intro():
     print(f"Oh yes {host_name}'s party - just moved back from abroad...\n")
     print("Great night anyway.")
     print("Good crowd.")
-    print("Wonder how many crashed here?")
+    print("Wonder how many crashed here?\n")
     time.sleep(2)
     print("Hmmm..probably shouldn't have been partying with that virus"
           " spreading\n and everything.")
@@ -50,7 +50,7 @@ def intro():
     print("You look out the window.\n")
     time.sleep(1)
     print("There's a couple of people from the party shuffling around"
-          " the driveway \n near your car.\n")
+          " the driveway \nnear your car.\n")
     time.sleep(2)
     print("Must've had too much to drink.\n")
     time.sleep(2)
