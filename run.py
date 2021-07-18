@@ -101,17 +101,21 @@ def bedroom():
     convert choice to lower case
     if / else statement for door choice to move to bathroom or landing
     """
-    door_choice = input("Which do you choose? Left or Right\n")
-    if "l".lower() in door_choice:
-        print("You chose the door on the left\n")
-        time.sleep(1.5)
-        left_bathroom()
-    elif "r".lower() in door_choice:
-        print("You chose the door on the right")
-        time.sleep(1.5)
-        landing()
-    else:
-        print(input("Please enter left or right\n"))
+    while True:
+        door_choice = input("Which do you choose? Left or Right\n")
+        if "l".lower() in door_choice:
+            print("You chose the door on the left\n")
+            time.sleep(1.5)
+            left_bathroom()
+            break
+        elif "r".lower() in door_choice:
+            print("You chose the door on the right")
+            time.sleep(1.5)
+            landing()
+            break
+        else:
+            print(input("Please enter left or right\n"))
+            continue
 
 
 def left_bathroom():
