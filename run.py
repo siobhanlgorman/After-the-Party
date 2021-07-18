@@ -224,8 +224,7 @@ def bedroom1(camping_box):
             say_hi(friend_name, camping_box)
             break
         elif "n".lower() in user_answer:
-            print("You picked no. we're going to call a"
-                  " function to attack friend")
+            landing2(camping_box)
             break
         else:
             print("Better choose quickly the door handle's turning...")
