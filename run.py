@@ -381,18 +381,21 @@ def stairs():
                 print("You smash the hammer into its head and slime"
                       " and skull splat everywhere.")
                 print(output)
-                print("call next function")
+                living_room()
             elif "knife" in inventory:
                 print("You knife it in the forehead and slime and"
                       " skull splat everywhere.")
                 print(output)
+                living_room()
             elif "screwdriver" in inventory:
                 print("You ram the screwdriver through its eye and"
                       " slime and skull splat everywhere.")
                 print(output)
+                living_room()
             else:
                 print("You give it a good hard shove.")
                 print(output)
+                living_room()
             break
         elif "n".lower() in user_choice:
             you_die("There's no escape. The horde swarms up the stairs"
