@@ -37,26 +37,26 @@ def intro():
     global host_name
     host_name = (input(f"{player_name} who had the party?\n").capitalize())
     print(f"Oh yes {host_name}'s party - just moved back from abroad...\n")
-    # print("Great night anyway.")
-    # print("Good crowd.")
-    # print("Wonder how many crashed here?")
-    # time.sleep(2)
-    # print("Hmmm..probably shouldn't have been partying with that virus"
-    #       " spreading\n and everything.")
-    # time.sleep(2)
-    # print("They say it could be deadly.\n")
-    # print("You hear some groaning from outside.\n")
-    # time.sleep(2)
-    # print("You look out the window.\n")
-    # time.sleep(1)
-    # print("There's a couple of people from the party shuffling around"
-    #       " the driveway \n near your car.\n")
-    # time.sleep(2)
-    # print("Must've had too much to drink.\n")
-    # time.sleep(2)
-    # print("They don't look at all well.")
-    # time.sleep(2)
-    # print("Very pale.\n")
+    print("Great night anyway.")
+    print("Good crowd.")
+    print("Wonder how many crashed here?")
+    time.sleep(2)
+    print("Hmmm..probably shouldn't have been partying with that virus"
+          " spreading\n and everything.")
+    time.sleep(2)
+    print("They say it could be deadly.\n")
+    print("You hear some groaning from outside.\n")
+    time.sleep(2)
+    print("You look out the window.\n")
+    time.sleep(1)
+    print("There's a couple of people from the party shuffling around"
+          " the driveway \n near your car.\n")
+    time.sleep(2)
+    print("Must've had too much to drink.\n")
+    time.sleep(2)
+    print("They don't look at all well.")
+    time.sleep(2)
+    print("Very pale.\n")
     bedroom()
 
 
@@ -64,7 +64,7 @@ def bedroom():
     """
     get friend name from player
     """
-    # print("You notice the bed is empty.\n")
+    print("You notice the bed is empty.\n")
 
     # user assigns friend name
     global friend_name
@@ -74,19 +74,19 @@ def bedroom():
     print("That's weird...\n")
     time.sleep(1)
     print(f"Where has {friend_name} got to??\n")
-    # time.sleep(2)
-    # print("Sleepwalking again probably.\n")
-    # time.sleep(2)
-    # print("Better head off anyway.")
-    # time.sleep(1)
-    # print(f"{friend_name}'s probably downstairs\n")
-    # print("You pull on your clothes and look around the room.")
-    # print("Don't remember going to bed at all...")
-    # time.sleep(2)
-    # print("Which way out?\n")
-    # time.sleep(2)
-    # print("There are two doors in the bedroom. "
-    #       "One is on the left and one on the right.")
+    time.sleep(2)
+    print("Sleepwalking again probably.\n")
+    time.sleep(2)
+    print("Better head off anyway.")
+    time.sleep(1)
+    print(f"{friend_name}'s probably downstairs\n")
+    print("You pull on your clothes and look around the room.")
+    print("Don't remember going to bed at all...")
+    time.sleep(2)
+    print("Which way out?\n")
+    time.sleep(2)
+    print("There are two doors in the bedroom. "
+          "One is on the left and one on the right.")
     time.sleep(1)
 
     """
@@ -159,20 +159,20 @@ def landing():
     time.sleep(1)
     print(f"{friend_name}??")
     time.sleep(1.5)
-    # print(f"You turn around and see {friend_name} staggering towards you.")
-    # time.sleep(1)
-    # print("their skin is green and ....rotting...euch...")
-    # time.sleep(1)
-    # print("and their eyes... rolling in their sockets")
-    # time.sleep(1.5)
-    # print("Their arms are outstretched and it is not for a warm hug "
-    #       "by the looks of it")
-    # time.sleep(1.5)
-    # print("Arrrggghh, that virus .... household gatherings .... should have "
-    #       "listened...")
-    # time.sleep(1.5)
-    # print("No time to think about that now. Need a weapon")
-    # time.sleep(1)
+    print(f"You turn around and see {friend_name} staggering towards you.")
+    time.sleep(1)
+    print("their skin is green and ....rotting...euch...")
+    time.sleep(1)
+    print("and their eyes... rolling in their sockets")
+    time.sleep(1.5)
+    print("Their arms are outstretched and it is not for a warm hug "
+          "by the looks of it")
+    time.sleep(1.5)
+    print("Arrrggghh, that virus .... household gatherings .... should have "
+          "listened...")
+    time.sleep(1.5)
+    print("No time to think about that now. Need a weapon")
+    time.sleep(1)
     print("You see a cardboard box marked 'camping equipment' "
           "just by the door.\n")
     time.sleep(1)
@@ -188,7 +188,7 @@ def landing():
             open_camping_box(camping_box)
             break
         else:
-            print("Pardon")
+            print("Sorry, what did you say?")
             continue
 
 
@@ -241,11 +241,11 @@ def say_hi(friend_name, camping_box):
     if the player chooses not to fight they escape out the window
     """
 
-    # print("Hello...??\n")
-    # print(" Are they... ALIVE??\n")
-    # print("They start to get out of the bed with "
-    #       "that familiar groan and putrid stench.")
-    # print("Is everybody in this house zombiefied??")
+    print("Hello...??\n")
+    print(" Are they... ALIVE??\n")
+    print("They start to get out of the bed with "
+          "that familiar groan and putrid stench.")
+    print("Is everybody in this house zombiefied??")
     while True:
         user_answer = input("Do you want to fight? (Yes or No)\n")
         if "y".lower() in user_answer:
@@ -262,6 +262,17 @@ def say_hi(friend_name, camping_box):
                       " out. Have to find a way out")
                 landing2(camping_box)
                 break
+            elif hammer in inventory:
+                print("You slam the hammer into Denis's head")
+                print(" and his head disintegrates into small pieces of "
+                      "bone and strings of goo.")
+                print("\nDenis falls on top of Erin and she"
+                      " is trapped")
+                print(f"{friend_name} grabs your arm from behind and you swing"
+                      " around and smash her in the forehead. More slime.")
+                print("Quickly. Back out of this room anyway before Erin gets"
+                      " out. Have to find a way out")
+                landing2(camping_box))
             else:
                 you_die("You don't have a weapon! Erin and Denis grab you and"
                         " take chunks of flesh out of your face. YOU DIE")
