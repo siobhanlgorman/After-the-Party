@@ -340,14 +340,16 @@ def landing2(camping_box):
     """
 
     print("Back out on the landing")
+    time.sleep(1.5)
     print("Better grab something else from the camping box")
     print("Inside the box there's a:")
     for x in camping_box:
         print(x)
+    time.sleep(1.5)
     while True:
         time.sleep(1.5)
         user_choice1 = input("\nWhich item do you grab?\n")
-        print(user_choice1.lower())
+        print(f"You picked {user_choice1}.lower()")
         if user_choice1 in camping_box:
             inventory.append(user_choice1)
             camping_box.remove(user_choice1)
