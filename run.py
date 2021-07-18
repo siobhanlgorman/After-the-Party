@@ -443,7 +443,7 @@ def stairs():
             print("You're going to attack\n")
             output = ("Good job! It falls back and the rest topple down "
                       "like dominoes. You climb over the pile of"
-                      " bodies and reach the bottom of the stairs.")
+                      " bodies and reach the bottom of the stairs.\n")
             if "hammer" in inventory:
                 time.sleep(1.5)
                 print("You smash the hammer into its head and slime"
@@ -483,12 +483,13 @@ def stairs():
 
 
 def living_room():
-    print("you are in the living room and can see the front door")
+    print("You are in the living room and can see the front door")
     time.sleep(1.5)
     print("But the way is blocked by a good dozen dead creatures")
+    time.sleep(1.5)
     print("They haven't seen you yet.")
     time.sleep(1.5)
-    print("How to get through...")
+    print("How to get through...\n")
     time.sleep(1.5)
 
     while True:
