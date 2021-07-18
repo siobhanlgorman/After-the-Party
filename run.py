@@ -262,7 +262,7 @@ def say_hi(friend_name, camping_box):
                       " out. Have to find a way out")
                 landing2(camping_box)
                 break
-            elif hammer in inventory:
+            elif "hammer" in inventory:
                 print("You slam the hammer into Denis's head")
                 print(" and his head disintegrates into small pieces of "
                       "bone and strings of goo.")
@@ -272,7 +272,7 @@ def say_hi(friend_name, camping_box):
                       " around and smash her in the forehead. More slime.")
                 print("Quickly. Back out of this room anyway before Erin gets"
                       " out. Have to find a way out")
-                landing2(camping_box))
+                landing2(camping_box)
             else:
                 you_die("You don't have a weapon! Erin and Denis grab you and"
                         " take chunks of flesh out of your face. YOU DIE")
