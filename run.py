@@ -32,14 +32,15 @@ def intro():
     print("You wake up in an unfamiliar room as dawn is breaking.\n")
     time.sleep(2)
     print("Bit of a headache.\n")
-    print("Whose house is this again?\n")
-    time.sleep(0.5)
-    global host_name
-    host_name = (input(f"{player_name} who had the party?\n").capitalize())
-    print(f"Oh yes {host_name}'s party - just moved back from abroad...\n")
     print("Great night anyway.")
     print("Good crowd.")
     print("Wonder how many crashed here?\n")
+    print("Whose house is this again?\n")
+    time.sleep(0.5)
+    global host_name
+    host_name = (input(f"{player_name} who was the host of the party?\n").capitalize())
+    print(f"Oh yes {host_name}'s party - just moved back from abroad...\n")
+    
     time.sleep(2)
     print("Hmmm..probably shouldn't have been partying with that virus"
           " spreading\n and everything.")
