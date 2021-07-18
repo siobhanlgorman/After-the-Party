@@ -29,10 +29,10 @@ def intro():
     get host name from player for global use
 
     """
-    # print("You wake up in an unfamiliar room as dawn is breaking.\n")
-    # time.sleep(2)
-    # print("Bit of a headache.\n")
-    # print("Whose house is this again?\n")
+    print("You wake up in an unfamiliar room as dawn is breaking.\n")
+    time.sleep(2)
+    print("Bit of a headache.\n")
+    print("Whose house is this again?\n")
     time.sleep(0.5)
     global host_name
     host_name = (input(f"{player_name} who had the party?\n").capitalize())
