@@ -361,6 +361,7 @@ def landing2(camping_box):
         if user_choice1 in camping_box:
             inventory.append(user_choice1)
             camping_box.remove(user_choice1)
+            print(camping_box)
             break
         else:
             print("That's not in the box! Be quick!")
@@ -516,7 +517,7 @@ def living_room():
         elif "n".lower() in user_choice:
             time.sleep(1.5)
             you_die("The dead turn towards you. You turn to go back up. "
-                    "But Erin is coming down the stairs."
+                    "\nBut Erin is coming down the stairs."
                     "There's no escape. Sorry YOU DIE")
             break
         else:
