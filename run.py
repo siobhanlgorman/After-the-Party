@@ -79,7 +79,7 @@ def bedroom():
     friend_name = input(f"{player_name}, who did you come to the party with?"
                         "\n").capitalize()
     time.sleep(1.5)
-    print("That's weird...\n")
+    print("That's weird...")
     time.sleep(1.5)
     print(f"Where has {friend_name} got to??")
     time.sleep(1.5)
@@ -183,7 +183,8 @@ def landing():
     print("Their arms are outstretched and it is not for a warm hug "
           "by the looks of it")
     time.sleep(1.5)
-    print("Arrrggghh, that virus .... household gatherings .... should have "
+    print("ARRRRRGGGGGHHHHH\n")
+    print("That virus .... household gatherings .... should have "
           "listened...")
     time.sleep(1.5)
     print("No time to think about that now. Need a weapon")
@@ -237,17 +238,17 @@ def open_camping_box(camping_box):
 def bedroom1(camping_box):
     print("There's a door beside you. You open it and run in")
     time.sleep(1.5)
-    print("SLAM")
+    print("SLAM!!!")
     time.sleep(1.5)
-    print("Two people in bed. Looks like that couple Erin and Denis\n")
+    print("Two people in bed. Looks like that couple Erin and Denis.\n")
     time.sleep(1.5)
-    print("Could they be ALIVE?")
+    print("Could they be ALIVE?\n")
     time.sleep(1.5)
     while True:
         user_answer = input("Do you say Hi? (Yes or No)\n")
         if "y".lower() in user_answer:
             time.sleep(0.5)
-            print("You picked yes")
+            print("You picked yes\n")
             say_hi(friend_name, camping_box)
             break
         elif "n".lower() in user_answer:
@@ -269,20 +270,20 @@ def say_hi(friend_name, camping_box):
     if the player chooses not to fight they escape out the window
     """
 
-    print("Hello...??\n")
+    print("H..H..H..Hello...??\n")
     time.sleep(1.5)
-    print(" Are they... ALIVE??\n")
+    print("Are they... ALIVE??\n")
     time.sleep(1.5)
     print("They start to get out of the bed with "
           "that familiar groan and putrid stench.")
     time.sleep(1.5)
-    print("Is everybody in this house zombiefied??")
+    print("Is EVERYBODY in this house zombiefied??")
     time.sleep(1.5)
     while True:
-        user_answer = input("Do you want to fight? (Yes or No)\n")
+        user_answer = input("Do you want to fight or run? (fight/un)\n")
         time.sleep(0.5)
-        if "y".lower() in user_answer:
-            print("You want to fight")
+        if user_answer.lower() == "fight":
+            print("You to fight")
             time.sleep(1.5)
             if "knife" or "screwdriver" in inventory:
                 print("Good thing you picked that from the box!\nNow"
@@ -319,7 +320,7 @@ def say_hi(friend_name, camping_box):
                 you_die("You don't have a weapon! Erin and Denis grab you and"
                         " take chunks of flesh out of your face. YOU DIE")
                 break
-        elif "n".lower() in user_answer:
+        elif user_answer.lower() == "run":
             print("You don't want to fight. Oh dear. Hope you have a better"
                   " idea.")
             time.sleep(1.5)
