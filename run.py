@@ -175,7 +175,7 @@ def landing():
     time.sleep(1.5)
     print(f"You turn around and see {friend_name} staggering towards you.")
     time.sleep(1.5)
-    print("their skin is green and ....rotting...euch...")
+    print("Their skin is green and ....rotting...euch...")
     time.sleep(1.5)
     print("and their eyes... rolling in their sockets")
     time.sleep(1.5)
@@ -214,7 +214,7 @@ def open_camping_box(camping_box):
     print("Inside the box there's a:")
     for x in camping_box:
         print(x)
-        time.sleep(1.5)
+        time.sleep(0.2)
     while True:
         time.sleep(1.5)
         user_choice1 = input("\nWhich item do you grab?\n").lower()
@@ -421,6 +421,7 @@ def bedroom2():
                 break
         elif "n".lower() in user_choice:
             print("Hope you've got a weapon then.")
+            time.sleep(1.5)
             stairs()
             break
         else:
@@ -430,36 +431,47 @@ def bedroom2():
 
 def stairs():
     print("You are on the stairs")
+    time.sleep(1.5)
     print("Dead party-goers are trooping up the stairs.\nThe first one is"
           " at the top")
+    time.sleep(1.5)
     while True:
         user_choice = input("Are you going to attack?\n")
         if "y".lower() in user_choice:
-            print("attack with weapon")
+            print("You're going to attack")
             output = ("Good job! It falls back and the rest topple down "
                       "like dominoes. You climb over the pile of"
                       " bodies and reach the bottom of the stairs.")
             if "hammer" in inventory:
+                time.sleep(1.5)
                 print("You smash the hammer into its head and slime"
                       " and skull splat everywhere.")
+                time.sleep(1.5)
                 print(output)
                 living_room()
+                break
             elif "knife" in inventory:
+                time.sleep(1.5)
                 print("You knife it in the forehead and slime and"
                       " skull splat everywhere.")
+                time.sleep(1.5)
                 print(output)
                 living_room()
             elif "screwdriver" in inventory:
+                time.sleep(1.5)
                 print("You ram the screwdriver through its eye and"
                       " slime and skull splat everywhere.")
+                time.sleep(1.5)
                 print(output)
                 living_room()
             else:
+                time.sleep(1.5)
                 print("You give it a good hard shove.")
                 print(output)
                 living_room()
             break
         elif "n".lower() in user_choice:
+            time.sleep(1.5)
             you_die("There's no escape. The horde swarms up the stairs"
                     " and it ain't pretty. YOU DIE")
             break
@@ -470,30 +482,41 @@ def stairs():
 
 def living_room():
     print("you are in the living room and can see the front door")
+    time.sleep(1.5)
     print("But the way is blocked by a good dozen dead creatures")
     print("They haven't seen you yet.")
+    time.sleep(1.5)
     print("How to get through...")
+    time.sleep(1.5)
 
     while True:
         user_choice = input("Do you have the energy to fight your way "
                             "through? (Yes or No)\n")
+        time.sleep(1.5)
         if "y".lower() in user_choice:
             print("attack with weapon")
             if "hammer" or "knife" or "screwdriver" in inventory:
                 print("You battle your way bravely with your last "
                       "drop of energy and clear a path.")
+                time.sleep(1.5)
                 print("You reach the front door")
+                time.sleep(1.5)
                 print("Thank the lord!!")
+                time.sleep(1.5)
                 print("But wait...it's LOCKED????")
+                time.sleep(1.5)
                 print("Where the hell is the key???")
+                time.sleep(1.5)
                 front_door()
             break
         elif "n".lower() in user_choice:
+            time.sleep(1.5)
             you_die("The dead turn towards you. You turn to go back up. "
                     "But Erin is coming down the stairs."
                     "There's no escape. Sorry YOU DIE")
             break
         else:
+            time.sleep(0.5)
             print("Well, which is it to be?")
             continue
 
@@ -501,7 +524,9 @@ def living_room():
 def front_door():
     print("I don't believe it... what used to be Erin is coming across "
           "the living room now. Should have finished her off upstairs.")
+    time.sleep(1.5)
     print("Do you have anything to open a locked door?")
+    time.sleep(1.5)
     if "screwdriver" in inventory:
         you_win("You pick the lock. You burst through the door "
                 "into the sunlight and speed away in your car. YOU WIN ")
@@ -511,14 +536,19 @@ def front_door():
     else:
         while True:
             print("You're out of energy and ideas.")
+            time.sleep(1.5)
             print("Maybe a rest will help before you tackle the rest "
                   "of the dead")
+            time.sleep(1.5)
             print("There's a cupboard over there. With a latch on the outside")
             user_choice = input("You could rest in there. Do you open it? "
                                 "Yes or No?\n")
             if "y".lower() in user_choice:
+                time.sleep(1.5)
                 print(f"You lift the latch and a voice says '{player_name}??'")
+                time.sleep(1.5)
                 print(f"{host_name}?")
+                time.sleep(1.5)
                 you_win(f"{host_name} has the key to the from door! "
                         "You race over and open the door. You both speed "
                         "off to safety. YOU WIN!")
@@ -531,11 +561,6 @@ def front_door():
             else:
                 print("Better decide fast!")
                 continue
-
-
-# def kitchen():
-
-# host in cupboard with key --> open cupboard win
 
 
 def you_win(reason):
