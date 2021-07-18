@@ -277,28 +277,37 @@ def say_hi(friend_name, camping_box):
         time.sleep(0.5)
         if "y".lower() in user_answer:
             print("You want to fight")
+            time.sleep(1.5)
             if "knife" or "screwdriver" in inventory:
                 print("Good thing you picked that from the box!\nNow"
                       " 'stick 'em with the pointy end' as they say. ")
+                time.sleep(1.5)
                 print("You stab Denis between the eyes and green goo pours "
                       "out. \nEuchh. \nDenis falls on top of Erin and she"
                       " is trapped")
+                time.sleep(1.5)
                 print(f"{friend_name} grabs your arm from behind and you swing"
                       " around and jab them in the forehead. More slime.")
+                time.sleep(1.5)
                 print("Quickly. Back out of this room anyway before Erin gets"
                       " out. Have to find a way out")
+                time.sleep(1.5)
                 landing2(camping_box)
                 break
             elif "hammer" in inventory:
                 print("You slam the hammer into Denis's head")
                 print(" and his head disintegrates into small pieces of "
                       "bone and strings of goo.")
+                time.sleep(1.5)
                 print("\nDenis falls on top of Erin and she"
                       " is trapped")
+                time.sleep(1.5)
                 print(f"{friend_name} grabs your arm from behind and you swing"
                       " around and smash her in the forehead. More slime.")
+                time.sleep(1.5)
                 print("Quickly. Back out of this room anyway before Erin gets"
                       " out. Have to find a way out")
+                time.sleep(1.5)
                 landing2(camping_box)
             else:
                 you_die("You don't have a weapon! Erin and Denis grab you and"
@@ -307,11 +316,17 @@ def say_hi(friend_name, camping_box):
         elif "n".lower() in user_answer:
             print("You don't want to fight. Oh dear. Hope you have a better"
                   " idea.")
+            time.sleep(1.5)
             print(f"{friend_name} is coming through the door now...")
+            time.sleep(1.5)
             print("And Erin and Dennis are standing up...")
+            time.sleep(1.5)
             print("There's no way out....but wait")
+            time.sleep(1.5)
             print("There's a window past the bed. You make a run for it")
+            time.sleep(1.5)
             print("It's open! (That was lucky!")
+            time.sleep(1.5)
             you_win("You shimmy down the drainpipe. You're out. YOU WIN!")
             break
         else:
