@@ -87,7 +87,7 @@ def bedroom():
     time.sleep(1.5)
     print("Better head off anyway.")
     time.sleep(1.5)
-    print(f"{friend_name}'s probably downstairs.")
+    print(f"{friend_name}'s probably downstairs.\n")
     print("You pull on your clothes and look around the room.")
     time.sleep(1.5)
     print("Don't remember going to bed at all...")
@@ -180,7 +180,7 @@ def landing():
     time.sleep(1.5)
     print("and their eyes... rolling in their sockets")
     time.sleep(1.5)
-    print("Their arms are outstretched and it is not for a warm hug "
+    print("Their arms are outstretched and \nit is not for a warm hug "
           "by the looks of it\n")
     time.sleep(1.5)
     print("ARRRRRGGGGGHHHHH\n")
@@ -275,7 +275,7 @@ def say_hi(friend_name, camping_box):
     print("Are they... ALIVE??\n")
     time.sleep(1.5)
     print("They start to get out of the bed with "
-          "that familiar groan and putrid stench.")
+          "that familiar groan and putrid stench.\n")
     time.sleep(1.5)
     print("Is EVERYBODY in this house zombiefied??")
     time.sleep(1.5)
@@ -286,18 +286,19 @@ def say_hi(friend_name, camping_box):
             print("You are going to fight")
             time.sleep(1.5)
             if "knife" or "screwdriver" in inventory:
-                print("Good thing you picked that from the box!\nNow"
-                      " 'stick 'em with the pointy end' as they say. ")
+                print("Good thing you picked that from the box! \nNow"
+                      " 'stick 'em with the pointy end' as they say.\n ")
                 time.sleep(1.5)
                 print("You stab Denis between the eyes and green goo pours "
-                      "out. \nEuchh. \nDenis falls on top of Erin and she"
-                      " is trapped")
+                      "out. ")
+                print("\nEuchh. \nDenis falls on top of Erin and she"
+                      " is trapped\n")
                 time.sleep(1.5)
                 print(f"{friend_name} grabs your arm from behind and you swing"
-                      " around and jab them in the forehead. More slime.")
+                      " around and jab them in the forehead. More slime.\n")
                 time.sleep(1.5)
                 print("Quickly. Back out of this room anyway before Erin gets"
-                      " out. Have to find a way out")
+                      " out. Have to find a way out\n")
                 time.sleep(1.5)
                 landing2(camping_box)
                 break
@@ -390,23 +391,23 @@ def landing2(camping_box):
 
 
 def bedroom2():
-    print("You open the door cautiously. Something white flies at you")
+    print("You open the door cautiously. Something white flies at you\n")
     time.sleep(1.5)
-    print("What the ....!!!")
+    print("What the ....!!!\n")
     time.sleep(1.5)
     print(f"Phew, just a dog!! {host_name} said he put his dog upstairs "
           "when the party got crazy. \n"
-          "At least there's no dead people anyway.")
+          "At least there's no dead people anyway.\n")
     time.sleep(1.5)
-    print("The dog starts barking")
+    print("The dog starts barking\n")
     time.sleep(1.5)
-    print("Noooo! Sssshhh!")
+    print("Noooo! Sssshhh!\n")
     time.sleep(1.5)
     print("Too late. You hear more footsteps on the stairs")
-    print("What are you going to do?")
+    print("What are you going to do?\n")
     time.sleep(1.5)
     print("You look around the room. There's a window.")
-    print("Could you get out that way?")
+    print("Could you get out that way?\n")
     time.sleep(1.5)
     while True:
         user_choice = input("Do you want to try the window? (Yes or No?)\n")
@@ -442,8 +443,8 @@ def stairs():
         if "y".lower() in user_choice:
             print("You're going to attack\n")
             output = ("Good job! It falls back and the rest topple down "
-                      "like dominoes. You climb over the pile of"
-                      " bodies and reach the bottom of the stairs.\n")
+                      "like dominoes. \nYou climb over the pile of"
+                      " bodies and reach the bottom \nof the stairs.\n")
             if "hammer" in inventory:
                 time.sleep(1.5)
                 print("You smash the hammer into its head and slime"
