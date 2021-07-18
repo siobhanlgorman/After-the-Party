@@ -217,8 +217,10 @@ def open_camping_box(camping_box):
         time.sleep(1.5)
     while True:
         time.sleep(1.5)
-        user_choice1 = input("\nWhich item do you grab?\n").lower
+        user_choice1 = input("\nWhich item do you grab?\n").lower()
+        time.sleep(0.5)
         print(f"You picked a {user_choice1}")
+        time.sleep(1.5)
         if user_choice1 in camping_box:
             inventory.append(user_choice1)
             camping_box.remove(user_choice1)
@@ -227,13 +229,16 @@ def open_camping_box(camping_box):
         else:
             print(f"That's not in the box! Be quick, {friend_name} is"
                   " getting closer!")
+            time.sleep(1.5)
             continue
 
 
 def bedroom1(camping_box):
     print("There's a door beside you. You open it and run in")
     time.sleep(1.5)
-    print("SLAM. Two people in bed. Looks like that couple Erin and Denis\n")
+    print("SLAM")
+    time.sleep(1.5)
+    print("Two people in bed. Looks like that couple Erin and Denis\n")
     time.sleep(1.5)
     print("Could they be ALIVE?")
     time.sleep(1.5)
@@ -347,8 +352,8 @@ def landing2(camping_box):
         print(x)
     time.sleep(1.5)
     while True:
-        time.sleep(1.5)
         user_choice1 = input("\nWhich item do you grab?\n").lower()
+        time.sleep(0.5)
         print(f"You picked a {user_choice1}")
         if user_choice1 in camping_box:
             inventory.append(user_choice1)
@@ -357,20 +362,25 @@ def landing2(camping_box):
         else:
             print("That's not in the box! Be quick!")
             continue
-    print(camping_box)
-    print(inventory)
+    time.sleep(1.5)
     print("You hear thumping footsteps on the stairs. \nOh no... more of those"
           " things..people must've crashed downstairs...")
+    time.sleep(1.5)
     print("You see another door")
     while True:
+        time.sleep(0.5)
         user_choice = input("Do you open the door? (Yes or No)\n")
         if "y".lower() in user_choice:
+            time.sleep(0.5)
             print("you picked yes")
             bedroom2()
             break
         elif "n".lower() in user_choice:
+            time.sleep(0.5)
             print("you picked no")
+            time.sleep(1.5)
             print("You turn to the stairs")
+            time.sleep(1.5)
             stairs()
             break
         else:
@@ -379,18 +389,26 @@ def landing2(camping_box):
 
 def bedroom2():
     print("You open the door cautiously. Something white flies at you")
+    time.sleep(1.5)
     print("What the ....!!!")
+    time.sleep(1.5)
     print(f"Phew, just a dog!! {host_name} said he put his dog upstairs "
           "when the party got crazy. \n"
           "At least there's no dead people anyway.")
+    time.sleep(1.5)
     print("The dog starts barking")
+    time.sleep(1.5)
     print("Noooo! Sssshhh!")
+    time.sleep(1.5)
     print("Too late. You hear more footsteps on the stairs")
     print("What are you going to do?")
+    time.sleep(1.5)
     print("You look around the room. There's a window.")
     print("Could you get out that way?")
+    time.sleep(1.5)
     while True:
         user_choice = input("Do you want to try the window? (Yes or No?)\n")
+        time.sleep(1.5)
         if "y".lower() in user_choice:
             if "rope" in inventory:
                 you_win("You tie the rope around the window handle and climb"
