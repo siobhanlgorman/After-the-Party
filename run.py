@@ -42,14 +42,15 @@ def intro():
     print("Whose house is this again?\n")
     time.sleep(1.5)
     global host_name
-    host_name = (input(f"{player_name} who was the host of the party?\n").capitalize())
+    host_name = (input(f"{player_name} who was the host of the "
+                 "party?\n").capitalize())
     print(f"Oh yes {host_name}'s party - just moved back from abroad...\n")
     time.sleep(1.5)
     print("Hmmm..probably shouldn't have been partying with that virus"
           " spreading\n and everything.")
     time.sleep(1.5)
     print("They say it could be deadly.\n")
-    time.sleep(0.5)
+    time.sleep(1.5)
     print("You hear some groaning from outside.\n")
     time.sleep(1.5)
     print("You look out the window.\n")
@@ -115,6 +116,7 @@ def bedroom():
             break
         else:
             print(input("Please enter left or right\n"))
+            time.sleep(0.5)
             continue
 
 
@@ -184,11 +186,12 @@ def landing():
           "listened...")
     time.sleep(1.5)
     print("No time to think about that now. Need a weapon")
-    time.sleep(1)
+    time.sleep(1.5)
     print("You see a cardboard box marked 'camping equipment' "
           "just by the door.\n")
     time.sleep(1.5)
     print("The box might have something useful in it")
+    time.sleep(0.5)
     print("What do you want to do? \n ")
     while True:
         user_answer = input("Type one word!: \n")
@@ -198,11 +201,12 @@ def landing():
             print("You decided to open the box")
             time.sleep(1.5)
             print("Quickly you tear open the lid.")
-            time.sleep(1)
+            time.sleep(1.5)
             open_camping_box(camping_box)
             break
         else:
-            print("Sorry, what did you say?")
+            print("Sorry, what did you say? What do you want to do "
+                  "with the box??")
             continue
 
 
@@ -210,6 +214,7 @@ def open_camping_box(camping_box):
     print("Inside the box there's a:")
     for x in camping_box:
         print(x)
+        time.sleep(1.5)
     while True:
         time.sleep(1.5)
         user_choice1 = input("\nWhich item do you grab?\n")
@@ -217,27 +222,31 @@ def open_camping_box(camping_box):
         if user_choice1 in camping_box:
             inventory.append(user_choice1)
             camping_box.remove(user_choice1)
-            print(inventory)
-            print(camping_box)
             bedroom1(camping_box)
             break
         else:
-            print("That's not in the box! Be quick, your former friend is"
+            print(f"That's not in the box! Be quick, {friend_name} is"
                   " getting closer!")
             continue
 
 
 def bedroom1(camping_box):
     print("There's a door beside you. You open it and run in")
+    time.sleep(1.5)
     print("SLAM. Two people in bed. Looks like that couple Erin and Denis\n")
+    time.sleep(1.5)
     print("Could they be ALIVE?")
+    time.sleep(1.5)
     while True:
         user_answer = input("Do you say Hi? (Yes or No)\n")
         if "y".lower() in user_answer:
+            time.sleep(0.5)
             print("You picked yes")
             say_hi(friend_name, camping_box)
             break
         elif "n".lower() in user_answer:
+            time.sleep(0.5)
+            print("You picked no")
             landing2(camping_box)
             break
         else:
@@ -255,12 +264,17 @@ def say_hi(friend_name, camping_box):
     """
 
     print("Hello...??\n")
+    time.sleep(1.5)
     print(" Are they... ALIVE??\n")
+    time.sleep(1.5)
     print("They start to get out of the bed with "
           "that familiar groan and putrid stench.")
+    time.sleep(1.5)
     print("Is everybody in this house zombiefied??")
+    time.sleep(1.5)
     while True:
         user_answer = input("Do you want to fight? (Yes or No)\n")
+        time.sleep(0.5)
         if "y".lower() in user_answer:
             print("You want to fight")
             if "knife" or "screwdriver" in inventory:
@@ -441,7 +455,7 @@ def living_room():
                 front_door()
             break
         elif "n".lower() in user_choice:
-            you_die("The dead turn towards you. You turn to go back up"
+            you_die("The dead turn towards you. You turn to go back up. "
                     "But Erin is coming down the stairs."
                     "There's no escape. Sorry YOU DIE")
             break
