@@ -469,9 +469,11 @@ def front_door():
           "the living room now. Should have finished her off upstairs.")
     print("Do you have anything to open a locked door?")
     if "screwdriver" in inventory:
-        you_win("You pick the lock ")
+        you_win("You pick the lock. You burst through the door "
+                "into the sunlight and speed away in your car. YOU WIN ")
     elif "nail scissors" in inventory:
-        you_win("You unscrew the lock")
+        you_win("You unscrew the lock. You burst through the door "
+                "to the safety of your car and speed off. YOU WIN ")
     else:
         while True:
             print("You're out of energy and ideas.")
@@ -484,7 +486,8 @@ def front_door():
                 print(f"You lift the latch and a voice says '{player_name}??'")
                 print(f"{host_name}?")
                 you_win(f"{host_name} has the key to the from door! "
-                        "You can get out! YOU WIN!")
+                        "You race over and open the door. You both speed "
+                        "off to safety. YOU WIN!")
                 break
             elif "n".lower in user_choice:
                 you_die("So close....and yet so far. Erin reaches you and"
