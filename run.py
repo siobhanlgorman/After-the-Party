@@ -257,7 +257,7 @@ def say_hi(friend_name, camping_box):
                       "out. \nEuchh. \nDenis falls on top of Erin and she"
                       " is trapped")
                 print(f"{friend_name} grabs your arm from behind and you swing"
-                      " around and jab her in the forehead. More slime.")
+                      " around and jab them in the forehead. More slime.")
                 print("Quickly. Back out of this room anyway before Erin gets"
                       " out. Have to find a way out")
                 landing2(camping_box)
