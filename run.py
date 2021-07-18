@@ -29,7 +29,7 @@ def intro():
     get host name from player for global use
 
     """
-    print("You wake up in an unfamiliar room as dawn is breaking.\n")
+    print("You wake up in an unfamiliar room as dawn is breaking.")
     time.sleep(1.5)
     print("Bit of a headache.\n")
     time.sleep(1.5)
@@ -39,7 +39,7 @@ def intro():
     time.sleep(1.5)
     print("Wonder how many crashed here?\n")
     time.sleep(1.5)
-    print("Whose house is this again?\n")
+    print("Whose house is this again?")
     time.sleep(1.5)
     global host_name
     host_name = (input(f"{player_name} who was the host of the "
@@ -51,14 +51,14 @@ def intro():
     time.sleep(1.5)
     print("They say it could be deadly.\n")
     time.sleep(1.5)
-    print("You hear some groaning from outside.\n")
+    print("You hear some groaning from outside.")
     time.sleep(1.5)
-    print("You look out the window.\n")
+    print("You look out the window.")
     time.sleep(1.5)
     print("There's a couple of people from the party shuffling around"
-          " the driveway \nnear your car.\n")
+          " the driveway \nnear your car.")
     time.sleep(1.5)
-    print("Must've had too much to drink.\n")
+    print("Must've had too much to drink.")
     time.sleep(1.5)
     print("They don't look at all well.")
     time.sleep(1.5)
@@ -71,7 +71,8 @@ def bedroom():
     """
     get friend name from player
     """
-    print("You notice the bed is empty.\n")
+    print("You notice the bed is empty.")
+    time.sleep(1.5)
 
     # user assigns friend name
     global friend_name
@@ -80,13 +81,13 @@ def bedroom():
     time.sleep(1.5)
     print("That's weird...\n")
     time.sleep(1.5)
-    print(f"Where has {friend_name} got to??\n")
+    print(f"Where has {friend_name} got to??")
     time.sleep(1.5)
-    print("Sleepwalking again probably.\n")
+    print("Sleepwalking again probably.")
     time.sleep(1.5)
     print("Better head off anyway.")
     time.sleep(1.5)
-    print(f"{friend_name}'s probably downstairs\n")
+    print(f"{friend_name}'s probably downstairs.")
     print("You pull on your clothes and look around the room.")
     time.sleep(1.5)
     print("Don't remember going to bed at all...")
@@ -126,7 +127,7 @@ def left_bathroom():
     if statement for player choice to open shower curtain
 
     """
-    print("You open the door.\n")
+    print("You open the door.")
     time.sleep(1.5)
     print("Just the bathroom.\n")
     time.sleep(1.5)
@@ -135,7 +136,7 @@ def left_bathroom():
     time.sleep(1.5)
     print("Did it just move...?")
     time.sleep(1.5)
-    print("What the ...??\n")
+    print("What the ...??")
     time.sleep(1.5)
     while True:
         choice = (input("Do you open the curtain? (Yes or No)\n"))
@@ -578,7 +579,7 @@ def you_die(reason):
 
 # function to ask user to play game again
 def play_again():
-    answer = input("Do you want to play again? Yes or No\n")
+    answer = input("\nDo you want to play again? Yes or No\n")
     if "y" in answer:
         print("Good decision.\nYou can definitely make it out this time!\n")
         time.sleep(1)
@@ -587,16 +588,6 @@ def play_again():
         welcome()
     elif "n" in answer:
         print("No worries. Come back soon!")
-
-
-# def living_room():
-#
-
-# def kitchen():
-    # print("you are upstairs")
-
-# def downstairs():
-    # print("you are downstairs")
 
 
 # function to start game
