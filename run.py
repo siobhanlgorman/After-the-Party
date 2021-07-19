@@ -637,14 +637,14 @@ def front_door():
 
     # While loop to check for valid input and repeat prompt if not
     while True:
-        user_answer = input("Do you want to try to pick the lock?")
+        user_answer = input("Do you want to try to pick the lock?\n")
         time.sleep(1.5)
         if "y".lower() in user_answer:
-            if "screwdriver" in inventory:
+            if "nail scissors" in inventory:
                 you_win("You pick the lock. You burst through the door "
                         "into the sunlight and speed away in your car. "
                         "YOU WIN! ")
-            elif "nail scissors" in inventory:
+            elif "screwdriver" in inventory:
                 you_win("You unscrew the lock. You burst through the door "
                         "to the safety of your car and speed off. YOU WIN ")
             else:
@@ -689,7 +689,7 @@ def cupboard():
     time.sleep(1.5)
     you_win(f"{host_name} has the key to the from door! "
             "You race over and open the door. You both speed "
-            "off to safety. YOU WIN!")
+            "off to safety. YOU WIN!\n")
 
 
 def you_win(reason):
@@ -707,7 +707,7 @@ def you_die(reason):
 
 # function to ask user to play game again
 def play_again():
-    answer = input("\nDo you want to play again? Yes or No\n")
+    answer = input("Do you want to play again? (Yes or No)\n")
     if "y" in answer:
         print("Great!\n")
         time.sleep(1)
