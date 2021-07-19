@@ -415,7 +415,7 @@ def bedroom2():
         if "y".lower() in user_choice:
             if "rope" in inventory:
                 you_win("You tie the rope around the window handle and climb"
-                        "  down. (And the dog jumps down into your arms!)"
+                        "  down. \n(And the dog jumps down into your arms!)"
                         " Double WIN")
                 break
             else:
