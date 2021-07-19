@@ -220,16 +220,28 @@ def landing():
 
 
 def open_camping_box(camping_box):
+    """
+    Player selects one weapon/tool from camping box and moves to bedroom
+    """
     print("Inside the box there's a:")
+
+    # For loop displays items in camping box list
     for x in camping_box:
         print(x)
         time.sleep(0.2)
+    
+    # While loop repeats prompt if player choice is invalid
     while True:
         time.sleep(1.5)
         user_choice1 = input("\nWhich item do you grab?\n").lower()
         time.sleep(0.5)
         print(f"You picked a {user_choice1}")
         time.sleep(1.5)
+
+        """
+        If player choice is valid item is added to inventory list
+        and removed from camping box list
+        """
         if user_choice1 in camping_box:
             inventory.append(user_choice1)
             camping_box.remove(user_choice1)
@@ -243,6 +255,10 @@ def open_camping_box(camping_box):
 
 
 def bedroom1(camping_box):
+    """
+    Player is in bedroom and chooses whether to 'say hi' to couple in bed
+
+    """
     print("There's a door beside you. You open it and run in.\n")
     time.sleep(1.5)
     print("SLAM!!!\n")
@@ -251,8 +267,16 @@ def bedroom1(camping_box):
     time.sleep(1.5)
     print("Could they be ALIVE?\n")
     time.sleep(1.5)
+
+    # while loop to repeat prompt if player entry is invalid
     while True:
         user_answer = input("Do you say 'Hi'? (Yes or No)\n")
+        """
+        If/elif statement for player to choose yes or no
+        If yes player moves to say_hi()
+        If no player moves to landing2()
+
+        """
         if "y".lower() in user_answer:
             time.sleep(0.5)
             print("You picked yes\n")
