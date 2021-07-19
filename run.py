@@ -502,6 +502,11 @@ def bedroom2():
 
 
 def stairs():
+    """
+    Player is asked to choose yes or no to fight
+    If yes player proceeds downstairs
+    If no player dies
+    """
     print("You are on the stairs")
     time.sleep(1.5)
     print("Dead party-goers are trooping up the stairs.\nThe first one is"
@@ -555,6 +560,10 @@ def stairs():
 
 
 def living_room():
+    """
+
+    """
+
     print("You are in the living room and can see the front door")
     time.sleep(1.5)
     print("But the way is blocked by a good dozen dead creatures")
@@ -591,7 +600,10 @@ def living_room():
                 output()
             elif "screwdriver" in inventory:
                 output()
-
+            elif "nail scissors" in inventory:
+                output()
+            else:
+                you_die("You can't get through them without a good weapon!")
             break
 
         elif "n".lower() in user_choice:
