@@ -166,8 +166,10 @@ def left_bathroom():
             continue
 
 
-# function for user
 def landing():
+    """
+    User is prompted to suggest opening camping box
+    """
     camping_box = [
         "knife", "hammer", "rope", "nail scissors", "screwdriver"]
     print("You come out of the bedroom onto the landing\n")
@@ -198,6 +200,8 @@ def landing():
     print("The box might have something useful in it")
     time.sleep(0.5)
     print("What do you want to do? \n ")
+
+    # while loop repeats prompt in case of invalid user entry
     while True:
         user_answer = input("Type one word!: \n")
         if user_answer.lower(
