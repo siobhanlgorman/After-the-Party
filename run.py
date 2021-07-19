@@ -170,9 +170,9 @@ def landing():
     print("You come out of the bedroom onto the landing\n")
     print("From behind you, you hear a crash and a groan")
     time.sleep(1.5)
-    print("Sounds like someone's in the bathroom")
+    print("Sounds like someone's in the bathroom\n")
     time.sleep(1.5)
-    print(f"{friend_name}??")
+    print(f"{friend_name}??\n")
     time.sleep(1.5)
     print(f"You turn around and see {friend_name} staggering towards you.")
     time.sleep(1.5)
@@ -361,7 +361,6 @@ def landing2(camping_box):
         if user_choice1 in camping_box:
             inventory.append(user_choice1)
             camping_box.remove(user_choice1)
-            print(camping_box)
             break
         else:
             print("That's not in the box! Be quick!")
@@ -552,7 +551,7 @@ def front_door():
                 time.sleep(1.5)
                 print(f"You lift the latch and a voice says '{player_name}??'")
                 time.sleep(1.5)
-                print(f"{host_name}?")
+                print(f"'{host_name}?'")
                 time.sleep(1.5)
                 you_win(f"{host_name} has the key to the from door! "
                         "You race over and open the door. You both speed "
