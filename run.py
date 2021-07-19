@@ -318,7 +318,24 @@ def say_hi(friend_name, camping_box):
         if user_answer.lower() == "fight":
             print("You are going to fight")
             time.sleep(1.5)
-            if "knife" or "screwdriver" in inventory:
+            if "knife" in inventory:
+                print("Good thing you picked that from the box! \nNow"
+                      " 'stick 'em with the pointy end' as they say.\n ")
+                time.sleep(1.5)
+                print("You stab Denis between the eyes and green goo pours "
+                      "out. ")
+                print("\nEuchh. \nDenis falls on top of Erin and she"
+                      " is trapped\n")
+                time.sleep(1.5)
+                print(f"{friend_name} grabs your arm from behind and you swing"
+                      " around and jab them in the forehead. More slime.\n")
+                time.sleep(1.5)
+                print("Quickly. Back out of this room anyway before Erin gets"
+                      " out. Have to find a way out\n")
+                time.sleep(1.5)
+                landing2(camping_box)
+                break
+            elif "screwdriver" in inventory:
                 print("Good thing you picked that from the box! \nNow"
                       " 'stick 'em with the pointy end' as they say.\n ")
                 time.sleep(1.5)
