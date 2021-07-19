@@ -367,7 +367,7 @@ def landing2(camping_box):
             continue
     time.sleep(1.5)
     print("You hear thumping footsteps on the stairs. \nOh no... more of those"
-          " things..people must've crashed downstairs...\n")
+          " ...things...people must've crashed downstairs...\n")
     time.sleep(1.5)
     print("You see another door")
     while True:
@@ -395,7 +395,7 @@ def bedroom2():
     time.sleep(1.5)
     print("What the ....!!!\n")
     time.sleep(1.5)
-    print(f"Phew, just a dog!! {host_name} said he put his dog upstairs "
+    print(f"Phew, just a dog!! {host_name} said they put his dog upstairs "
           "when the party got crazy. \n"
           "At least there's no dead people anyway.\n")
     time.sleep(1.5)
