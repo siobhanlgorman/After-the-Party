@@ -141,6 +141,7 @@ def left_bathroom():
     print("What the ...??")
     time.sleep(1.5)
 
+    # loop to check if player enters valid yes/no input otherwise repeat prompt
     while True:
         choice = (input("Do you open the curtain? (Yes or No)\n"))
         if "y" in choice.lower():
@@ -230,7 +231,7 @@ def open_camping_box(camping_box):
         print(x)
         time.sleep(0.2)
 
-    # While loop repeats prompt if player choice is invalid
+    # While loop to check for valid input and repeat prompt if not
     while True:
         time.sleep(1.5)
         user_choice1 = input("\nWhich item do you grab?\n").lower()
@@ -395,15 +396,22 @@ def say_hi(friend_name, camping_box):
 
 def landing2(camping_box):
     """
+    Player chooses another item from the camping box
+    Item is added to player inventory list and removed from camping list
+    Player chooses whether or not to open the door to bedroom2
     """
 
     print("Back out on the landing\n")
     time.sleep(1.5)
     print("Better grab something else from the camping box\n")
     print("Inside the box there's a:")
+
+    # loop through updated camping box list
     for x in camping_box:
         print(x)
     time.sleep(1.5)
+
+    # While loop to check for valid input and repeat prompt if not
     while True:
         user_choice1 = input("\nWhich item do you grab?\n").lower()
         time.sleep(0.5)
@@ -420,6 +428,8 @@ def landing2(camping_box):
           " ...things...people must've crashed downstairs...\n")
     time.sleep(1.5)
     print("You see another door")
+
+    # While loop to check for valid input and repeat prompt if not
     while True:
         time.sleep(0.5)
         user_choice = input("Do you open the door? (Yes or No)\n")
@@ -441,6 +451,13 @@ def landing2(camping_box):
 
 
 def bedroom2():
+    """
+    Player is offered choice to get out window
+    If player says yes and has rope player wins
+    If yes without rope player dies
+    If no player continues to stairs
+
+    """
     print("You open the door cautiously. Something white flies at you\n")
     time.sleep(1.5)
     print("What the ....!!!\n")
@@ -459,6 +476,8 @@ def bedroom2():
     print("You look around the room. There's a window.")
     print("Could you get out that way?\n")
     time.sleep(1.5)
+
+    # While loop to check for valid input and repeat prompt if not
     while True:
         user_choice = input("Do you want to try the window? (Yes or No?)\n")
         time.sleep(1.5)
@@ -488,6 +507,8 @@ def stairs():
     print("Dead party-goers are trooping up the stairs.\nThe first one is"
           " at the top\n")
     time.sleep(1.5)
+
+    # While loop to check for valid input and repeat prompt if not
     while True:
         user_choice = input("Are you going to attack?\n")
         if "y".lower() in user_choice:
@@ -543,6 +564,7 @@ def living_room():
     print("How to get through...\n")
     time.sleep(1.5)
 
+    # While loop to check for valid input and repeat prompt if not
     while True:
         user_choice = input("Do you have the energy to fight your way "
                             "through? (Yes or No)\n")
@@ -591,6 +613,7 @@ def front_door():
           " Got to get out quick!!! ")
     time.sleep(1.5)
 
+    # While loop to check for valid input and repeat prompt if not
     while True:
         user_answer = input("Do you want to try to pick the lock?")
         time.sleep(1.5)
