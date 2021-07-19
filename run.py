@@ -561,7 +561,10 @@ def stairs():
 
 def living_room():
     """
-
+    Player chooses yes/no whether to fight or not 
+    If yes and suitable weapon player reaches front door
+    If no weapon player dies
+    If chooses no player dies
     """
 
     print("You are in the living room and can see the front door")
@@ -619,6 +622,13 @@ def living_room():
 
 
 def front_door():
+    """
+    Player prompted yes/no to pick lock
+    If yes and nail scissors/screwdriver player wins
+    If no player chooses yes/no to enter cupboard
+    If no player dies
+
+    """
     print("I don't believe it... what used to be Erin is coming across "
           "the living room now. \nShould have finished her off "
           "upstairs.\nAnd she is followed by more from the stairs."
@@ -670,6 +680,9 @@ def front_door():
 
 
 def cupboard():
+    """
+    Player wins
+    """
     print(f"You lift the latch and a voice says '{player_name}??'")
     time.sleep(1.5)
     print(f"'{host_name}?'")
