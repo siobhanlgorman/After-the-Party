@@ -99,9 +99,10 @@ def bedroom():
     time.sleep(0.5)
 
     """
-    user chooses left or right door
-    convert choice to lower case
+    User chooses left or right door
+    Convert choice to lower case
     if / else statement for door choice to move to bathroom or landing
+    While loop allows repeat of question in case of invalid user choice
     """
     while True:
         door_choice = input("Which do you choose? Left or Right\n")
