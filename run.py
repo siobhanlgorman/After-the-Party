@@ -1,3 +1,4 @@
+# python module to give delay between lines of text
 import time
 
 # Empty list to hold weapons and tools selected by player
@@ -6,7 +7,7 @@ inventory = []
 
 def welcome():
     """
-    welcome and get user's name
+    Welcomes and gets player's name
     """
     print("Hello there!")
     time.sleep(1)
@@ -24,9 +25,8 @@ def welcome():
 
 def intro():
     """
-    set scene
-    start game
-    get host name from player for global use
+    Sets the opening scene
+    Get party host's name from player for global use
 
     """
     print("You wake up in an unfamiliar room as dawn is breaking.")
@@ -69,7 +69,7 @@ def intro():
 
 def bedroom():
     """
-    get friend name from player
+    Gets friend's name from player for global use
     """
     print("You notice the bed is empty.")
     time.sleep(1.5)
@@ -141,9 +141,9 @@ def left_bathroom():
     while True:
         choice = (input("Do you open the curtain? (Yes or No)\n"))
         if "y" in choice.lower():
-            print(f"Looks like you found {friend_name} …\n")
+            print(f"Looks like you found {friend_name}...\n")
             time.sleep(1.5)
-            print(f"except it’s not {friend_name} any more....\n")
+            print(f"except it’s not {friend_name} any more...\n")
             time.sleep(1.5)
             print("Their skin is rotting and their eyes are white…\n")
             time.sleep(1.5)
