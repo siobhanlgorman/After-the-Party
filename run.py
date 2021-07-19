@@ -549,11 +549,11 @@ def living_room():
 
         def output():
             print("You battle your way bravely with your last "
-                  "drop of energy and clear a path.")
+                  "drop of energy and clear a path.\n")
             time.sleep(1.5)
             print("You reach the front door")
             time.sleep(1.5)
-            print("Thank the lord!!")
+            print("Thank the lord!!\n")
             time.sleep(1.5)
             print("But wait...it's LOCKED????")
             time.sleep(1.5)
@@ -587,13 +587,14 @@ def living_room():
 def front_door():
     print("I don't believe it... what used to be Erin is coming across "
           "the living room now. \nShould have finished her off "
-          "upstairs.\nAnd she is followed by more...from the kitchen!!! ")
+          "upstairs.\nAnd she is followed by more from the stairs."
+          " Got to get out quick!!! ")
     time.sleep(1.5)
 
     while True:
         user_answer = input("Do you want to try to pick the lock?")
         time.sleep(1.5)
-        if "y".lower in user_answer:
+        if "y".lower() in user_answer:
             if "screwdriver" in inventory:
                 you_win("You pick the lock. You burst through the door "
                         "into the sunlight and speed away in your car. "
@@ -602,11 +603,11 @@ def front_door():
                 you_win("You unscrew the lock. You burst through the door "
                         "to the safety of your car and speed off. YOU WIN ")
             else:
-                you_die("What a shame...you don't have a tool for that!"
+                you_die("What a shame...you don't have a tool for that! "
                         "Erin and friends grab you by the hair and take "
-                        " chunks out of your skull. YOU DIE")
+                        "chunks out of your skull. YOU DIE")
             break
-        elif "n".lower in user_answer:
+        elif "n".lower() in user_answer:
             print("You're out of energy and ideas.")
             time.sleep(1.5)
             print("Maybe a rest will help before you tackle the rest "
