@@ -584,7 +584,7 @@ def you_die(reason):
 def play_again():
     answer = input("\nDo you want to play again? Yes or No\n")
     if "y" in answer:
-        print("Good decision.\nYou can definitely make it out this time!\n")
+        print("Great!\n")
         time.sleep(1)
         print("Good luck!\n")
         time.sleep(2.5)
