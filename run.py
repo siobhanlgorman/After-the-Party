@@ -546,23 +546,32 @@ def living_room():
     while True:
         user_choice = input("Do you have the energy to fight your way "
                             "through? (Yes or No)\n")
-        time.sleep(1.5)
+
+        def output():
+            print("You battle your way bravely with your last "
+                  "drop of energy and clear a path.")
+            time.sleep(1.5)
+            print("You reach the front door")
+            time.sleep(1.5)
+            print("Thank the lord!!")
+            time.sleep(1.5)
+            print("But wait...it's LOCKED????")
+            time.sleep(1.5)
+            print("Where the hell is the key???")
+            time.sleep(1.5)
+            front_door()
+
+        time.sleep(0.5)
         if "y".lower() in user_choice:
-            print("attack with weapon")
-            if "hammer" or "knife" or "screwdriver" in inventory:
-                print("You battle your way bravely with your last "
-                      "drop of energy and clear a path.")
-                time.sleep(1.5)
-                print("You reach the front door")
-                time.sleep(1.5)
-                print("Thank the lord!!")
-                time.sleep(1.5)
-                print("But wait...it's LOCKED????")
-                time.sleep(1.5)
-                print("Where the hell is the key???")
-                time.sleep(1.5)
-                front_door()
+            if "hammer" in inventory:
+                output()
+            elif "knife" in inventory:
+                output()
+            elif "screwdriver" in inventory:
+                output()
+
             break
+
         elif "n".lower() in user_choice:
             time.sleep(1.5)
             you_die("The dead turn towards you. You turn to go back up. "
@@ -577,44 +586,61 @@ def living_room():
 
 def front_door():
     print("I don't believe it... what used to be Erin is coming across "
-          "the living room now. Should have finished her off upstairs.")
+          "the living room now. \nShould have finished her off "
+          "upstairs.\nAnd she is followed by more...from the kitchen!!! ")
     time.sleep(1.5)
-    print("Do you have anything to open a locked door?")
-    time.sleep(1.5)
-    if "screwdriver" in inventory:
-        you_win("You pick the lock. You burst through the door "
-                "into the sunlight and speed away in your car. YOU WIN ")
-    elif "nail scissors" in inventory:
-        you_win("You unscrew the lock. You burst through the door "
-                "to the safety of your car and speed off. YOU WIN ")
-    else:
-        while True:
+
+    while True:
+        user_answer = input("Do you want to try to pick the lock?")
+        time.sleep(1.5)
+        if "y".lower in user_answer:
+            if "screwdriver" in inventory:
+                you_win("You pick the lock. You burst through the door "
+                        "into the sunlight and speed away in your car. "
+                        "YOU WIN! ")
+            elif "nail scissors" in inventory:
+                you_win("You unscrew the lock. You burst through the door "
+                        "to the safety of your car and speed off. YOU WIN ")
+            else:
+                you_die("What a shame...you don't have a tool for that!"
+                        "Erin and friends grab you by the hair and take "
+                        " chunks out of your skull. YOU DIE")
+            break
+        elif "n".lower in user_answer:
             print("You're out of energy and ideas.")
             time.sleep(1.5)
             print("Maybe a rest will help before you tackle the rest "
                   "of the dead")
             time.sleep(1.5)
             print("There's a cupboard over there. With a latch on the outside")
-            user_choice = input("You could rest in there. Do you open it? "
-                                "Yes or No?\n")
-            if "y".lower() in user_choice:
-                time.sleep(1.5)
-                print(f"You lift the latch and a voice says '{player_name}??'")
-                time.sleep(1.5)
-                print(f"'{host_name}?'")
-                time.sleep(1.5)
-                you_win(f"{host_name} has the key to the from door! "
-                        "You race over and open the door. You both speed "
-                        "off to safety. YOU WIN!")
-                break
-            elif "n".lower in user_choice:
-                you_die("So close....and yet so far. Erin reaches you and"
-                        "before you can strike she bites off your hand.."
-                        "YOU DIE")
-                break
-            else:
-                print("Better decide fast!")
-                continue
+            while True:
+                user_choice = input("You could rest in there. Do you open it? "
+                                    "Yes or No?\n")
+                if "y".lower() in user_choice:
+                    time.sleep(1.5)
+                    cupboard()
+                    break
+                elif "n".lower() in user_choice:
+                    you_die("There's no escape then. All hope is lost. You "
+                            "become Erin's next feast. YOU DIE")
+                    break
+                else:
+                    print("If you don't want to become Erin's next "
+                          "feast better decide")
+                    continue
+        else:
+            print("Better decide quickly!")
+            continue
+
+
+def cupboard():
+    print(f"You lift the latch and a voice says '{player_name}??'")
+    time.sleep(1.5)
+    print(f"'{host_name}?'")
+    time.sleep(1.5)
+    you_win(f"{host_name} has the key to the from door! "
+            "You race over and open the door. You both speed "
+            "off to safety. YOU WIN!")
 
 
 def you_win(reason):
