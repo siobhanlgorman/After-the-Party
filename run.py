@@ -229,7 +229,7 @@ def open_camping_box(camping_box):
     for x in camping_box:
         print(x)
         time.sleep(0.2)
-    
+
     # While loop repeats prompt if player choice is invalid
     while True:
         time.sleep(1.5)
@@ -294,11 +294,11 @@ def bedroom1(camping_box):
 
 def say_hi(friend_name, camping_box):
     """
-    function for player to choose whether to fight or run
-    if player chooses to fight there are two outcomes.
-    if they have the knife is ithey can move on
-    if they don't have the knife they die
-    if the player chooses not to fight they escape out the window
+    Player chooses whether to fight or run
+    If player chooses to fight there are two outcomes.
+    If they have the knife is ithey can move on
+    If they don't have the knife they die
+    If the player chooses not to fight they escape out the window
     """
 
     print("H..H..H..Hello...??\n")
@@ -310,6 +310,8 @@ def say_hi(friend_name, camping_box):
     time.sleep(1.5)
     print("Is EVERYBODY in this house zombiefied??")
     time.sleep(1.5)
+
+    # while loop allows prompt to be repeated if player entry is invalid
     while True:
         user_answer = input("Do you want to fight or run? (fight/run)\n")
         time.sleep(0.5)
