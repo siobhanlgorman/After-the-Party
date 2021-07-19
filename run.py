@@ -101,7 +101,7 @@ def bedroom():
     """
     User chooses left or right door
     Convert choice to lower case
-    if / else statement for door choice to move to bathroom or landing
+    If / else statement for door choice to move to bathroom or landing
     While loop allows repeat of question in case of invalid user choice
     """
     while True:
@@ -124,8 +124,9 @@ def bedroom():
 
 def left_bathroom():
     """
-    player is in bathroom
-    if statement for player choice to open shower curtain
+    Player is in bathroom
+    If statement for player choice to open shower curtain
+    While loop to repeat prompt in case of user invalid entry
 
     """
     print("You open the door.")
@@ -139,6 +140,7 @@ def left_bathroom():
     time.sleep(1.5)
     print("What the ...??")
     time.sleep(1.5)
+
     while True:
         choice = (input("Do you open the curtain? (Yes or No)\n"))
         if "y" in choice.lower():
