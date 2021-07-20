@@ -172,7 +172,7 @@ def landing():
     User is prompted to suggest opening camping box
     """
     camping_box = [
-        "knife", "hammer", "rope", "nail scissors", "screwdriver"]
+        "knife", "hammer", "rope", "nail scissors", "peg", "screwdriver"]
     print("You come out of the bedroom onto the landing\n")
     print("From behind you, you hear a crash and a groan")
     time.sleep(1.5)
@@ -475,8 +475,7 @@ def bedroom2():
     time.sleep(1.5)
     print("You look around the room. There's a window.")
     print("Could you get out that way?\n")
-    time.sleep(1.5)
-
+    
     # While loop to check for valid input and repeat prompt if not
     while True:
         user_choice = input("Do you want to try the window? (Yes or No?)\n")
