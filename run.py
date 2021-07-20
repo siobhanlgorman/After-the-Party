@@ -639,6 +639,8 @@ def front_door():
     while True:
         user_answer = input("Do you want to try to pick the lock?\n")
         time.sleep(1.5)
+
+        # If statement to check if player has nail scissors or screwdriver to open lock
         if "y".lower() in user_answer:
             if "nail scissors" in inventory:
                 you_win("You pick the lock. You burst through the door "
@@ -659,6 +661,8 @@ def front_door():
                   "of the dead")
             time.sleep(1.5)
             print("There's a cupboard over there. With a latch on the outside")
+
+            # while loop to check that player inputs valid answer and repeats prompt if not 
             while True:
                 user_choice = input("You could rest in there. Do you open it? "
                                     "Yes or No?\n")
@@ -681,7 +685,7 @@ def front_door():
 
 def cupboard():
     """
-    Player wins
+    In this function the player wins
     """
     print(f"You lift the latch and a voice says '{player_name}??'")
     time.sleep(1.5)
