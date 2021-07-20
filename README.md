@@ -20,19 +20,20 @@ After the Party is a lighthearted zombie escape game. The player wakes up after 
 ## Testing
 ### [PEP8](http://pep8online.com/)
 ### Manual Testing
-The options and flow were checked manually and all passed. The tests conducted can be seen here: [https://docs.google.com/spreadsheets/d/1NUVHJ0VQ0orWFZ3Bh9MgGXAYShW9a5Ki2Rw6T_ssCLE/edit?usp=sharing]
+The options and flow were checked manually and all passed. The tests conducted can be seen [here:](https://docs.google.com/spreadsheets/d/1NUVHJ0VQ0orWFZ3Bh9MgGXAYShW9a5Ki2Rw6T_ssCLE/edit?usp=sharing)
+
 ## Deployment
 The application uses Heroku for deployement
 
 ### To create the application:
-* first create the requirements file the Heroku will use to import the dependencies required for deployment: type `pip3 freeze > requirements.txt`
-* navigate to the [Heroku](https://www.heroku.com/) website
+1. First create the requirements file the Heroku will use to import the dependencies required for deployment: type `pip3 freeze > requirements.txt`. For this project the requirements.txt file is empty as no libraries or modules were imported other than from the standard python library.
+2. Navigate to the [Heroku](https://www.heroku.com/) website
 * create an account by entering your email address and a password
-* activate the account through the authentication email sent to your email account
-* click the new button and select create a new app from the dropdown menu
-* enter a name for the application which must be unique, in this case the app name is after-the-party
-* select a region, in this case Europe
-* click create app
+3. Activate the account through the authentication email sent to your email account
+4. Click the new button and select create a new app from the dropdown menu
+5. Enter a name for the application which must be unique, in this case the app name is after-the-party
+6. Select a region, in this case Europe
+7. Click create app
 
 ### Heroku settings
 1. From the horizontal menu bar select 'Settings'.
