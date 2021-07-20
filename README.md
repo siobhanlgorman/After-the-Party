@@ -34,8 +34,16 @@ The application uses Heroku for deployement
 * click create app
 
 ### Heroku settings
-* From the horizontal menu bar select settings
-* In the config vars section where sensitive data is stored e.g. creds.json (in gitignore file) in the field for key enter CREDS from Gitpod workspace copy entire creds.json file into value field then click add (This step is included but it was not necessary to set any config vars for this project)
+* From the horizontal menu bar select 'Settings'
+* In the config vars section where sensitive data is stored e.g. creds.json (in gitignore file) in the field for key enter CREDS from Gitpod workspace copy entire creds.json file into value field then click 'add' (This step is included but it was not necessary to set any config vars for this project)
+* In the buildpacks section where further necessary dependencies are installed click 'add buildpack'. Select 'Python' first and click 'save changes'. Next click 'node.js' and then click 'save changes' again. The 'Python' buildpack must be above the 'node.js' buildpack'. The can be clicked on and dragged to change the order if necessary
+### Deployment
+* In the top menu bar select 'Deploy'
+* In the deployment methos section select 'Github' and click the connect to Github button to confirm
+* In the 'search' box enter the Github repository name for the project. Click search and then click connect to link the heroku app with the Github repository. The box will confirm connected to in this case [After the Party](https://github.com/siobhanlgorman/After-the-Party)
+* Scroll down to select either automatic or manual deployment. For this project automatic deployment was selected. If you wish to select automatic deployment select the button 'Enable Automatic Deploys'. This will rebuild the app every time a change is pushed to Github. If you wish to manually deploy click the button 'Deploy Branch'. The default 'Master' option in the dropdown menu should be selected in both cases
+* 
+
 
 ### Live Deployment
 ### Local Deployment
