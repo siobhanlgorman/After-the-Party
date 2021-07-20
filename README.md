@@ -24,7 +24,11 @@ The flowchart created during the planning stage can be viewed [here](https://git
   * in landing function user answer is incorrect if more than one word entered e.g open it instead of just open so added prompt 'enter one word'
   * in bedroom 2 escape with item other than rope
 ## Testing
-### [PEP8](http://pep8online.com/)
+### Validation
+Validation of the Python code was carried out by [PEP8](http://pep8online.com/). No errors were found.
+![alt-text](assets/images/pep8.png)
+
+
 ### Manual Testing
 The options and flow were checked manually and all passed. The tests conducted can be seen [here:](https://docs.google.com/spreadsheets/d/1NUVHJ0VQ0orWFZ3Bh9MgGXAYShW9a5Ki2Rw6T_ssCLE/edit?usp=sharing)
 
