@@ -21,6 +21,22 @@ After the Party is a lighthearted zombie escape game. The player wakes up after 
 ### [PEP8](http://pep8online.com/)
 ### Manual Testing
 ## Deployment
+The application uses Heroku for deployement
+
+### To create the application:
+* first create the requirements file the Heroku will use to import the dependencies required for deployment: type `pip3 freeze > requirements.txt`
+* navigate to the [Heroku](https://www.heroku.com/) website
+* create an account by entering your email address and a password
+* activate the account through the authentication email sent to your email account
+* click the new button and select create a new app from the dropdown menu
+* enter a name for the application which must be unique, in this case the app name is after-the-party
+* select a region, in this case Europe
+* click create app
+
+### Heroku settings
+* From the horizontal menu bar select settings
+* In the config vars section where sensitive data is stored e.g. creds.json (in gitignore file) in the field for key enter CREDS from Gitpod workspace copy entire creds.json file into value field then click add (This step is included but it was not necessary to set any config vars for this project)
+
 ### Live Deployment
 ### Local Deployment
 ## Credits

@@ -693,13 +693,18 @@ def cupboard():
 
 
 def you_win(reason):
+    """
+    Function to give reason why player wins
+    """
     print(reason)
     time.sleep(2)
     play_again()
 
 
-# function for when user dies and game ends
 def you_die(reason):
+    """
+    function for when user dies and game ends
+    """
     print(reason)
     time.sleep(2)
     play_again()
@@ -707,6 +712,10 @@ def you_die(reason):
 
 # function to ask user to play game again
 def play_again():
+    """
+    function to ask if player wants to play again
+    If player inputs yes game restarts
+    """
     answer = input("Do you want to play again? (Yes or No)\n")
     if "y" in answer:
         print("Great!\n")
