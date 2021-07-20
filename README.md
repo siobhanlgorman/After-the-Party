@@ -1,7 +1,6 @@
 # After the Party
 After the Party Live Link [here](https://after-the-party.herokuapp.com/)
 ## Overview
-[Afer the Party Flowchart](https://github.com/siobhanlgorman/After-the-Party/blob/main/documentation/After%20the%20party.png)
 After the Party is a lighthearted zombie escape game. The player wakes up after a party in an unfamiliar house where everyone else seems to have turned into zombies.
 ## Features
 ### Existing Features
@@ -10,7 +9,7 @@ After the Party is a lighthearted zombie escape game. The player wakes up after 
 Screenshots here
 ### Program Structure
 The flowchart created during the planning stage can be viewed [here](https://github.com/siobhanlgorman/After-the-Party/blob/main/assets/after_the_party.png)
-
+![alt text]()
 ## Technologies
 ### Languages.. 
   * Python
