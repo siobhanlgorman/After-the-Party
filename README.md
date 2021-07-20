@@ -42,8 +42,21 @@ The application uses Heroku for deployement
 * In the deployment methos section select 'Github' and click the connect to Github button to confirm
 * In the 'search' box enter the Github repository name for the project. Click search and then click connect to link the heroku app with the Github repository. The box will confirm connected to in this case [After the Party](https://github.com/siobhanlgorman/After-the-Party)
 * Scroll down to select either automatic or manual deployment. For this project automatic deployment was selected. If you wish to select automatic deployment select the button 'Enable Automatic Deploys'. This will rebuild the app every time a change is pushed to Github. If you wish to manually deploy click the button 'Deploy Branch'. The default 'Master' option in the dropdown menu should be selected in both cases
-* 
-
+* When the app is deployed a message 'Your app was successfully deployed' will be shown. Click 'view' to see the deployed app in the browser
+* The app starts automatically and can be restarted by pressing the 'Run Program' button
+### Forking the Repository
+If you wish to fork the repository to make changes without affecting the original you can fork the repository
+* Navigate to the [After the Party repository](https://github.com/siobhanlgorman/After-the-Party)
+* Click the 'Fork' button at the top right of the page
+* A forked copy of the repository will appear in your Repositories page
+### Cloning the Repository
+1. On [GitHub](https://github.com/) navigate to the main page of the repository
+2. Above the list of files click the dropdown code menu
+3. Select the https option and copy the link 
+4. Open the GitPod Bash terminal
+5. Change the current working directory to the desired destination location
+6. Type the git clone command with the copied URL: `git clone https://github.com/siobhanlgorman/After-the-Party.git`
+7. Press enter to create the local clone
 
 ### Live Deployment
 ### Local Deployment
