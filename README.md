@@ -20,6 +20,7 @@ After the Party is a lighthearted zombie escape game. The player wakes up after 
 ## Testing
 ### [PEP8](http://pep8online.com/)
 ### Manual Testing
+The options and flow were checked manually and all passed. The tests conducted can be seen here: [https://docs.google.com/spreadsheets/d/1NUVHJ0VQ0orWFZ3Bh9MgGXAYShW9a5Ki2Rw6T_ssCLE/edit?usp=sharing]
 ## Deployment
 The application uses Heroku for deployement
 
