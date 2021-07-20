@@ -561,7 +561,7 @@ def stairs():
 
 def living_room():
     """
-    Player chooses yes/no whether to fight or not 
+    Player chooses yes/no whether to fight or not
     If yes and suitable weapon player reaches front door
     If no weapon player dies
     If chooses no player dies
@@ -640,7 +640,8 @@ def front_door():
         user_answer = input("Do you want to try to pick the lock?\n")
         time.sleep(1.5)
 
-        # If statement to check if player has nail scissors or screwdriver to open lock
+        # If statement to check if player has nail scissors or
+        # screwdriver to open lock
         if "y".lower() in user_answer:
             if "nail scissors" in inventory:
                 you_win("You pick the lock. You burst through the door "
@@ -662,7 +663,8 @@ def front_door():
             time.sleep(1.5)
             print("There's a cupboard over there. With a latch on the outside")
 
-            # while loop to check that player inputs valid answer and repeats prompt if not 
+            # while loop to check that player inputs valid answer and repeats
+            # prompt if not
             while True:
                 user_choice = input("You could rest in there. Do you open it? "
                                     "Yes or No?\n")
