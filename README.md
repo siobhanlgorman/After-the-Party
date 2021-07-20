@@ -9,7 +9,8 @@ After the Party is a lighthearted zombie escape game. The player wakes up after 
 ### Terminal Area
 Screenshots here
 ### Program Structure
-Flowchart
+The flowchart created during the planning stage can be viewed [here](https://github.com/siobhanlgorman/After-the-Party/blob/main/assets/after_the_party.png)
+
 ## Technologies
 ### Languages.. 
   * Python
