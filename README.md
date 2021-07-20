@@ -44,7 +44,7 @@ The application uses Heroku for deployement
 2. In the 'Deployment method' section select 'Github' and click the connect to Github button to confirm.
 3. In the 'search' box enter the Github repository name for the project. Click search and then click connect to link the heroku app with the Github repository. The box will confirm that heroku is connected to the repository which in this case is [After the Party](https://github.com/siobhanlgorman/After-the-Party).
 4. Scroll down to select either automatic or manual deployment. For this project automatic deployment was selected. If you wish to select automatic deployment select the button 'Enable Automatic Deploys'. This will rebuild the app every time a change is pushed to Github. If you wish to manually deploy click the button 'Deploy Branch'. The default 'Master' option in the dropdown menu should be selected in both cases.
-5. When the app is deployed a message 'Your app was successfully deployed' will be shown. Click 'view' to see the deployed app in the browser.
+5. When the app is deployed a message 'Your app was successfully deployed' will be shown. Click 'view' to see the deployed app in the browser. The live deployment of the project can be seen [here](https://after-the-party.herokuapp.com/)
 6. The app starts automatically and can be restarted by pressing the 'Run Program' button.
 ### Forking the Repository
 If you wish to fork the repository to make changes without affecting the original you can fork the repository
@@ -60,8 +60,7 @@ If you wish to fork the repository to make changes without affecting the origina
 6. Type the git clone command with the copied URL: `git clone https://github.com/siobhanlgorman/After-the-Party.git`.
 7. Press enter to create the local clone.
 
-### Live Deployment
-### Local Deployment
+
 ## Credits
 ### Code
   [Learn Python by making a text-based adventure game](https://coding-grace-guide.readthedocs.io/en/latest/guide/lessonplans/beginners-python-text-based-adventure.html)
