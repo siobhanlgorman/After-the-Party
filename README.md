@@ -16,9 +16,10 @@ The flowchart created during the planning stage can be viewed [here](https://git
 ### Languages.. 
   * Python
 ### Other Technologies and Libraries
-* Github
-* Git
-* Heroku
+* Github and Git were used for version control
+* [Gitpod](https://gitpod.io/)
+* [Heroku](http://heroku.com/) was used to deploy the app
+* The Google Chrome browser was used to view the app
 ## Known Issues/Bugs
 
   * in landing function user answer is incorrect if more than one word entered e.g open it instead of just open so added prompt 'enter one word'
