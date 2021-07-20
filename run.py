@@ -475,7 +475,7 @@ def bedroom2():
     time.sleep(1.5)
     print("You look around the room. There's a window.")
     print("Could you get out that way?\n")
-    
+
     # While loop to check for valid input and repeat prompt if not
     while True:
         user_choice = input("Do you want to try the window? (Yes or No?)\n")
