@@ -18,12 +18,12 @@ The flowchart created during the planning stage can be viewed [here](https://git
 
 ## Technologies
 ### Languages.. 
-  * Python
+  * [Python](https://www.python.org/) summary of python goes here
 ### Other Technologies and Libraries
 * [Github](https://github.com/) and [Git](https://git-scm.com/) were used for version control
 * [Gitpod](https://gitpod.io/) was used as cloud-based IDE
 * [Heroku](http://heroku.com/) was used to deploy the app
-* The Google Chrome browser add link was used to view the app
+* [The Google Chrome browser](https://www.google.com/intl/en_ie/chrome/) was used to view the app
 ## Known Issues/Bugs
 
   * in landing function user answer is incorrect if more than one word entered e.g open it instead of just open so added prompt 'enter one word'
