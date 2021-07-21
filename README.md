@@ -25,7 +25,7 @@ The flowchart created during the planning stage can be viewed [here](https://git
 * [Heroku](http://heroku.com/) was used to deploy the app
 * [The Google Chrome browser](https://www.google.com/intl/en_ie/chrome/) was used to view the app
 ## Known Issues/Bugs
-* left/right bug?
+* left/right bug? sometimes won't accept 'Left' input but accepts second time and sometimes accepts. Not sure what's going on
 * Player was able to continue with game after hitting return instead of entering a valid player name. This I fixed with a while loop and `if not player_name:`. But the player was still able to enter spaces. I experimented with several ways but eventually fixed this by adding an elif statement and the `isspace()` method.
 
   * in landing function user answer is incorrect if more than one word entered e.g open it instead of just open so added prompt 'enter one word'
