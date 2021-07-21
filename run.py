@@ -111,7 +111,7 @@ def bedroom():
 
     """
     User chooses left or right door
-    Convert choice to lower case
+    Convert choice to lower case to accept user using capitals
     If / else statement for door choice to move to bathroom or landing
     While loop allows repeat of question in case of invalid user choice
     """
@@ -136,6 +136,7 @@ def bedroom():
 def y_n_check(question):
     """
     function to check if player imputs yes or no
+    While loop to repeat prompt in case of user invalid entry
     """
     while True:
         ask_y_n = input(question).lower()
@@ -152,7 +153,6 @@ def left_bathroom():
     """
     Player is in bathroom
     If statement for player choice to open shower curtain
-    While loop to repeat prompt in case of user invalid entry
 
     """
     print("You open the door.")
@@ -185,31 +185,6 @@ def left_bathroom():
         print("You go back into the bedroom and open the other door")
         landing()
         time.sleep(1.5)
-
-    # loop to check if player enters valid yes/no input otherwise repeat prompt
-    # while True:
-    #     choice = (input("Do you open the curtain? (Yes or No)\n"))
-    #     if "y" in choice.lower():
-    #         print(f"Looks like you found {friend_name}...\n")
-    #         time.sleep(1.5)
-    #         print(f"except it’s not {friend_name} any more...\n")
-    #         time.sleep(1.5)
-    #         print("Their skin is rotting and their eyes are white…\n")
-    #         time.sleep(1.5)
-    #         print("AGGGGGGGGHHHHHHHHHH...\n")
-    #         time.sleep(1.5)
-    #         you_die(f"{friend_name} sinks their teeth into your neck… YOU DIE")
-    #         break
-    #     elif "n" in choice.lower():
-    #         print("You picked no. \n")
-    #         time.sleep(1.5)
-    #         print("You go back into the bedroom and open the other door")
-    #             landing()
-    #         time.sleep(1.5)
-    #         break
-    #     else:
-    #         print("What was that? If you're lazy you can enter y or n!")
-    #         continue
 
 
 def landing():
