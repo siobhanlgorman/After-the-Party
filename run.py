@@ -22,7 +22,6 @@ def welcome():
         elif player_name.isspace():
             print("You can't play if you don't enter a name!")
             continue
-            print("")
         else:
             break
         time.sleep(1)
@@ -117,13 +116,13 @@ def bedroom():
     While loop allows repeat of question in case of invalid user choice
     """
     while True:
-        door_choice = input("Which do you choose? Left or Right\n")
-        if "l".lower() in door_choice:
+        door_choice = input("Which do you choose? Left or Right\n").lower()
+        if door_choice == "left":
             print("You chose the door on the left\n")
             time.sleep(1.5)
             left_bathroom()
             break
-        elif "r".lower() in door_choice:
+        elif door_choice == "right":
             print("You chose the door on the right")
             time.sleep(1.5)
             landing()
@@ -131,6 +130,21 @@ def bedroom():
         else:
             print(input("Please enter left or right\n"))
             time.sleep(0.5)
+            continue
+
+
+def y_n_check(question):
+    """
+    function to check if player imputs yes or no
+    """
+    while True:
+        ask_y_n = input(question).lower()
+        if ask_y_n == "yes":
+            return "yes"
+        elif ask_y_n == "no":
+            return "no"
+        else:
+            print("No time to dilly-dally!")
             continue
 
 
@@ -153,30 +167,49 @@ def left_bathroom():
     print("What the ...??")
     time.sleep(1.5)
 
+    y_or_n = y_n_check("Do you open the curtain? (Yes or No)\n")
+    if y_or_n == "yes":
+        print("You picked yes\n")
+        print(f"Looks like you found {friend_name}...\n")
+        time.sleep(1.5)
+        print(f"except it’s not {friend_name} any more...\n")
+        time.sleep(1.5)
+        print("Their skin is rotting and their eyes are white…\n")
+        time.sleep(1.5)
+        print("AGGGGGGGGHHHHHHHHHH...\n")
+        time.sleep(1.5)
+        you_die(f"{friend_name} sinks their teeth into your neck… \nYOU DIE")
+    elif y_or_n == "no":
+        print("You picked no. \n")
+        time.sleep(1.5)
+        print("You go back into the bedroom and open the other door")
+        landing()
+        time.sleep(1.5)
+
     # loop to check if player enters valid yes/no input otherwise repeat prompt
-    while True:
-        choice = (input("Do you open the curtain? (Yes or No)\n"))
-        if "y" in choice.lower():
-            print(f"Looks like you found {friend_name}...\n")
-            time.sleep(1.5)
-            print(f"except it’s not {friend_name} any more...\n")
-            time.sleep(1.5)
-            print("Their skin is rotting and their eyes are white…\n")
-            time.sleep(1.5)
-            print("AGGGGGGGGHHHHHHHHHH...\n")
-            time.sleep(1.5)
-            you_die(f"{friend_name} sinks their teeth into your neck… YOU DIE")
-            break
-        elif "n" in choice.lower():
-            print("You picked no. \n")
-            time.sleep(1.5)
-            print("You go back into the bedroom and open the other door")
-            landing()
-            time.sleep(1.5)
-            break
-        else:
-            print("What was that? If you're lazy you can enter y or n!")
-            continue
+    # while True:
+    #     choice = (input("Do you open the curtain? (Yes or No)\n"))
+    #     if "y" in choice.lower():
+    #         print(f"Looks like you found {friend_name}...\n")
+    #         time.sleep(1.5)
+    #         print(f"except it’s not {friend_name} any more...\n")
+    #         time.sleep(1.5)
+    #         print("Their skin is rotting and their eyes are white…\n")
+    #         time.sleep(1.5)
+    #         print("AGGGGGGGGHHHHHHHHHH...\n")
+    #         time.sleep(1.5)
+    #         you_die(f"{friend_name} sinks their teeth into your neck… YOU DIE")
+    #         break
+    #     elif "n" in choice.lower():
+    #         print("You picked no. \n")
+    #         time.sleep(1.5)
+    #         print("You go back into the bedroom and open the other door")
+    #             landing()
+    #         time.sleep(1.5)
+    #         break
+    #     else:
+    #         print("What was that? If you're lazy you can enter y or n!")
+    #         continue
 
 
 def landing():

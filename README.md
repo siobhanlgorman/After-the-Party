@@ -26,7 +26,7 @@ The flowchart created during the planning stage can be viewed [here](https://git
 * [The Google Chrome browser](https://www.google.com/intl/en_ie/chrome/) was used to view the app
 ## Known Issues/Bugs
 * left/right bug?
-* enter name - recognises empty string but thinks space is valid - if player_name == ''
+* Player was able to continue with game after hitting return instead of entering a valid player name. This I fixed with a while loop and `if not player_name:`. But the player was still able to enter spaces. I experimented with several ways but eventually fixed this by adding an elif statement and the `isspace()` method.
 
   * in landing function user answer is incorrect if more than one word entered e.g open it instead of just open so added prompt 'enter one word'
   * in bedroom 2 escape with item other than rope
@@ -82,5 +82,7 @@ If you wish to fork the repository to make changes without affecting the origina
 ### Code
 
 This tutorial was useful for inspiration: [Learn Python by making a text-based adventure game](https://coding-grace-guide.readthedocs.io/en/latest/guide/lessonplans/beginners-python-text-based-adventure.html)
+
+[Stack Overflow](https://stackoverflow.com/) was useful for looking up various solutions to bugs e.g. [whitespace only strings](https://stackoverflow.com/questions/2405292/check-if-string-contains-only-whitespace)
 ## Content
 The story content was developed by this author.
