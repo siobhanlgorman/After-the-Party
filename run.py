@@ -386,7 +386,7 @@ def say_hi(friend_name, camping_box):
             time.sleep(1.5)
             print("\nIt's open! (That was lucky!)\n")
             time.sleep(1.5)
-            you_win("You shimmy down the drainpipe. You're out. YOU WIN!")
+            you_win("You shimmy down the drainpipe. You're out. \nYOU WIN!\n")
             break
         else:
             print("Make up your mind!")
@@ -482,9 +482,9 @@ def bedroom2():
         time.sleep(1.5)
         if "y".lower() in user_choice:
             if "rope" in inventory:
-                you_win("You tie the rope around the window handle and climb"
+                you_win("\nYou tie the rope around the window handle and climb"
                         "  down. \n(And the dog jumps down into your arms!)"
-                        " Double WIN")
+                        " \nDouble WIN!!")
                 break
             else:
                 you_die("You're not a rubber ball!! You jump out the window "
