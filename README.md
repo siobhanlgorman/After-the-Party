@@ -25,6 +25,8 @@ The flowchart created during the planning stage can be viewed [here](https://git
 * [Heroku](http://heroku.com/) was used to deploy the app
 * [The Google Chrome browser](https://www.google.com/intl/en_ie/chrome/) was used to view the app
 ## Known Issues/Bugs
+* left/right bug?
+* enter name - recognises empty string but thinks space is valid - if player_name == ''
 
   * in landing function user answer is incorrect if more than one word entered e.g open it instead of just open so added prompt 'enter one word'
   * in bedroom 2 escape with item other than rope
@@ -76,6 +78,9 @@ If you wish to fork the repository to make changes without affecting the origina
 
 
 ## Credits
+
 ### Code
-  [Learn Python by making a text-based adventure game](https://coding-grace-guide.readthedocs.io/en/latest/guide/lessonplans/beginners-python-text-based-adventure.html)
+
+This tutorial was useful for inspiration: [Learn Python by making a text-based adventure game](https://coding-grace-guide.readthedocs.io/en/latest/guide/lessonplans/beginners-python-text-based-adventure.html)
 ## Content
+The story content was developed by this author.

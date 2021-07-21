@@ -11,13 +11,25 @@ def welcome():
     """
     print("Hello there!")
     time.sleep(1)
-    global player_name
-    player_name = input("What's your name?:\n").capitalize()
-    time.sleep(1)
-    print(f"Hi {player_name}!\n")
-    time.sleep(1.5)
-    print("OK, let's start the game.\n")
-    time.sleep(1)
+
+    # while loop checks for valid player_name input
+    while True:
+        global player_name
+        player_name = input("What's your name?:\n").capitalize()
+        if not player_name:
+            print("You can't play if you don't enter a name!")
+            continue
+        elif player_name.isspace():
+            print("You can't play if you don't enter a name!")
+            continue
+            print("")
+        else:
+            break
+        time.sleep(1)
+        print(f"Hi {player_name}!\n")
+        time.sleep(1.5)
+        print("OK, let's start the game.\n")
+        time.sleep(1)
     intro()
 
 
