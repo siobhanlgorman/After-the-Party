@@ -730,6 +730,7 @@ def play_again():
         welcome()
     elif "n".lower() in answer:
         print("No worries. Come back soon!")
+        exit()
     else:
         exit()
 
