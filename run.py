@@ -460,7 +460,6 @@ def bedroom2():
     """
     print("You open the door cautiously. Something white flies at you\n")
     time.sleep(1.5)
-    d
     print("What the ....!!!\n")
     time.sleep(1.5)
     print(f"Phew, just a dog!! {host_name} said they put his dog upstairs "
