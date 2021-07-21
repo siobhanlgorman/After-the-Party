@@ -341,7 +341,7 @@ def say_hi(friend_name, camping_box):
                       " 'stick 'em with the pointy end' as they say.\n ")
                 time.sleep(1.5)
                 print("You stab Denis between the eyes and green goo pours "
-                      "out. ")
+                      "out.\n ")
                 print("\nEuchh. \nDenis falls on top of Erin and she"
                       " is trapped\n")
                 time.sleep(1.5)
@@ -370,7 +370,7 @@ def say_hi(friend_name, camping_box):
                 landing2(camping_box)
             else:
                 you_die("You don't have a weapon! Erin and Denis grab you and"
-                        " take chunks of flesh out of your face. YOU DIE")
+                        " take chunks of \nflesh out of your face. YOU DIE")
                 break
         elif user_answer.lower() == "run":
             print("\nYou don't want to fight. Oh dear. Hope you have a better"
@@ -460,6 +460,7 @@ def bedroom2():
     """
     print("You open the door cautiously. Something white flies at you\n")
     time.sleep(1.5)
+    d
     print("What the ....!!!\n")
     time.sleep(1.5)
     print(f"Phew, just a dog!! {host_name} said they put his dog upstairs "
