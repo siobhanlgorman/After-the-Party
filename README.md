@@ -52,8 +52,7 @@ The application uses Heroku for deployement
 
 ### Heroku settings
 1. From the horizontal menu bar select 'Settings'.
-2. Go to the 'Config Vars' section (where sensitive data is stored e.g. the data from the creds.json file in Github gitignore file).  In the field for 'key' enter CREDS from Gitpod workspace copy entire creds.json file into 'value' field then click 'add' (This step is included but it was not necessary to set any config vars for this project).
-3. In the buildpacks section, where further necessary dependencies are installed, click 'add buildpack'. Select 'Python' first and click 'save changes'. Next click 'node.js' and then click 'save changes' again. The 'Python' buildpack must be above the 'node.js' buildpack'. They can be clicked on and dragged to change the order if necessary.
+2. In the buildpacks section, where further necessary dependencies are installed, click 'add buildpack'. Select 'Python' first and click 'save changes'. Next click 'node.js' and then click 'save changes' again. The 'Python' buildpack must be above the 'node.js' buildpack'. They can be clicked on and dragged to change the order if necessary.
 ### Deployment
 1. In the top menu bar select 'Deploy'.
 2. In the 'Deployment method' section select 'Github' and click the connect to Github button to confirm.
