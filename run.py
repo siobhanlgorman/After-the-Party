@@ -373,18 +373,18 @@ def say_hi(friend_name, camping_box):
                         " take chunks of flesh out of your face. YOU DIE")
                 break
         elif user_answer.lower() == "run":
-            print("You don't want to fight. Oh dear. Hope you have a better"
+            print("\nYou don't want to fight. Oh dear. Hope you have a better"
                   " idea.")
             time.sleep(1.5)
             print(f"{friend_name} is coming through the door now...")
             time.sleep(1.5)
-            print("And Erin and Dennis are standing up...")
+            print("\nAnd Erin and Dennis are standing up...\n")
             time.sleep(1.5)
             print("There's no way out....but wait")
             time.sleep(1.5)
             print("There's a window past the bed. You make a run for it")
             time.sleep(1.5)
-            print("It's open! (That was lucky!")
+            print("\nIt's open! (That was lucky!)\n")
             time.sleep(1.5)
             you_win("You shimmy down the drainpipe. You're out. YOU WIN!")
             break
