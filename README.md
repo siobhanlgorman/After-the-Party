@@ -11,9 +11,9 @@ Screenshots here
 ![alt-text](assets/images/screen1.png)
 ![alt-text](assets/images/screen2.png)
 ### Program Structure
-The flowchart created during the planning stage can be viewed [here](https://github.com/siobhanlgorman/After-the-Party/blob/main/assets/images/after_the_party.png)
+The flowchart created during the planning stage can be viewed [here](https://github.com/siobhanlgorman/After-the-Party/blob/main/assets/images/flowchart.png)
 
-![alt-text](assets/images/after_the_party.png)
+![alt-text](assets/images/flowchart.png)
 
 ## Technologies
 ### Languages.. 
@@ -62,7 +62,7 @@ The application uses Heroku for deployement
 6. The app starts automatically and can be restarted by pressing the 'Run Program' button.
 ### Forking the Repository
 If you wish to fork the repository to make changes without affecting the original you can fork the repository
-1. Navigate to the [After the Party repository](https://github.com/siobhanlgorman/After-the-Party).
+1. Navigate to the [After the Party repository](https://github.com/siobhanlgorman/After-the-Party)
 2. Click the 'Fork' button at the top right of the page.
 3. A forked copy of the repository will appear in your Repositories page.
 ### Cloning the Repository
