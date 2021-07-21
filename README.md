@@ -20,7 +20,7 @@ The flowchart created during the planning stage can be viewed [here](https://git
 ### Languages.. 
   * Python
 ### Other Technologies and Libraries
-* Github and Git were used for version control
+* [Github](https://github.com/) and [Git](https://git-scm.com/) were used for version control
 * [Gitpod](https://gitpod.io/) was used as cloud-based IDE
 * [Heroku](http://heroku.com/) was used to deploy the app
 * The Google Chrome browser add link was used to view the app
