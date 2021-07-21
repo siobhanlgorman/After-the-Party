@@ -1,9 +1,10 @@
 # After the Party
 After the Party Live Link [here](https://after-the-party.herokuapp.com/)
 ## Overview
-After the Party is a lighthearted zombie escape game. The player wakes up after a party in an unfamiliar house where everyone else seems to have turned into zombies.
+After the Party is a lighthearted zombie escape game. The player wakes up after a party in an unfamiliar house where everyone else seems to have turned into zombies.You wake up make your way etc
 ## Features
 ### Existing Features
+player makes choices chooses who to bring etc chooses own path explain different paths explore rooms be careful mighte end up dying etc
 ### Run Program button
 ### Terminal Area
 Screenshots here
@@ -12,16 +13,16 @@ Screenshots here
 ### Program Structure
 The flowchart created during the planning stage can be viewed [here](https://github.com/siobhanlgorman/After-the-Party/blob/main/assets/images/after_the_party.png)
 
-![alt-text](assets/images/flowchart.png)
+![alt-text](assets/images/after_the_party.png)
 
 ## Technologies
 ### Languages.. 
   * Python
 ### Other Technologies and Libraries
 * Github and Git were used for version control
-* [Gitpod](https://gitpod.io/)
+* [Gitpod](https://gitpod.io/) was used as cloud-based IDE
 * [Heroku](http://heroku.com/) was used to deploy the app
-* The Google Chrome browser was used to view the app
+* The Google Chrome browser add link was used to view the app
 ## Known Issues/Bugs
 
   * in landing function user answer is incorrect if more than one word entered e.g open it instead of just open so added prompt 'enter one word'
@@ -65,10 +66,10 @@ If you wish to fork the repository to make changes without affecting the origina
 2. Click the 'Fork' button at the top right of the page.
 3. A forked copy of the repository will appear in your Repositories page.
 ### Cloning the Repository
-1. On [GitHub](https://github.com/) navigate to the main page of the repository.
+1. On [GitHub](https://github.com/siobhanlgorman/After-the-Party) navigate to the main page of the repository.
 2. Above the list of files click the dropdown code menu.
 3. Select the https option and copy the link.
-4. Open the GitPod Bash terminal.
+4. Open the terminal.
 5. Change the current working directory to the desired destination location.
 6. Type the git clone command with the copied URL: `git clone https://github.com/siobhanlgorman/After-the-Party.git`.
 7. Press enter to create the local clone.
