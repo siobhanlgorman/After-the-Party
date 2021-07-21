@@ -7,8 +7,9 @@ After the Party is a lighthearted zombie escape game. The player wakes up after 
 player makes choices chooses who to bring etc chooses own path explain different paths explore rooms be careful mighte end up dying etc
 ### Run Program button
 ### Terminal Area
-Screenshots here
+The first screen of the program showingthe opening and the first two player inputs of their player name and the part host name/:
 ![alt-text](assets/images/screen1.png)
+
 ![alt-text](assets/images/screen2.png)
 ### Program Structure
 The flowchart created during the planning stage can be viewed [here](https://github.com/siobhanlgorman/After-the-Party/blob/main/assets/images/flowchart.png)

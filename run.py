@@ -172,7 +172,8 @@ def landing():
     User is prompted to suggest opening camping box
     """
     camping_box = [
-        "knife", "hammer", "rope", "nail scissors", "peg", "screwdriver"]
+        'knife', 'hammer', 'rope', 'pair of nail scissors', 'peg',
+        'screwdriver']
     print("You come out of the bedroom onto the landing\n")
     print("From behind you, you hear a crash and a groan")
     time.sleep(1.5)
@@ -602,7 +603,7 @@ def living_room():
                 output()
             elif "screwdriver" in inventory:
                 output()
-            elif "nail scissors" in inventory:
+            elif "pair of nail scissors" in inventory:
                 output()
             else:
                 you_die("You can't get through them without a good weapon!")
@@ -623,7 +624,7 @@ def living_room():
 def front_door():
     """
     Player prompted yes/no to pick lock
-    If yes and nail scissors/screwdriver player wins
+    If yes and pair of nail scissors/screwdriver player wins
     If no player chooses yes/no to enter cupboard
     If no player dies
 
@@ -639,10 +640,10 @@ def front_door():
         user_answer = input("Do you want to try to pick the lock?\n")
         time.sleep(1.5)
 
-        # If statement to check if player has nail scissors or
+        # If statement to check if player has pair of nail scissors or
         # screwdriver to open lock
         if "y".lower() in user_answer:
-            if "nail scissors" in inventory:
+            if "pair of nail scissors" in inventory:
                 you_win("You pick the lock. You burst through the door "
                         "into the sunlight and speed away in your car. "
                         "YOU WIN! ")
