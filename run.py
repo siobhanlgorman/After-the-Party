@@ -722,13 +722,13 @@ def play_again():
     If player inputs yes game restarts
     """
     answer = input("Do you want to play again? (Yes or No)\n")
-    if "y" in answer:
+    if "y".lower() in answer:
         print("Great!\n")
         time.sleep(1)
         print("Good luck!\n")
         time.sleep(2.5)
         welcome()
-    elif "n" in answer:
+    elif "n".lower() in answer:
         print("No worries. Come back soon!")
     else:
         exit()
