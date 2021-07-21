@@ -730,6 +730,8 @@ def play_again():
         welcome()
     elif "n" in answer:
         print("No worries. Come back soon!")
+    else:
+        exit()
 
 
 # function to start game
