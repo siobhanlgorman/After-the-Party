@@ -5,6 +5,26 @@ import time
 inventory = []
 
 
+def check_name(question):
+    """
+    Function to check if player inputs valid names
+    While loop checks for no input or spaces
+    If player enters nothing or spaces input request is repeated
+    Name entered is capitalised
+    """
+    while True:
+        name = input(question).capitalize()
+        if not name:
+            name = "false"
+            continue
+        elif name.isspace():
+            name = "false"
+            continue
+        else:
+            name = "true"
+            break
+
+
 def welcome():
     """
     Welcomes and gets player's name
