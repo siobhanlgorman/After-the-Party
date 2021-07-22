@@ -321,9 +321,7 @@ def bedroom1(camping_box):
         print("You picked no. \n")
         landing2(camping_box)
         time.sleep(1.5)
-    else:
-        print("Better choose quickly the door handle's turning...")
-
+    
 
 def say_hi(friend_name, camping_box):
     """
@@ -461,26 +459,18 @@ def landing2(camping_box):
     time.sleep(1.5)
     print("You see another door")
 
-    # While loop to check for valid input and repeat prompt if not
-    while True:
-        time.sleep(0.5)
-        user_choice = input("Do you open the door? (Yes or No)\n")
-        if "y".lower() in user_choice:
-            time.sleep(0.5)
-            print("You picked yes")
-            bedroom2()
-            break
-        elif "n".lower() in user_choice:
-            time.sleep(0.5)
-            print("You picked no")
-            time.sleep(1.5)
-            print("You turn to the stairs")
-            time.sleep(1.5)
-            stairs()
-            break
-        else:
-            continue
-
+    y_or_n = y_n_check("Do you open the door? (Yes or No)\n")
+    if y_or_n == "yes":
+        print("You picked yes\n")
+        bedroom2()
+    elif y_or_n == "no":
+        print("You picked no. \n")
+        time.sleep(1.5)
+        print("You turn to the stairs")
+        time.sleep(1.5)
+        stairs()
+    
+    
 
 def bedroom2():
     """
