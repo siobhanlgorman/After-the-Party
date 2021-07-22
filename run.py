@@ -211,7 +211,7 @@ def landing():
     User is prompted to suggest opening camping box
     """
     camping_box = [
-        'knife', 'hammer', 'rope', 'pair of nail scissors', 'peg',
+        'knife', 'hammer', 'rope', 'hairpin', 'peg',
         'screwdriver']
     print("You come out of the bedroom onto the landing\n")
     print("From behind you, you hear a crash and a groan")
@@ -309,7 +309,6 @@ def bedroom1(camping_box):
     print("Could they be ALIVE?\n")
     time.sleep(1.5)
 
-   
     # If/elif statement for player to choose yes or no
     # If yes player moves to say_hi()
     # If no player moves to landing2()
@@ -324,7 +323,6 @@ def bedroom1(camping_box):
         time.sleep(1.5)
     else:
         print("Better choose quickly the door handle's turning...")
-        continue
 
 
 def say_hi(friend_name, camping_box):
@@ -636,7 +634,7 @@ def living_room():
                 output()
             elif "screwdriver" in inventory:
                 output()
-            elif "pair of nail scissors" in inventory:
+            elif "hairpin" in inventory:
                 output()
             else:
                 you_die("You can't get through them without a good weapon!")
@@ -657,7 +655,7 @@ def living_room():
 def front_door():
     """
     Player prompted yes/no to pick lock
-    If yes and pair of nail scissors/screwdriver player wins
+    If yes and hairpin/screwdriver player wins
     If no player chooses yes/no to enter cupboard
     If no player dies
 
@@ -673,10 +671,10 @@ def front_door():
         user_answer = input("Do you want to try to pick the lock?\n")
         time.sleep(1.5)
 
-        # If statement to check if player has pair of nail scissors or
+        # If statement to check if player has hairpin or
         # screwdriver to open lock
         if "y".lower() in user_answer:
-            if "pair of nail scissors" in inventory:
+            if "hairpin" in inventory:
                 you_win("You pick the lock. You burst through the door "
                         "into the sunlight and speed away in your car. "
                         "YOU WIN! ")
