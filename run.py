@@ -110,25 +110,25 @@ def bedroom():
             continue
         else:
             break
-        time.sleep(1)
-        print("That's weird...")
-        time.sleep(1.5)
-        print(f"Where has {friend_name} got to??")
-        time.sleep(1.5)
-        print("Sleepwalking again probably.")
-        time.sleep(1.5)
-        print("Better head off anyway.")
-        time.sleep(1.5)
-        print(f"{friend_name}'s probably downstairs.\n")
-        print("You pull on your clothes and look around the room.")
-        time.sleep(1.5)
-        print("Don't remember going to bed at all...")
-        time.sleep(1.5)
-        print("Which way out?\n")
-        time.sleep(1.5)
-        print("There are two doors in the bedroom. "
-              "One is on the left and one on the right.")
-        time.sleep(0.5)
+    time.sleep(1)
+    print("That's weird...")
+    time.sleep(1.5)
+    print(f"Where has {friend_name} got to??")
+    time.sleep(1.5)
+    print("Sleepwalking again probably.")
+    time.sleep(1.5)
+    print("Better head off anyway.")
+    time.sleep(1.5)
+    print(f"{friend_name}'s probably downstairs.\n")
+    print("You pull on your clothes and look around the room.")
+    time.sleep(1.5)
+    print("Don't remember going to bed at all...")
+    time.sleep(1.5)
+    print("Which way out?\n")
+    time.sleep(1.5)
+    print("There are two doors in the bedroom. "
+          "One is on the left and one on the right.")
+    time.sleep(0.5)
 
     """
     User chooses left or right door
