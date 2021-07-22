@@ -5,6 +5,9 @@ After the Party is a lighthearted zombie escape game. The player wakes up after 
 ## Features
 ### Existing Features
 player makes choices chooses who to bring etc chooses own path explain different paths explore rooms be careful mighte end up dying etc
+### Future Features
+Create one function to check the validity of the three names inputted by user
+
 ### Run Program button
 ### Terminal Area
 The first screen of the program showingthe opening and the first two player inputs of their player name and the part host name/:

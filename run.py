@@ -129,7 +129,8 @@ def bedroom():
           "One is on the left and one on the right.")
     time.sleep(0.5)
 
-    # While loop checks for valid user input and repeats question in case of invalid user choice
+    # While loop checks for valid user input and repeats question in case of
+    # invalid user choice
     # Converts choice to lower case to accept user using capitals
     # If / else statement for door choice to move to bathroom or landing
 
