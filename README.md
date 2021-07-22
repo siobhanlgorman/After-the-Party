@@ -1,12 +1,17 @@
 # After the Party
 After the Party Live Link [here](https://after-the-party.herokuapp.com/)
 ## Overview
-After the Party is a lighthearted zombie escape game. The player wakes up after a party in an unfamiliar house where everyone else seems to have turned into zombies.You wake up make your way etc
+After the Party is a lighthearted zombie escape game. The player wakes up after a party in an unfamiliar house where everyone else seems to have turned into zombies. The player navigates their way around the house trying to get out safely, choosing to enter different rooms. The player also selects items from a box which help to win the game.
 ## Features
 ### Existing Features
-player makes choices chooses who to bring etc chooses own path explain different paths explore rooms be careful mighte end up dying etc
+* The player chooses the name of whose party they are at and who they came to the party with. These people then appear later in the story.
+* The player chooses items from a camping box which then assist in winning the game in various different ways
+* The different rooms the player enters have different paths to win or lose 
+* Winning is escaping from the house and losing is dying or being killed. The means of winning or losing is told to the player at the end of the game.
 ### Future Features
-Create one function to check the validity of the three names inputted by user
+* I refactored a lot of code but in the future would also refactor the functions to check the validity of the names. Currently the player is prevented from entering an empty string or a space and is not able to continue without enterring valid text. I would like to find a way to do this by calling one function.
+* I would add more rooms, more weapons/tools and more scenarios for escaping/dying.
+
 
 ### Run Program button
 ### Terminal Area
