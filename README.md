@@ -10,10 +10,15 @@ Create one function to check the validity of the three names inputted by user
 
 ### Run Program button
 ### Terminal Area
-The first screen of the program showingthe opening and the first two player inputs of their player name and the part host name/:
+The first screen of the program showing the opening and the first two player inputs of their player name and the part host name/:
 ![alt-text](assets/images/screen1.png)
-
+A screenshot showing player choosing to 'open' the camping box and the contents list is displayed from which the player selects an item.
 ![alt-text](assets/images/screen2.png)
+The third screenshot shows one way that a player could win.
+![alt-text](assets/images/screen3.png)
+The fourth screenshot shows one way that a player has died.
+![alt-text](assets/images/screen4.png)
+
 ### Program Structure
 The flowchart created during the planning stage can be viewed [here](https://github.com/siobhanlgorman/After-the-Party/blob/main/assets/images/flowchart.png)
 

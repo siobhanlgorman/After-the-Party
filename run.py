@@ -554,50 +554,6 @@ def stairs():
         time.sleep(1.5)
         you_die("There's no escape. The horde swarms up the stairs"
                 " and it ain't pretty. YOU DIE\n")
-    # While loop to check for valid input and repeat prompt if not
-    # while True:
-    #     user_choice = input("Are you going to attack?\n")
-    #     if "y".lower() in user_choice:
-    #         print("You're going to attack\n")
-    #         output = ("Good job! It falls back and the rest topple down "
-    #                   "like dominoes. \nYou climb over the pile of"
-    #                   " bodies and reach the bottom \nof the stairs.\n")
-    #         if "hammer" in inventory:
-    #             time.sleep(1.5)
-    #             print("You smash the hammer into its head and slime"
-    #                   " and skull splat everywhere.\n")
-    #             time.sleep(1.5)
-    #             print(output)
-    #             living_room()
-    #             break
-    #         elif "knife" in inventory:
-    #             time.sleep(1.5)
-    #             print("You knife it in the forehead and slime and"
-    #                   " skull splat everywhere.\n")
-    #             time.sleep(1.5)
-    #             print(output)
-    #             living_room()
-    #         elif "screwdriver" in inventory:
-    #             time.sleep(1.5)
-    #             print("You ram the screwdriver through its eye and"
-    #                   " slime and skull splat everywhere.\n")
-    #             time.sleep(1.5)
-    #             print(output)
-    #             living_room()
-    #         else:
-    #             time.sleep(1.5)
-    #             print("You give it a good hard shove.\n")
-    #             print(output)
-    #             living_room()
-    #         break
-    #     elif "n".lower() in user_choice:
-    #         time.sleep(1.5)
-    #         you_die("There's no escape. The horde swarms up the stairs"
-    #                 " and it ain't pretty. YOU DIE\n")
-    #         break
-    #     else:
-    #         print("Better be quick!")
-    #         continue
 
 
 def living_room():
@@ -649,62 +605,6 @@ def living_room():
                 "\nBut Erin is coming down the stairs."
                 "There's no escape. Sorry YOU DIE")
 
-        # print("You battle your way bravely with your last "
-        #       "drop of energy and clear a path.\n")
-        # time.sleep(1.5)
-        # print("You reach the front door")
-        # time.sleep(1.5)
-        # print("Thank the lord!!\n")
-        # time.sleep(1.5)
-        # print("But wait...it's LOCKED????")
-        # time.sleep(1.5)
-        # print("Where the hell is the key???")
-        # time.sleep(1.5)
-        # front_door()
-
-    # while True:
-    #     user_choice = input("Do you have the energy to fight your way "
-    #                         "through? (Yes or No)\n")
-
-    #     def output():
-    #         print("You battle your way bravely with your last "
-    #               "drop of energy and clear a path.\n")
-    #         time.sleep(1.5)
-    #         print("You reach the front door")
-    #         time.sleep(1.5)
-    #         print("Thank the lord!!\n")
-    #         time.sleep(1.5)
-    #         print("But wait...it's LOCKED????")
-    #         time.sleep(1.5)
-    #         print("Where the hell is the key???")
-    #         time.sleep(1.5)
-    #         front_door()
-
-    #     time.sleep(0.5)
-    #     if "y".lower() in user_choice:
-    #         if "hammer" in inventory:
-    #             output()
-    #         elif "knife" in inventory:
-    #             output()
-    #         elif "screwdriver" in inventory:
-    #             output()
-    #         elif "hairpin" in inventory:
-    #             output()
-    #         else:
-    #             you_die("You can't get through them without a good weapon!")
-    #         break
-
-        # elif "n".lower() in user_choice:
-        #     time.sleep(1.5)
-        #     you_die("The dead turn towards you. You turn to go back up. "
-        #             "\nBut Erin is coming down the stairs."
-        #             "There's no escape. Sorry YOU DIE")
-        #     break
-        # else:
-        #     time.sleep(0.5)
-        #     print("Well, which is it to be?")
-        #     continue
-
 
 def front_door():
     """
@@ -739,37 +639,6 @@ def front_door():
               "of the dead")
         time.sleep(1.5)
         print("There's a cupboard over there. With a latch on the outside")
-    # While loop to check for valid input and repeat prompt if not
-    # while True:
-    #     user_answer = input("Do you want to try to pick the lock?\n")
-    #     time.sleep(1.5)
-
-    #     # If statement to check if player has hairpin or
-    #     # screwdriver to open lock
-    #     if "y".lower() in user_answer:
-    #         if "hairpin" in inventory:
-    #             you_win("You pick the lock. You burst through the door "
-    #                     "into the sunlight and speed away in your car. "
-    #                     "YOU WIN! ")
-    #         elif "screwdriver" in inventory:
-    #             you_win("You unscrew the lock. You burst through the door "
-    #                     "to the safety of your car and speed off. YOU WIN ")
-    #         else:
-    #             you_die("What a shame...you don't have a tool for that! "
-    #                     "Erin and friends grab you by the hair and take "
-    #                     "chunks out of your skull. YOU DIE")
-    #         break
-    #     elif "n".lower() in user_answer:
-    #         print("You're out of energy and ideas.")
-    #         time.sleep(1.5)
-    #         print("Maybe a rest will help before you tackle the rest "
-    #               "of the dead")
-    #         time.sleep(1.5)
-    #         print("There's a cupboard over there. With a latch on the
-    #           outside")
-
-    # while loop to check that player inputs valid answer and repeats
-    # prompt if not
 
     y_or_n = y_n_check("You could rest in there. Do you open it? "
                        "Yes or No?\n")
@@ -780,27 +649,6 @@ def front_door():
     elif y_or_n == "no":
         you_die("There's no escape then. All hope is lost. You "
                 "become Erin's next feast. YOU DIE")
-
-        #     while True:
-
-        #         user_choice = input("You could rest in there. Do you open it"
-        #                        "?"
-        #                             "Yes or No?\n")
-        #         if "y".lower() in user_choice:
-        #             time.sleep(1.5)
-        #             cupboard()
-        #             break
-        #         elif "n".lower() in user_choice:
-        #             you_die("There's no escape then. All hope is lost. You "
-        #                     "become Erin's next feast. YOU DIE")
-        #             break
-        #         else:
-        #             print("If you don't want to become Erin's next "
-        #                   "feast better decide")
-        #             continue
-        # else:
-        #     print("Better decide quickly!")
-        #     continue
 
 
 def cupboard():
