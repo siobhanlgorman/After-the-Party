@@ -309,28 +309,22 @@ def bedroom1(camping_box):
     print("Could they be ALIVE?\n")
     time.sleep(1.5)
 
-    # while loop to repeat prompt if player entry is invalid
-    while True:
-        user_answer = input("Do you say 'Hi'? (Yes or No)\n")
-        """
-        If/elif statement for player to choose yes or no
-        If yes player moves to say_hi()
-        If no player moves to landing2()
+   
+    # If/elif statement for player to choose yes or no
+    # If yes player moves to say_hi()
+    # If no player moves to landing2()
 
-        """
-        if "y".lower() in user_answer:
-            time.sleep(0.5)
-            print("You picked yes\n")
-            say_hi(friend_name, camping_box)
-            break
-        elif "n".lower() in user_answer:
-            time.sleep(0.5)
-            print("You picked no\n")
-            landing2(camping_box)
-            break
-        else:
-            print("Better choose quickly the door handle's turning...")
-            continue
+    y_or_n = y_n_check("Do you say 'Hi'? (Yes or No)\n")
+    if y_or_n == "yes":
+        print("You picked yes\n")
+        say_hi(friend_name, camping_box)   
+    elif y_or_n == "no":
+        print("You picked no. \n")
+        landing2(camping_box)
+        time.sleep(1.5)
+    else:
+        print("Better choose quickly the door handle's turning...")
+        continue
 
 
 def say_hi(friend_name, camping_box):
