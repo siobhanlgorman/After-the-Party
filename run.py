@@ -1,8 +1,8 @@
 # python module to give delay between lines of text
 import time
-
 # Empty list to hold weapons and tools selected by player
 inventory = []
+
 
 def welcome():
     """
@@ -10,8 +10,8 @@ def welcome():
     """
     print("Hello there!")
     time.sleep(1)
-
-    # while loop checks for valid player_name input
+    # player enters name
+    # While loop checks player_name input is not empty or spaces
     while True:
         global player_name
         player_name = input("What's your name?:\n").capitalize()
@@ -30,8 +30,6 @@ def welcome():
     time.sleep(1)
     intro()
 
-
-# function to set scene and start game
 
 def intro():
     """
@@ -92,6 +90,7 @@ def intro():
 def bedroom():
     """
     Gets friend's name from player for global use
+    User chooses left or right door
     """
     print("You notice the bed is empty.")
     time.sleep(1.5)
@@ -130,12 +129,10 @@ def bedroom():
           "One is on the left and one on the right.")
     time.sleep(0.5)
 
-    """
-    User chooses left or right door
-    Convert choice to lower case to accept user using capitals
-    If / else statement for door choice to move to bathroom or landing
-    While loop allows repeat of question in case of invalid user choice
-    """
+    # While loop checks for valid user input and repeats question in case of invalid user choice
+    # Converts choice to lower case to accept user using capitals
+    # If / else statement for door choice to move to bathroom or landing
+
     while True:
         door_choice = input("Which do you choose? Left or Right\n").lower()
         if door_choice == "left":
