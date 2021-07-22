@@ -719,55 +719,88 @@ def front_door():
           "upstairs.\nAnd she is followed by more from the stairs."
           " Got to get out quick!!! ")
     time.sleep(1.5)
-
-    # While loop to check for valid input and repeat prompt if not
-    while True:
-        user_answer = input("Do you want to try to pick the lock?\n")
-        time.sleep(1.5)
-
-        # If statement to check if player has hairpin or
-        # screwdriver to open lock
-        if "y".lower() in user_answer:
-            if "hairpin" in inventory:
-                you_win("You pick the lock. You burst through the door "
-                        "into the sunlight and speed away in your car. "
-                        "YOU WIN! ")
-            elif "screwdriver" in inventory:
-                you_win("You unscrew the lock. You burst through the door "
-                        "to the safety of your car and speed off. YOU WIN ")
-            else:
-                you_die("What a shame...you don't have a tool for that! "
-                        "Erin and friends grab you by the hair and take "
-                        "chunks out of your skull. YOU DIE")
-            break
-        elif "n".lower() in user_answer:
-            print("You're out of energy and ideas.")
-            time.sleep(1.5)
-            print("Maybe a rest will help before you tackle the rest "
-                  "of the dead")
-            time.sleep(1.5)
-            print("There's a cupboard over there. With a latch on the outside")
-
-            # while loop to check that player inputs valid answer and repeats
-            # prompt if not
-            while True:
-                user_choice = input("You could rest in there. Do you open it? "
-                                    "Yes or No?\n")
-                if "y".lower() in user_choice:
-                    time.sleep(1.5)
-                    cupboard()
-                    break
-                elif "n".lower() in user_choice:
-                    you_die("There's no escape then. All hope is lost. You "
-                            "become Erin's next feast. YOU DIE")
-                    break
-                else:
-                    print("If you don't want to become Erin's next "
-                          "feast better decide")
-                    continue
+    y_or_n = y_n_check("Do you want to try to pick the lock?\n")
+    if y_or_n == "yes":
+        if "hairpin" in inventory:
+            you_win("You pick the lock with the hairpin. \nYou burst through  "
+                    "the door into the sunlight and speed away in your car. "
+                    "YOU WIN!")
+        elif "screwdriver" in inventory:
+            you_win("You unscrew the lock. You burst through the door "
+                    "to the safety of your car and speed off. YOU WIN ")
         else:
-            print("Better decide quickly!")
-            continue
+            you_die("What a shame...you don't have a tool for that! "
+                    "Erin and friends grab you by the hair and take "
+                    "chunks out of your skull. YOU DIE")
+    elif y_or_n == "no":
+        print("You're out of energy and ideas.")
+        time.sleep(1.5)
+        print("Maybe a rest will help before you tackle the rest "
+              "of the dead")
+        time.sleep(1.5)
+        print("There's a cupboard over there. With a latch on the outside")
+    # While loop to check for valid input and repeat prompt if not
+    # while True:
+    #     user_answer = input("Do you want to try to pick the lock?\n")
+    #     time.sleep(1.5)
+
+    #     # If statement to check if player has hairpin or
+    #     # screwdriver to open lock
+    #     if "y".lower() in user_answer:
+    #         if "hairpin" in inventory:
+    #             you_win("You pick the lock. You burst through the door "
+    #                     "into the sunlight and speed away in your car. "
+    #                     "YOU WIN! ")
+    #         elif "screwdriver" in inventory:
+    #             you_win("You unscrew the lock. You burst through the door "
+    #                     "to the safety of your car and speed off. YOU WIN ")
+    #         else:
+    #             you_die("What a shame...you don't have a tool for that! "
+    #                     "Erin and friends grab you by the hair and take "
+    #                     "chunks out of your skull. YOU DIE")
+    #         break
+    #     elif "n".lower() in user_answer:
+    #         print("You're out of energy and ideas.")
+    #         time.sleep(1.5)
+    #         print("Maybe a rest will help before you tackle the rest "
+    #               "of the dead")
+    #         time.sleep(1.5)
+    #         print("There's a cupboard over there. With a latch on the
+    #           outside")
+
+    # while loop to check that player inputs valid answer and repeats
+    # prompt if not
+
+    y_or_n = y_n_check("You could rest in there. Do you open it? "
+                       "Yes or No?\n")
+    if y_or_n == "yes":
+        print("You picked yes\n")
+        time.sleep(1.5)
+        cupboard()
+    elif y_or_n == "no":
+        you_die("There's no escape then. All hope is lost. You "
+                "become Erin's next feast. YOU DIE")
+
+        #     while True:
+
+        #         user_choice = input("You could rest in there. Do you open it"
+        #                        "?"
+        #                             "Yes or No?\n")
+        #         if "y".lower() in user_choice:
+        #             time.sleep(1.5)
+        #             cupboard()
+        #             break
+        #         elif "n".lower() in user_choice:
+        #             you_die("There's no escape then. All hope is lost. You "
+        #                     "become Erin's next feast. YOU DIE")
+        #             break
+        #         else:
+        #             print("If you don't want to become Erin's next "
+        #                   "feast better decide")
+        #             continue
+        # else:
+        #     print("Better decide quickly!")
+        #     continue
 
 
 def cupboard():
@@ -816,9 +849,6 @@ def play_again():
         welcome()
     elif "n".lower() in answer:
         print("No worries. Come back soon!")
-        exit()
-    else:
-        exit()
 
 
 # function to start game
