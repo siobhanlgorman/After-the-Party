@@ -316,12 +316,12 @@ def bedroom1(camping_box):
     y_or_n = y_n_check("Do you say 'Hi'? (Yes or No)\n")
     if y_or_n == "yes":
         print("You picked yes\n")
-        say_hi(friend_name, camping_box)   
+        say_hi(friend_name, camping_box)
     elif y_or_n == "no":
         print("You picked no. \n")
         landing2(camping_box)
         time.sleep(1.5)
-    
+
 
 def say_hi(friend_name, camping_box):
     """
@@ -469,8 +469,7 @@ def landing2(camping_box):
         print("You turn to the stairs")
         time.sleep(1.5)
         stairs()
-    
-    
+
 
 def bedroom2():
     """
@@ -498,28 +497,19 @@ def bedroom2():
     print("You look around the room. There's a window.")
     print("Could you get out that way?\n")
 
-    # While loop to check for valid input and repeat prompt if not
-    while True:
-        user_choice = input("Do you want to try the window? (Yes or No?)\n")
-        time.sleep(1.5)
-        if "y".lower() in user_choice:
-            if "rope" in inventory:
-                you_win("\nYou tie the rope around the window handle and climb"
-                        "  down. \n(And the dog jumps down into your arms!)"
-                        " \nDouble WIN!!")
-                break
-            else:
-                you_die("You're not a rubber ball!! You jump out the window "
-                        "and break your neck")
-                break
-        elif "n".lower() in user_choice:
-            print("Hope you've got a weapon then.")
-            time.sleep(1.5)
-            stairs()
-            break
+    y_or_n = y_n_check("Do you want to try the window? (Yes or No?)\n")
+    if y_or_n == "yes":
+        if "rope" in inventory:
+            you_win("\nYou tie the rope around the window handle and climb"
+                    "  down. \n(And the dog jumps down into your arms!)"
+                    " \nDouble WIN!!")
         else:
-            print("Well? Which is it?")
-            continue
+            you_die("You're not a rubber ball!! You jump out the window "
+                    "and break your neck. YOU DIE!!")
+    elif y_or_n == "no":
+        print("Hope you've got a weapon then.")
+        time.sleep(1.5)
+        stairs()
 
 
 def stairs():
@@ -534,6 +524,36 @@ def stairs():
           " at the top\n")
     time.sleep(1.5)
 
+    y_or_n = y_n_check("Are you going to attack? (Yes or No)\n")
+    if y_or_n == "yes":
+        print("You're going to attack...\n")
+        if "hammer" in inventory:
+            time.sleep(1.5)
+            print("You smash the hammer into its head and slime"
+                  " and skull splat everywhere.\n")
+            time.sleep(1.5)
+        elif "knife" in inventory:
+            time.sleep(1.5)
+            print("You knife it in the forehead and slime and"
+                  " skull splat everywhere.\n")
+            time.sleep(1.5)
+        elif "screwdriver" in inventory:
+            time.sleep(1.5)
+            print("You ram the screwdriver through its eye and"
+                  " slime and skull splat everywhere.\n")
+            time.sleep(1.5)
+        else:
+            time.sleep(1.5)
+            print("You give it a good hard shove.\n")
+        print("Good job! It falls back and the rest topple down "
+              "like dominoes. \nYou climb over the pile of"
+              " bodies and reach the bottom \nof the stairs.\n")
+        living_room()
+    elif y_or_n == "no":
+        print("You picked no. \n")
+        time.sleep(1.5)
+        you_die("There's no escape. The horde swarms up the stairs"
+                " and it ain't pretty. YOU DIE\n")
     # While loop to check for valid input and repeat prompt if not
     while True:
         user_choice = input("Are you going to attack?\n")
