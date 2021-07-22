@@ -5,24 +5,24 @@ import time
 inventory = []
 
 
-def check_name(question):
-    """
-    Function to check if player inputs valid names
-    While loop checks for no input or spaces
-    If player enters nothing or spaces input request is repeated
-    Name entered is capitalised
-    """
-    while True:
-        name = input(question).capitalize()
-        if not name:
-            name = "false"
-            continue
-        elif name.isspace():
-            name = "false"
-            continue
-        else:
-            name = "true"
-            break
+# def check_name(question):
+#     """
+#     Function to check if player inputs valid names
+#     While loop checks for no input or spaces
+#     If player enters nothing or spaces input request is repeated
+#     Name entered is capitalised
+#     """
+#     while True:
+#         name = input(question).capitalize()
+#         if not name:
+#             name = "false"
+#             continue
+#         elif name.isspace():
+#             name = "false"
+#             continue
+#         else:
+#             name = "true"
+#             break
 
 
 def welcome():
@@ -72,9 +72,21 @@ def intro():
     time.sleep(1.5)
     print("Whose house is this again?")
     time.sleep(1.5)
-    global host_name
-    host_name = (input(f"{player_name} who was the host of the "
-                 "party?\n").capitalize())
+
+    # while loop repeats request for valid host_name input if player input is
+    # space or empty
+    while True:
+        global host_name
+        host_name = (input(f"{player_name} who was the host of the "
+                     "party?\n").capitalize())
+        if not host_name:
+            print("You can't play if you don't enter a name!")
+            continue
+        elif host_name.isspace():
+            print("You can't play if you don't enter a name!")
+            continue
+        else:
+            break
     print(f"Oh yes {host_name}'s party - just moved back from abroad...\n")
     time.sleep(1.5)
     print("Hmmm..probably shouldn't have been partying with that virus"
@@ -106,28 +118,38 @@ def bedroom():
     time.sleep(1.5)
 
     # user assigns friend name
-    global friend_name
-    friend_name = input(f"{player_name}, who did you come to the party with?"
-                        "\n").capitalize()
-    time.sleep(1.5)
-    print("That's weird...")
-    time.sleep(1.5)
-    print(f"Where has {friend_name} got to??")
-    time.sleep(1.5)
-    print("Sleepwalking again probably.")
-    time.sleep(1.5)
-    print("Better head off anyway.")
-    time.sleep(1.5)
-    print(f"{friend_name}'s probably downstairs.\n")
-    print("You pull on your clothes and look around the room.")
-    time.sleep(1.5)
-    print("Don't remember going to bed at all...")
-    time.sleep(1.5)
-    print("Which way out?\n")
-    time.sleep(1.5)
-    print("There are two doors in the bedroom. "
-          "One is on the left and one on the right.")
-    time.sleep(0.5)
+    # while loop checks for valid text input and repeats if not
+    while True:
+        global friend_name
+        friend_name = input(f"{player_name}, who did you come to the party "
+                            "with?\n").capitalize()
+        if not friend_name:
+            print("You can't play if you don't enter a name!")
+            continue
+        elif friend_name.isspace():
+            print("You can't play if you don't enter a name!")
+            continue
+        else:
+            break
+        time.sleep(1)
+        print("That's weird...")
+        time.sleep(1.5)
+        print(f"Where has {friend_name} got to??")
+        time.sleep(1.5)
+        print("Sleepwalking again probably.")
+        time.sleep(1.5)
+        print("Better head off anyway.")
+        time.sleep(1.5)
+        print(f"{friend_name}'s probably downstairs.\n")
+        print("You pull on your clothes and look around the room.")
+        time.sleep(1.5)
+        print("Don't remember going to bed at all...")
+        time.sleep(1.5)
+        print("Which way out?\n")
+        time.sleep(1.5)
+        print("There are two doors in the bedroom. "
+              "One is on the left and one on the right.")
+        time.sleep(0.5)
 
     """
     User chooses left or right door
