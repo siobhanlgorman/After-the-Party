@@ -25,10 +25,10 @@ def welcome():
         else:
             break
         time.sleep(1)
-        print(f"Hi {player_name}!\n")
-        time.sleep(1.5)
-        print("OK, let's start the game.\n")
-        time.sleep(1)
+    print(f"Hi {player_name}!\n")
+    time.sleep(1.5)
+    print("OK, let's start the game.\n")
+    time.sleep(1)
     intro()
 
 
