@@ -248,7 +248,7 @@ def landing():
 
     # while loop repeats prompt in case of invalid user entry
     while True:
-        user_answer = input("Type one word!(Hint: open!): \n")
+        user_answer = input("Type one word!(Hint: open): \n")
         if user_answer.lower(
         ) in [
              "box", "open", "open it", "look", "inside", "look inside", "see"]:
@@ -403,8 +403,9 @@ def say_hi(friend_name, camping_box):
                 time.sleep(1.5)
                 landing2(camping_box)
             else:
-                you_die("\nYou don't have a weapon! Erin and Denis grab you and"
-                        " take chunks of \nflesh out of your face. \nYOU DIE\n")
+                you_die("\nYou don't have a weapon! Erin and Denis grab you "
+                        "and take chunks of \nflesh out of your face. "
+                        "\nYOU DIE\n")
                 break
         elif user_answer.lower() == "run":
             print("\nYou don't want to fight. Oh dear. Hope you have a better"
@@ -557,7 +558,7 @@ def stairs():
         print("You picked no. \n")
         time.sleep(1.5)
         you_die("There's no escape. The horde swarms up the stairs"
-                " and it ain't pretty. YOU DIE\n")
+                " and it ain't pretty. \nYOU DIE\n")
 
 
 def living_room():
@@ -643,16 +644,15 @@ def front_door():
               "of the dead")
         time.sleep(1.5)
         print("There's a cupboard over there. With a latch on the outside")
-
-    y_or_n = y_n_check("You could rest in there. Do you open it? "
-                       "Yes or No?\n")
-    if y_or_n == "yes":
-        print("You picked yes\n")
-        time.sleep(1.5)
-        cupboard()
-    elif y_or_n == "no":
-        you_die("There's no escape then. All hope is lost. You "
-                "become Erin's next feast. \nYOU DIE")
+        y_or_n = y_n_check("You could rest in there. Do you open it? "
+                           "Yes or No?\n")
+        if y_or_n == "yes":
+            print("You picked yes\n")
+            time.sleep(1.5)
+            cupboard()
+        elif y_or_n == "no":
+            you_die("There's no escape then. All hope is lost. You "
+                    "become Erin's next feast. \nYOU DIE")
 
 
 def cupboard():
