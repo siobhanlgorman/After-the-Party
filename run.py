@@ -252,9 +252,9 @@ def landing():
         if user_answer.lower(
         ) in [
              "box", "open", "open it", "look", "inside", "look inside", "see"]:
-            print("You decided to open the box")
+            print("You decided to open the box\n")
             time.sleep(1.5)
-            print("Quickly you tear open the lid.")
+            print("Quickly you tear open the lid.\n")
             time.sleep(1.5)
             open_camping_box(camping_box)
             break
