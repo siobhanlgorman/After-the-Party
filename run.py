@@ -561,6 +561,21 @@ def stairs():
                 " and it ain't pretty. \nYOU DIE\n")
 
 
+def output():
+    print("You battle your way bravely with your last "
+             "drop of energy and clear a path.\n")
+    time.sleep(1.5)
+    print("You reach the front door")
+    time.sleep(1.5)
+    print("Thank the lord!!\n")
+    time.sleep(1.5)
+    print("But wait...it's LOCKED????")
+    time.sleep(1.5)
+    print("Where the hell is the key???")
+    time.sleep(1.5)
+    front_door()
+
+
 def living_room():
     """
     Player chooses yes/no whether to fight or not
@@ -577,20 +592,6 @@ def living_room():
     time.sleep(1.5)
     print("How to get through...\n")
     time.sleep(1.5)
-
-    def output():
-        print("You battle your way bravely with your last "
-              "drop of energy and clear a path.\n")
-        time.sleep(1.5)
-        print("You reach the front door")
-        time.sleep(1.5)
-        print("Thank the lord!!\n")
-        time.sleep(1.5)
-        print("But wait...it's LOCKED????")
-        time.sleep(1.5)
-        print("Where the hell is the key???")
-        time.sleep(1.5)
-        front_door()
     y_or_n = y_n_check("Do you have the energy to fight your way "
                        "through? (Yes or No)\n")
     if y_or_n == "yes":
@@ -716,4 +717,5 @@ def play_again():
 
 
 # function to start game
-welcome()
+# welcome()
+living_room()
