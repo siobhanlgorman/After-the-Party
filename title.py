@@ -5,12 +5,11 @@ def title():
 
     print("     ***********************************************************")
     print("     *                                                         *")
-    print("     *                           After                         *")
-    print("     *                               the                       *")
-    print("     *                                   Party                 *")
+    print("     *                     After                               *")
+    print("     *                            the                          *")
+    print("     *                                  Party                  *")
     print("     *                                                         *")
-    print("     *                           by                            *")
-    print("     *                              Siobhan Gorman             *")
+    print("     *                         by                              *")
+    print("     *                            Siobhan Gorman               *")
     print("     *                                                         *")
     print("     ***********************************************************")
-

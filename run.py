@@ -1,13 +1,17 @@
 # python module to give delay between lines of text
 import time
+from title import title
 # Empty list to hold weapons and tools selected by player
 inventory = []
 
 
 def welcome():
     """
+    Dsplays title
     Welcomes and gets player's name
     """
+    title()
+    print()
     print("Hello there!")
     time.sleep(1)
     # player enters name
