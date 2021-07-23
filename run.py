@@ -393,13 +393,13 @@ def say_hi(friend_name, camping_box):
                       "bone and strings of goo.")
                 time.sleep(1.5)
                 print("\nDenis falls on top of Erin and she"
-                      " is trapped")
+                      " is trapped\n")
                 time.sleep(1.5)
                 print(f"{friend_name} grabs your arm from behind and you swing"
-                      " around and smash her in the forehead. More slime.")
+                      " around and smash her in the \nforehead. More slime.\n")
                 time.sleep(1.5)
                 print("Quickly. Back out of this room anyway before Erin gets"
-                      " out. Have to find a way out")
+                      " out. Have to \nfind a way out")
                 time.sleep(1.5)
                 landing2(camping_box)
             else:
@@ -488,7 +488,7 @@ def bedroom2():
     print("What the ....!!!\n")
     time.sleep(1.5)
     print(f"Phew, just a dog!! {host_name} said they put their dog upstairs "
-          "when the party got crazy. \n"
+          "when \nthe party got crazy. \n"
           "At least there's no dead people anyway.\n")
     time.sleep(1.5)
     print("The dog starts barking\n")
@@ -509,7 +509,7 @@ def bedroom2():
                     " \nDouble WIN!!")
         else:
             you_die("You're not a rubber ball!! You jump out the window "
-                    "and break your neck. YOU DIE!!")
+                    "and break your neck. \nYOU DIE!!")
     elif y_or_n == "no":
         print("Hope you've got a weapon then.")
         time.sleep(1.5)
