@@ -24,12 +24,6 @@ def welcome():
         if not player_name.isalpha():
             print("You can't play if you don't enter a name!")
             continue
-        # if not player_name:
-        #     print("You can't play if you don't enter a name!")
-        #     continue
-        # elif player_name.isspace():
-        #     print("You can't play if you don't enter a name!")
-        #     continue
         else:
             break
         time.sleep(1)
@@ -67,12 +61,6 @@ def intro():
         if not host_name.isalpha():
             print("You can't play if you don't enter a name!")
             continue
-        # if not host_name:
-        #     print("You can't play if you don't enter a name!")
-        #     continue
-        # elif host_name.isspace():
-        #     print("You can't play if you don't enter a name!")
-        #     continue
         else:
             break
     print(f"Oh yes {host_name}'s party - just moved back from abroad...\n")
@@ -112,12 +100,6 @@ def bedroom():
         global friend_name
         friend_name = input(f"{player_name}, who did you come to the party "
                             "with?\n").capitalize()
-        # if not friend_name:
-        # print("You can't play if you don't enter a name!")
-        # continue
-        # if friend_name.isspace():
-        # print("You can't play if you don't enter a name!")
-        # continue
         if not friend_name.isalpha():
             print("You can't play if you don't enter a name!")
             continue

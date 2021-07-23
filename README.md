@@ -50,10 +50,10 @@ The flowchart created during the planning stage can be viewed [here](https://git
 
 ## Technologies
 ### Languages.. 
-  * [Python](https://www.python.org/) is a widely used general-purpose, versatile and powerful programming language used for example for web development, machine learning and data science. Python was used to create the command line interface for this text-based game.
+* [Python](https://www.python.org/) is a widely used general-purpose, versatile and powerful programming language used for example for web development, machine learning and data science. Python was used to create the command line interface for this text-based game. Version 3
 ### Other Technologies and Libraries
 * [Github](https://github.com/) and [Git](https://git-scm.com/) were used for version control
-* [Gitpod](https://gitpod.io/) was used as cloud-based IDE
+* [Gitpod](https://gitpod.io/) was used as a cloud-based IDE
 * [Heroku](http://heroku.com/) was used to deploy the app
 * [The Google Chrome browser](https://www.google.com/intl/en_ie/chrome/) was used to view the app
 * [Diagrams](https://www.diagrams.net/) was used to create the flowchart
@@ -81,9 +81,9 @@ Validation of the Python code was carried out by [PEP8](http://pep8online.com/).
 Manual testing was carried out extensively both in the terminal and also in the browser. Once testing in the browser was conducted a lot of additional line breaks were needed to compensate for the width of the screen.
 The options and flow were checked manually and all passed. The list of these tests can be seen [here:](https://docs.google.com/spreadsheets/d/1NUVHJ0VQ0orWFZ3Bh9MgGXAYShW9a5Ki2Rw6T_ssCLE/edit?usp=sharing)
 ![alt-text](assets/images/test_sheet.png)
-In testing some users had difficulty with the prompt to open the box in landing() so I added a "hint: open" to the text to avoid frustration
+In testing some users had difficulty with the prompt to open the box in the landing function so I added a "hint: open" to the text to avoid frustration
 ## Deployment
-The application uses Heroku for deployement
+This application uses Heroku for deployment
 
 ### To create the application:
 1. First create the requirements file the Heroku will use to import the dependencies required for deployment: type `pip3 freeze > requirements.txt`. For this project the requirements.txt file is empty as no libraries or modules were imported other than from the standard python library.
