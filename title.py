@@ -1,6 +1,6 @@
 def title():
     """
-    Title
+    Displays title of game and author name on welcome screen
     """
 
     print("     ***********************************************************")
