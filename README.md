@@ -8,10 +8,6 @@ After the Party is a lighthearted zombie escape game. The player wakes up after 
 * The player chooses items from a camping box which then assist in winning the game in various different ways
 * The different rooms the player enters have different paths to win or lose 
 * Winning is escaping from the house and losing is dying or being killed. The means of winning or losing is told to the player at the end of the game.
-### Future Features
-* I refactored a lot of code but in the future would also refactor the functions to check the validity of the names. Currently the player is prevented from entering an empty string or a space and is not able to continue without enterring valid text. I would like to find a way to do this by calling one function.
-* I would add more rooms, more weapons/tools and more scenarios for escaping/dying.
-* I would add some ascii art to enhance user experience
 
 
 ### Run After the Party button
@@ -42,6 +38,10 @@ The fourth screenshot shows one way that a player has died.
 
 ![alt-text](assets/images/screen4.png)
 
+### Future Features
+* I refactored a lot of code but in the future would also refactor the functions to check the validity of the names. Currently the player is prevented from entering an empty string or a space and is not able to continue without enterring valid text. I would like to find a way to do this by calling one function.
+* I would add more rooms, more weapons/tools and more scenarios for escaping/dying.
+* I would add some ascii art to enhance user experience
 
 ### Program Structure
 The flowchart created during the planning stage can be viewed [here](https://github.com/siobhanlgorman/After-the-Party/blob/main/assets/images/flowchart.png)
@@ -58,7 +58,8 @@ The flowchart created during the planning stage can be viewed [here](https://git
 * [The Google Chrome browser](https://www.google.com/intl/en_ie/chrome/) was used to view the app
 * [Diagrams](https://www.diagrams.net/) was used to create the flowchart
 ## Known Issues/Bugs
-* Left/Right option: sometimes won't accept 'Left' or 'left' input but accepts second time and sometimes it does accept as expected. The cause has not been determined so the fix cannot be identified.
+* Left/Right option: sometimes won't accept 'Right' or 'right' input but accepts second time and sometimes it accepts first time as expected. The cause has not been determined as is intermttent so a fix cannot be identified currently.
+
 Not accepting 'right':
 
 ![alt-text](assets/images/error2.png)
@@ -67,7 +68,7 @@ Accepting 'right':
 
 ![alt-text](assets/images/error2not.png)
 
-* Player was able to continue with game after hitting return instead of entering a valid player name. This was fixed with a while loop and `if not player_name:`. But the player was still able to enter spaces. I experimented with several ways but eventually fixed this by adding an elif statement and the `isspace()` method.
+* Player was able to continue with game after hitting return instead of entering a valid player name. This was fixed with a while loop and `if not player_name:`. But the player was still able to enter spaces. I experimented with several ways but eventually fixed this by adding an elif statement and the `isspace()` method. In the end to eliminate player inputting e.g.??? I changed this to the `isalpha()` method
 
 * in landing function user answer is incorrect if more than one word entered which is not in list of accepted words or strings e.g 'I would open it' instead of just open so added prompt 'enter one word (hint: open)'. If this proved very problematic for users I would change the function but wanted a little variety and to allow the user a little freer choice
 
