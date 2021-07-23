@@ -7,17 +7,18 @@ inventory = []
 
 def welcome():
     """
-    Dsplays title
+    Displays title
     Welcomes and gets player's name
     """
     title()
     print()
     print("Hello there!")
     time.sleep(1)
-    # player enters name
+
     # While loop checks player_name input is not empty or spaces
     while True:
         global player_name
+        # Player enters name
         player_name = input("What's your name?:\n").capitalize()
         if not player_name:
             print("You can't play if you don't enter a name!")
@@ -54,8 +55,7 @@ def intro():
     print("Whose house is this again?")
     time.sleep(1.5)
 
-    # while loop repeats request for valid host_name input if player input is
-    # space or empty
+    # while loop repeats for valid host_name if player input is space or empty
     while True:
         global host_name
         host_name = (input(f"{player_name} who was the host of the "
@@ -706,16 +706,7 @@ def play_again():
         welcome()
     elif y_or_n == "no":
         print("No worries. Come back soon!")
-    # answer = input("Do you want to play again? (Yes or No)\n")
-    # if "y".lower() in answer:
-    #     print("Great!\n")
-    #     time.sleep(1)
-    #     print("Good luck!\n")
-    #     time.sleep(2.5)
-    #     welcome()
-    # elif "n".lower() in answer:
-    #     print("No worries. Come back soon!")
-
+         
 
 # function to start game
 welcome()
