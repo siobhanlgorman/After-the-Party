@@ -563,7 +563,7 @@ def stairs():
 
 def output():
     print("You battle your way bravely with your last "
-             "drop of energy and clear a path.\n")
+          "drop of energy and clear a path.\n")
     time.sleep(1.5)
     print("You reach the front door")
     time.sleep(1.5)
