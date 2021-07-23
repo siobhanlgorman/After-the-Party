@@ -403,8 +403,8 @@ def say_hi(friend_name, camping_box):
                 time.sleep(1.5)
                 landing2(camping_box)
             else:
-                you_die("You don't have a weapon! Erin and Denis grab you and"
-                        " take chunks of \nflesh out of your face. \nYOU DIE")
+                you_die("\nYou don't have a weapon! Erin and Denis grab you and"
+                        " take chunks of \nflesh out of your face. \nYOU DIE\n")
                 break
         elif user_answer.lower() == "run":
             print("\nYou don't want to fight. Oh dear. Hope you have a better"
