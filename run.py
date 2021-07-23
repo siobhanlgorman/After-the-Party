@@ -683,6 +683,7 @@ def you_die(reason):
     """
     print(reason)
     time.sleep(2)
+    print()
     play_again()
 
 
@@ -692,16 +693,29 @@ def play_again():
     function to ask if player wants to play again
     If player inputs yes game restarts
     """
-    answer = input("Do you want to play again? (Yes or No)\n")
-    if "y".lower() in answer:
+
+    y_or_n = y_n_check("Do you want to play again?\nYes or No?\n")
+    if y_or_n == "yes":
+        print("You picked yes\n")
         print("Great!\n")
         time.sleep(1)
         print("Good luck!\n")
-        time.sleep(2.5)
+        time.sleep(1.5)
         welcome()
-    elif "n".lower() in answer:
+    elif y_or_n == "no":
         print("No worries. Come back soon!")
+    # answer = input("Do you want to play again? (Yes or No)\n")
+    # if "y".lower() in answer:
+    #     print("Great!\n")
+    #     time.sleep(1)
+    #     print("Good luck!\n")
+    #     time.sleep(2.5)
+    #     welcome()
+    # elif "n".lower() in answer:
+    #     print("No worries. Come back soon!")
 
 
 # function to start game
-welcome()
+# welcome()
+play_again()
+
