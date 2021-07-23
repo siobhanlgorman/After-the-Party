@@ -68,9 +68,9 @@ Accepting 'right':
 
 ![alt-text](assets/images/error2not.png)
 
-* Player was able to continue with game after hitting return instead of entering a valid player name. This was fixed with a while loop and `if not player_name:`. But the player was still able to enter spaces. I experimented with several ways but eventually fixed this by adding an elif statement and the `isspace()` method. In the end to eliminate player inputting e.g.??? I changed this to the `isalpha()` method
+* Player was able to continue with game after hitting return instead of entering a valid player name. This was fixed with a while loop and `if not player_name:`. But the player was still able to enter spaces. I experimented with several ways but eventually fixed this by adding an elif statement and the `isspace()` method. In the end to eliminate player inputting e.g.??? I changed this to the `isalpha()` method.
 
-* in landing function user answer is incorrect if more than one word entered which is not in list of accepted words or strings e.g 'I would open it' instead of just open so added prompt 'enter one word (hint: open)'. If this proved very problematic for users I would change the function but wanted a little variety and to allow the user a little freer choice
+* in landing function user answer is incorrect if more than one word entered which is not in list of accepted words or strings e.g 'I would open it' instead of just open so added prompt 'enter one word (hint: open)'. If this proved very problematic for users I would change the function but wanted a little variety and to allow the user a little freer choice.
 
 ## Testing
 ### Validation
