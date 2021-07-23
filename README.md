@@ -16,24 +16,24 @@ This button starts or restarts the programme.
 ![alt-text](assets/images/run_button.png)
 
 ### Terminal Area
-The first screen of the program showing the opening screen.
+The opening screen of the program showing the title and the player's first input.
 
 ![alt-text](assets/images/screen1.png)
 
 
-A screenshot showing player choosing to 'open' the camping box and the contents list is displayed from which the player selects an item.
+This shows the player choosing to 'open' the camping box. The contents list is displayed from which the player selects an item.
 
 
 ![alt-text](assets/images/screen2.png)
 
 
-The third screenshot shows one way that a player could win.
+This shows one way that a player could win.
 
 
 ![alt-text](assets/images/screen3.png)
 
 
-The fourth screenshot shows one way that a player has died.
+This screenshot shows one way that a player has died.
 
 
 ![alt-text](assets/images/screen4.png)
