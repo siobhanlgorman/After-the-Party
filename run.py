@@ -487,7 +487,7 @@ def bedroom2():
     time.sleep(1.5)
     print("What the ....!!!\n")
     time.sleep(1.5)
-    print(f"Phew, just a dog!! {host_name} said they put his dog upstairs "
+    print(f"Phew, just a dog!! {host_name} said they put their dog upstairs "
           "when the party got crazy. \n"
           "At least there's no dead people anyway.\n")
     time.sleep(1.5)
