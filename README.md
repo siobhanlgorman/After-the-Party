@@ -50,7 +50,7 @@ The flowchart created during the planning stage can be viewed [here](https://git
 
 ## Technologies
 ### Languages.. 
-  * [Python](https://www.python.org/) Python is a widely used general-purpose, versatile and powerful programming language used for example for web development, machine learning and data science. Python was used to create the command line interface for this text-based game.
+  * [Python](https://www.python.org/) is a widely used general-purpose, versatile and powerful programming language used for example for web development, machine learning and data science. Python was used to create the command line interface for this text-based game.
 ### Other Technologies and Libraries
 * [Github](https://github.com/) and [Git](https://git-scm.com/) were used for version control
 * [Gitpod](https://gitpod.io/) was used as cloud-based IDE
@@ -60,9 +60,13 @@ The flowchart created during the planning stage can be viewed [here](https://git
 ## Known Issues/Bugs
 * Left/Right option: sometimes won't accept 'Left' or 'left' input but accepts second time and sometimes it does accept as expected. The cause has not been determined so the fix cannot be identified.
 Not accepting 'right':
+
 ![alt-text](assets/images/error2.png)
+
 Accepting 'right':
+
 ![alt-text](assets/images/error2not.png)
+
 * Player was able to continue with game after hitting return instead of entering a valid player name. This was fixed with a while loop and `if not player_name:`. But the player was still able to enter spaces. I experimented with several ways but eventually fixed this by adding an elif statement and the `isspace()` method.
 
 * in landing function user answer is incorrect if more than one word entered which is not in list of accepted words or strings e.g 'I would open it' instead of just open so added prompt 'enter one word (hint: open)'. If this proved very problematic for users I would change the function but wanted a little variety and to allow the user a little freer choice
