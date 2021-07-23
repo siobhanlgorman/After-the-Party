@@ -623,7 +623,7 @@ def front_door():
     print("I don't believe it... what used to be Erin is coming across "
           "the living \nroom now. \nShould have finished her off "
           "upstairs.\nAnd she is followed by more from the stairs."
-          " Got to get out quick!!! ")
+          " Got to get out quick!!! \n")
     time.sleep(1.5)
     y_or_n = y_n_check("Do you want to try to pick the lock?\n")
     if y_or_n == "yes":
@@ -639,10 +639,10 @@ def front_door():
                     "Erin and friends grab you by the hair and take "
                     "chunks out of your skull. \nYOU DIE")
     elif y_or_n == "no":
-        print("You're out of energy and ideas.")
+        print("\nYou're out of energy and ideas.")
         time.sleep(1.5)
         print("Maybe a rest will help before you tackle the rest "
-              "of the dead")
+              "of the dead\n")
         time.sleep(1.5)
         print("There's a cupboard over there. With a latch on the outside")
         y_or_n = y_n_check("You could rest in there. Do you open it? "
@@ -664,7 +664,8 @@ def cupboard():
     time.sleep(1.5)
     print(f"'{host_name}?'")
     time.sleep(1.5)
-    you_win(f"{host_name} has the key to the from door! "
+    you_win(f"{host_name} was locked in! and guess what????"
+            " They have the key to the front door!!! \nHow lucky is that! "
             "You race over and open the door. You both speed "
             "off to safety. \nYOU WIN!\n")
 
