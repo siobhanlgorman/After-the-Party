@@ -38,13 +38,14 @@ The flowchart created during the planning stage can be viewed [here](https://git
 * [Gitpod](https://gitpod.io/) was used as cloud-based IDE
 * [Heroku](http://heroku.com/) was used to deploy the app
 * [The Google Chrome browser](https://www.google.com/intl/en_ie/chrome/) was used to view the app
+* [Diagrams](https://www.diagrams.net/) was used to create the flowchart
 ## Known Issues/Bugs
-* left/right bug? sometimes won't accept 'Left' input but accepts second time and sometimes accepts. Not sure what's going on
-Sometimes won't accept capital L for left but then will. No known fix as usually works
-* Player was able to continue with game after hitting return instead of entering a valid player name. This I fixed with a while loop and `if not player_name:`. But the player was still able to enter spaces. I experimented with several ways but eventually fixed this by adding an elif statement and the `isspace()` method.
+* Left/Right option: sometimes won't accept 'Left' or 'left' input but accepts second time and sometimes it does accept as expected. The cause has not been determined so the fix cannot be identified.
 
-  * in landing function user answer is incorrect if more than one word entered e.g open it instead of just open so added prompt 'enter one word'
-  * in bedroom 2 escape with item other than rope
+* Player was able to continue with game after hitting return instead of entering a valid player name. This was fixed with a while loop and `if not player_name:`. But the player was still able to enter spaces. I experimented with several ways but eventually fixed this by adding an elif statement and the `isspace()` method.
+
+* in landing function user answer is incorrect if more than one word entered e.g open it instead of just open so added prompt 'enter one word'
+* in bedroom 2 escape with item other than rope
 ## Testing
 ### Validation
 Validation of the Python code was carried out by [PEP8](http://pep8online.com/). No errors were found.
