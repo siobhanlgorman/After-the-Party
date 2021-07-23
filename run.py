@@ -363,7 +363,7 @@ def say_hi(friend_name, camping_box):
                       " is trapped\n")
                 time.sleep(1.5)
                 print(f"{friend_name} grabs your arm from behind and you swing"
-                      " around and jab them in the forehead. More slime.\n")
+                      " around and jab them in the \nforehead. More slime.\n")
                 time.sleep(1.5)
                 print("Quickly. Back out of this room anyway before Erin gets"
                       " out. Have to find a way out\n")
@@ -380,7 +380,7 @@ def say_hi(friend_name, camping_box):
                       " is trapped\n")
                 time.sleep(1.5)
                 print(f"{friend_name} grabs your arm from behind and you swing"
-                      " around and jab them in the forehead. More slime.\n")
+                      " around and jab them in the \nforehead. More slime.\n")
                 time.sleep(1.5)
                 print("Quickly. Back out of this room anyway before Erin gets"
                       " out. Have to find a way out\n")
@@ -716,6 +716,4 @@ def play_again():
 
 
 # function to start game
-# welcome()
-play_again()
-
+welcome()
