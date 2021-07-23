@@ -80,9 +80,30 @@ Validation of the Python code was carried out by [PEP8](http://pep8online.com/).
 ### Manual Testing
 1. Manual testing was carried out extensively both in the terminal and also in the browser. Once testing in the browser was conducted a lot of additional line breaks were needed to compensate for the width of the screen.
 2. The options and flow were checked manually and all passed. The list of these tests can be seen [here:](https://docs.google.com/spreadsheets/d/1NUVHJ0VQ0orWFZ3Bh9MgGXAYShW9a5Ki2Rw6T_ssCLE/edit?usp=sharing)
+
+
 ![alt-text](assets/images/test_sheet.png)
+
+
 3. In testing some users had difficulty with the prompt to open the box in the landing function so I added a "hint: open" to the text to avoid frustration
 4. In testing it was apparent that a player could enter a space or hit return to enter a player name and still continue. To prevent this I added a function checking for a name and only space (`str.isspace()`) But this allowed the player to enter e.g. 555 or ??? so I changed the method to `str.isalpha`. It is recognised however that were a player to have a squiggle or other novel element in their name (like the artist formerly known as Prince did) they would not be able to enter this. If this was proven to be an issue it could be addressed in future versions of the game. 
+5. The game was tested on various sized screens and browsers including a Dell 15" laptop, 24" monitor, iPhone SE2 and Moto G8+ with no issues.
+
+Mockup:
+
+![alt-text](assets/images/responsive.png)
+
+IPhoneSE2:
+
+![alt-text](assets/images/iphone_se2_1.jpg)
+
+
+![alt-text](assets/images/iphone_se2_2.jpg)
+
+Moto G8+:
+
+![alt-text](assets/images/motog8.png)
+
 
 
 
