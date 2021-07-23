@@ -717,5 +717,4 @@ def play_again():
 
 
 # function to start game
-# welcome()
-living_room()
+welcome()
