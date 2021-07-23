@@ -248,7 +248,7 @@ def landing():
 
     # while loop repeats prompt in case of invalid user entry
     while True:
-        user_answer = input("Type one word!: \n")
+        user_answer = input("Type one word!(Hint: open!): \n")
         if user_answer.lower(
         ) in [
              "box", "open", "open it", "look", "inside", "look inside", "see"]:
