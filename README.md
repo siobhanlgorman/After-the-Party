@@ -32,7 +32,7 @@ The flowchart created during the planning stage can be viewed [here](https://git
 
 ## Technologies
 ### Languages.. 
-  * [Python](https://www.python.org/) summary of python goes here
+  * [Python](https://www.python.org/) Python is a widely used general-purpose, versatile and powerful programming language used for example for web development, machine learning and data science. Python was used to create the command line interface for this text-based game.
 ### Other Technologies and Libraries
 * [Github](https://github.com/) and [Git](https://git-scm.com/) were used for version control
 * [Gitpod](https://gitpod.io/) was used as cloud-based IDE
