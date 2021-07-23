@@ -151,4 +151,4 @@ This tutorial was useful for inspiration: [Learn Python by making a text-based a
 
 [Stack Overflow](https://stackoverflow.com/) was useful for looking up various solutions to bugs e.g. [whitespace only strings](https://stackoverflow.com/questions/2405292/check-if-string-contains-only-whitespace)
 ## Content
-The story content was developed by this author Siobhan Gorman.
+The story content was developed by this author [Siobhan Gorman](https://github.com/siobhanlgorman).
