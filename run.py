@@ -666,7 +666,7 @@ def cupboard():
     time.sleep(1.5)
     you_win(f"{host_name} was locked in! and guess what????"
             " They have the key to the front door!!! \nHow lucky is that! "
-            "You race over and open the door. You both speed "
+            "You race over and open the door. \nYou both speed "
             "off to safety. \nYOU WIN!\n")
 
 
