@@ -55,6 +55,7 @@ Validation of the Python code was carried out by [PEP8](http://pep8online.com/).
 ### Manual Testing
 The options and flow were checked manually and all passed. The tests conducted can be seen [here:](https://docs.google.com/spreadsheets/d/1NUVHJ0VQ0orWFZ3Bh9MgGXAYShW9a5Ki2Rw6T_ssCLE/edit?usp=sharing)
 ![alt-text](assets/images/test_sheet.png)
+In testing some users had difficulty with the prompt to open the box in landing() so I added a "hint: open!" to the text to avoid frustration
 ## Deployment
 The application uses Heroku for deployement
 
