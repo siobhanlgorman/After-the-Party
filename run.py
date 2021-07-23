@@ -3,6 +3,7 @@ import time
 from title import title
 # Empty list to hold weapons and tools selected by player
 inventory = []
+# reusable helper function
 
 
 def welcome():
@@ -20,12 +21,15 @@ def welcome():
         global player_name
         # Player enters name
         player_name = input("What's your name?:\n").capitalize()
-        if not player_name:
+        if not player_name.isalpha():
             print("You can't play if you don't enter a name!")
             continue
-        elif player_name.isspace():
-            print("You can't play if you don't enter a name!")
-            continue
+        # if not player_name:
+        #     print("You can't play if you don't enter a name!")
+        #     continue
+        # elif player_name.isspace():
+        #     print("You can't play if you don't enter a name!")
+        #     continue
         else:
             break
         time.sleep(1)
@@ -60,12 +64,15 @@ def intro():
         global host_name
         host_name = (input(f"{player_name} who was the host of the "
                      "party?\n").capitalize())
-        if not host_name:
+        if not host_name.isalpha():
             print("You can't play if you don't enter a name!")
             continue
-        elif host_name.isspace():
-            print("You can't play if you don't enter a name!")
-            continue
+        # if not host_name:
+        #     print("You can't play if you don't enter a name!")
+        #     continue
+        # elif host_name.isspace():
+        #     print("You can't play if you don't enter a name!")
+        #     continue
         else:
             break
     print(f"Oh yes {host_name}'s party - just moved back from abroad...\n")
@@ -105,10 +112,13 @@ def bedroom():
         global friend_name
         friend_name = input(f"{player_name}, who did you come to the party "
                             "with?\n").capitalize()
-        if not friend_name:
-            print("You can't play if you don't enter a name!")
-            continue
-        elif friend_name.isspace():
+        # if not friend_name:
+        # print("You can't play if you don't enter a name!")
+        # continue
+        # if friend_name.isspace():
+        # print("You can't play if you don't enter a name!")
+        # continue
+        if not friend_name.isalpha():
             print("You can't play if you don't enter a name!")
             continue
         else:
@@ -331,7 +341,7 @@ def say_hi(friend_name, camping_box):
     """
     Player chooses whether to fight or run
     If player chooses to fight there are two outcomes.
-    If they have the knife is ithey can move on
+    If they have the knife is they can move on
     If they don't have the knife they die
     If the player chooses not to fight they escape out the window
     """
@@ -706,7 +716,7 @@ def play_again():
         welcome()
     elif y_or_n == "no":
         print("No worries. Come back soon!")
-         
+
 
 # function to start game
 welcome()
