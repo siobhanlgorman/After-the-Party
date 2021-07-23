@@ -1,25 +1,43 @@
-# python module to give delay between lines of text
+# Imports python module to give delay between lines of text
 import time
+
+# Imports function to display game title and author
 from title import title
+
 # Empty list to hold weapons and tools selected by player
 inventory = []
-# reusable helper function
+
+
+def y_n_check(question):
+    """
+    Reusable helper function to check if player inputs yes or no
+    While loop repeats prompt in case of invalid user input
+    """
+    while True:
+        ask_y_n = input(question).lower()
+        if ask_y_n == "yes":
+            return "yes"
+        elif ask_y_n == "no":
+            return "no"
+        else:
+            print("No time to dilly-dally!")
+            continue
 
 
 def welcome():
     """
-    Displays title
-    Welcomes and gets player's name
+    Displays game title and author.
+    Welcomes and gets player's name for global use.
     """
     title()
     print()
     print("Hello there!")
     time.sleep(1)
 
-    # While loop checks player_name input is not empty or spaces
+    # While loop checks player_name input is valid alphabetic letters.
     while True:
         global player_name
-        # Player enters name
+        # Player enters name.
         player_name = input("What's your name?:\n").capitalize()
         if not player_name.isalpha():
             print("You can't play if you don't enter a name!")
@@ -36,8 +54,8 @@ def welcome():
 
 def intro():
     """
-    Sets the opening scene
-    Get party host's name from player for global use
+    Sets the opening scene.
+    Get party host's name from player for global use.
 
     """
     print("You wake up in an unfamiliar room as dawn is breaking.")
@@ -53,9 +71,10 @@ def intro():
     print("Whose house is this again?")
     time.sleep(1.5)
 
-    # while loop repeats for valid host_name if player input is space or empty
+    # While loop ensures valid party host name input and repeats prompt if not.
     while True:
         global host_name
+        # Player inputs name.
         host_name = (input(f"{player_name} who was the host of the "
                      "party?\n").capitalize())
         if not host_name.isalpha():
@@ -66,7 +85,7 @@ def intro():
     print(f"Oh yes {host_name}'s party - just moved back from abroad...\n")
     time.sleep(1.5)
     print("Hmmm..probably shouldn't have been partying with that virus"
-          " spreading\nand everything.")
+          " spreading \nand everything.")
     time.sleep(1.5)
     print("They say it could be deadly.\n")
     time.sleep(1.5)
@@ -88,16 +107,17 @@ def intro():
 
 def bedroom():
     """
-    Gets friend's name from player for global use
-    User chooses left or right door
+    Gets friend's name from player for global use.
+    Checks name is valid input.
+    Player chooses left or right door.
     """
     print("You notice the bed is empty.")
     time.sleep(1.5)
 
-    # user assigns friend name
-    # while loop checks for valid text input and repeats if not
+# While loop ensures name input is valid and repeats prompt if not.
     while True:
         global friend_name
+        # Player assigns friend name.
         friend_name = input(f"{player_name}, who did you come to the party "
                             "with?\n").capitalize()
         if not friend_name.isalpha():
@@ -125,12 +145,9 @@ def bedroom():
           "One is on the left and one on the right.")
     time.sleep(0.5)
 
-    # While loop checks for valid user input and repeats question in case of
-    # invalid user choice
-    # Converts choice to lower case to accept user using capitals
-    # If / else statement for door choice to move to bathroom or landing
-
+    # While loop ensures input is valid and repeats prompt if not.
     while True:
+        # Player chooses left or right door.
         door_choice = input("Which do you choose? Left or Right\n").lower()
         if door_choice == "left":
             print("You chose the door on the left\n")
@@ -148,27 +165,10 @@ def bedroom():
             continue
 
 
-def y_n_check(question):
-    """
-    function to check if player imputs yes or no
-    While loop to repeat prompt in case of user invalid entry
-    """
-    while True:
-        ask_y_n = input(question).lower()
-        if ask_y_n == "yes":
-            return "yes"
-        elif ask_y_n == "no":
-            return "no"
-        else:
-            print("No time to dilly-dally!")
-            continue
-
-
 def left_bathroom():
     """
-    Player is in bathroom
-    If statement for player choice to open shower curtain
-
+    Player is in bathroom.
+    Player chooses to open shower curtain or not.
     """
     print("You open the door.")
     time.sleep(1.5)
@@ -182,6 +182,7 @@ def left_bathroom():
     print("What the ...??")
     time.sleep(1.5)
 
+    # y_n_check function is called.
     y_or_n = y_n_check("Do you open the curtain? (Yes or No)\n")
     if y_or_n == "yes":
         print("You picked yes\n")
@@ -204,8 +205,9 @@ def left_bathroom():
 
 def landing():
     """
-    User is prompted to suggest opening camping box
+    Player is prompted to open camping box
     """
+    # Camping_box contents assigned
     camping_box = [
         'knife', 'hammer', 'rope', 'hairpin', 'peg',
         'screwdriver']
@@ -236,9 +238,9 @@ def landing():
     time.sleep(1.5)
     print("The box might have something useful in it")
     time.sleep(0.5)
-    print("What do you want to do? \n ")
+    print("What do you want to do?")
 
-    # while loop repeats prompt in case of invalid user entry
+    # While loop repeats prompt in case of invalid user input
     while True:
         user_answer = input("Type one word!(Hint: open): \n")
         if user_answer.lower(
@@ -258,16 +260,19 @@ def landing():
 
 def open_camping_box(camping_box):
     """
-    Player selects one weapon/tool from camping box and moves to bedroom
+    Player selects one weapon/tool from camping box
+    If player choice is valid item is added to inventory list and removed from
+    camping box list.
+    Player moves on to bedroom1.
     """
     print("Inside the box there's a:")
 
-    # For loop displays items in camping box list
+    # For loop displays items in camping box list.
     for x in camping_box:
         print(x)
         time.sleep(0.2)
 
-    # While loop to check for valid input and repeat prompt if not
+    # While loop checks for valid input and repeats prompt if not.
     while True:
         time.sleep(1.5)
         user_choice1 = input("\nWhich item do you grab?\n").lower()
@@ -275,10 +280,7 @@ def open_camping_box(camping_box):
         print(f"You picked a {user_choice1}")
         time.sleep(1.5)
 
-        """
-        If player choice is valid item is added to inventory list
-        and removed from camping box list
-        """
+        # Selected item is removed from camping box list and added to inventory
         if user_choice1 in camping_box:
             inventory.append(user_choice1)
             camping_box.remove(user_choice1)
@@ -293,8 +295,8 @@ def open_camping_box(camping_box):
 
 def bedroom1(camping_box):
     """
-    Player is in bedroom and chooses whether to 'say hi' to couple in bed
-
+    Player is in bedroom and chooses whether to 'say hi' to couple in bed.
+    Player moves to different room accordingly.
     """
     print("There's a door beside you. You open it and run in.\n")
     time.sleep(1.5)
@@ -305,10 +307,7 @@ def bedroom1(camping_box):
     print("Could they be ALIVE?\n")
     time.sleep(1.5)
 
-    # If/elif statement for player to choose yes or no
-    # If yes player moves to say_hi()
-    # If no player moves to landing2()
-
+    # y_n_check function is called.
     y_or_n = y_n_check("Do you say 'Hi'? (Yes or No)\n")
     if y_or_n == "yes":
         print("You picked yes\n")
@@ -325,7 +324,7 @@ def say_hi(friend_name, camping_box):
     If player chooses to fight there are two outcomes.
     If they have the knife is they can move on
     If they don't have the knife they die
-    If the player chooses not to fight they escape out the window
+    If the player chooses not to fight they escape out the window and win
     """
 
     print("H..H..H..Hello...??\n")
@@ -338,7 +337,7 @@ def say_hi(friend_name, camping_box):
     print("Is EVERYBODY in this house zombiefied??")
     time.sleep(1.5)
 
-    # while loop allows prompt to be repeated if player entry is invalid
+    # While loop repeats prompt if player entry is invalid
     while True:
         user_answer = input("Do you want to fight or run? (fight/run)\n")
         time.sleep(0.5)
@@ -423,9 +422,9 @@ def say_hi(friend_name, camping_box):
 
 def landing2(camping_box):
     """
-    Player chooses another item from the camping box
-    Item is added to player inventory list and removed from camping list
-    Player chooses whether or not to open the door to bedroom2
+    Player chooses another item from the camping box.
+    Player inventory list and camping_box list are updated.
+    Player chooses whether or not to open the door to bedroom2.
     """
 
     print("Back out on the landing\n")
@@ -433,16 +432,18 @@ def landing2(camping_box):
     print("Better grab something else from the camping box\n")
     print("Inside the box there's a:")
 
-    # loop through updated camping box list
+    # Loop through updated camping box list
     for x in camping_box:
         print(x)
     time.sleep(1.5)
 
-    # While loop to check for valid input and repeat prompt if not
+    # While loop checks for valid player input and repeats prompt if not
     while True:
+        # Player inputs item from list
         user_choice1 = input("\nWhich item do you grab?\n").lower()
         time.sleep(0.5)
         print(f"You picked a {user_choice1}\n")
+        # Camping_box and inventory lists are updated
         if user_choice1 in camping_box:
             inventory.append(user_choice1)
             camping_box.remove(user_choice1)
@@ -456,6 +457,7 @@ def landing2(camping_box):
     time.sleep(1.5)
     print("You see another door")
 
+    # y_n_check function is called
     y_or_n = y_n_check("Do you open the door? (Yes or No)\n")
     if y_or_n == "yes":
         print("You picked yes\n")
@@ -494,6 +496,7 @@ def bedroom2():
     print("You look around the room. There's a window.")
     print("Could you get out that way?\n")
 
+    # y_n_check function is called
     y_or_n = y_n_check("Do you want to try the window? (Yes or No?)\n")
     if y_or_n == "yes":
         if "rope" in inventory:
@@ -521,6 +524,7 @@ def stairs():
           " at the top\n")
     time.sleep(1.5)
 
+    # y_n_check function is called
     y_or_n = y_n_check("Are you going to attack? (Yes or No)\n")
     if y_or_n == "yes":
         print("You're going to attack...\n")
@@ -554,6 +558,9 @@ def stairs():
 
 
 def output():
+    """
+    Prints output for living_room function.
+    """
     print("You battle your way bravely with your last "
           "drop of energy and clear a path.\n")
     time.sleep(1.5)
@@ -584,6 +591,8 @@ def living_room():
     time.sleep(1.5)
     print("How to get through...\n")
     time.sleep(1.5)
+
+    # y_n_check function is called
     y_or_n = y_n_check("Do you have the energy to fight your way "
                        "through? (Yes or No)\n")
     if y_or_n == "yes":
@@ -606,10 +615,11 @@ def living_room():
 
 def front_door():
     """
-    Player prompted yes/no to pick lock
-    If yes and hairpin/screwdriver player wins
-    If no player chooses yes/no to enter cupboard
-    If no player dies
+    Player chooses whether to pick lock or not.
+    If yes and hairpin/screwdriver in inventory player wins.
+    If no player chooses whether to enter cupboard or not.
+    If yes player moves to cupboard.
+    If no player dies.
 
     """
     print("I don't believe it... what used to be Erin is coming across "
@@ -617,6 +627,8 @@ def front_door():
           "upstairs.\nAnd she is followed by more from the stairs."
           " Got to get out quick!!! \n")
     time.sleep(1.5)
+
+    # y_n_check function is called
     y_or_n = y_n_check("Do you want to try to pick the lock?\n")
     if y_or_n == "yes":
         if "hairpin" in inventory:
@@ -637,6 +649,8 @@ def front_door():
               "of the dead\n")
         time.sleep(1.5)
         print("There's a cupboard over there. With a latch on the outside")
+
+        # y_n_check function is called
         y_or_n = y_n_check("You could rest in there. Do you open it? "
                            "Yes or No?\n")
         if y_or_n == "yes":
@@ -650,21 +664,22 @@ def front_door():
 
 def cupboard():
     """
-    In this function the player wins
+    In this function the player wins.
     """
     print(f"You lift the latch and a voice says '{player_name}??'")
     time.sleep(1.5)
     print(f"'{host_name}?'")
     time.sleep(1.5)
-    you_win(f"{host_name} was locked in! and guess what????"
+    you_win(f"{host_name} was locked in! And guess what????"
             " They have the key to the front door!!! \nHow lucky is that! "
             "You race over and open the door. \nYou both speed "
-            "off to safety. \nYOU WIN!\n")
+            "off to safety in your car. \nYOU WIN!\n")
 
 
 def you_win(reason):
     """
-    Function to give reason why player wins
+    Function for when player wins game.
+    Prints reason why player wins.
     """
     print(reason)
     time.sleep(2)
@@ -673,7 +688,8 @@ def you_win(reason):
 
 def you_die(reason):
     """
-    function for when user dies and game ends
+    Function for when user dies and game ends.
+    Cause of death is printed and play_again function is called.
     """
     print(reason)
     time.sleep(2)
@@ -681,13 +697,15 @@ def you_die(reason):
     play_again()
 
 
-# function to ask user to play game again
+# Function to ask user to play game again
 def play_again():
     """
-    function to ask if player wants to play again
-    If player inputs yes game restarts
+    function to ask if player wants to play again.
+    If player inputs yes game restarts.
+    If player inputs no game ends.
     """
 
+    # y_n_check function is called
     y_or_n = y_n_check("Do you want to play again?\nYes or No?\n")
     if y_or_n == "yes":
         print("You picked yes\n")
@@ -700,5 +718,5 @@ def play_again():
         print("No worries. Come back soon!")
 
 
-# function to start game
+# Function to start game
 welcome()

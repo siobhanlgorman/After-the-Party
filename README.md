@@ -104,9 +104,6 @@ Moto G8+:
 
 ![alt-text](assets/images/motog8.png)
 
-
-
-
 ## Deployment
 This application uses Heroku for deployment
 
