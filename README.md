@@ -11,6 +11,7 @@ After the Party is a lighthearted zombie escape game. The player wakes up after 
 ### Future Features
 * I refactored a lot of code but in the future would also refactor the functions to check the validity of the names. Currently the player is prevented from entering an empty string or a space and is not able to continue without enterring valid text. I would like to find a way to do this by calling one function.
 * I would add more rooms, more weapons/tools and more scenarios for escaping/dying.
+* I would add some ascii art to enhance user experience
 
 
 ### Run Program button
