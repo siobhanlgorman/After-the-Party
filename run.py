@@ -607,7 +607,7 @@ def living_room():
         time.sleep(1.5)
         you_die("The dead turn towards you. You turn to go back up. "
                 "\nBut Erin is coming down the stairs."
-                "There's no escape. Sorry YOU DIE")
+                "There's no escape. Sorry \nYOU DIE")
 
 
 def front_door():
@@ -619,7 +619,7 @@ def front_door():
 
     """
     print("I don't believe it... what used to be Erin is coming across "
-          "the living room now. \nShould have finished her off "
+          "the living \nroom now. \nShould have finished her off "
           "upstairs.\nAnd she is followed by more from the stairs."
           " Got to get out quick!!! ")
     time.sleep(1.5)
@@ -631,11 +631,11 @@ def front_door():
                     "YOU WIN!")
         elif "screwdriver" in inventory:
             you_win("You unscrew the lock. You burst through the door "
-                    "to the safety of your car and speed off. YOU WIN ")
+                    "to the safety of your car and speed off. \nYOU WIN ")
         else:
             you_die("What a shame...you don't have a tool for that! "
                     "Erin and friends grab you by the hair and take "
-                    "chunks out of your skull. YOU DIE")
+                    "chunks out of your skull. \nYOU DIE")
     elif y_or_n == "no":
         print("You're out of energy and ideas.")
         time.sleep(1.5)
@@ -652,7 +652,7 @@ def front_door():
         cupboard()
     elif y_or_n == "no":
         you_die("There's no escape then. All hope is lost. You "
-                "become Erin's next feast. YOU DIE")
+                "become Erin's next feast. \nYOU DIE")
 
 
 def cupboard():
@@ -665,7 +665,7 @@ def cupboard():
     time.sleep(1.5)
     you_win(f"{host_name} has the key to the from door! "
             "You race over and open the door. You both speed "
-            "off to safety. YOU WIN!\n")
+            "off to safety. \nYOU WIN!\n")
 
 
 def you_win(reason):
