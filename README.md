@@ -14,7 +14,9 @@ After the Party is a lighthearted zombie escape game. The player wakes up after 
 * I would add some ascii art to enhance user experience
 
 
-### Run Program button
+### Run After the Party button
+This button starts or restarts the programme.
+
 ### Terminal Area
 The first screen of the program showing the opening and the first two player inputs of their player name and the part host name/:
 ![alt-text](assets/images/screen1.png)
