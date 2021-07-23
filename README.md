@@ -16,17 +16,32 @@ After the Party is a lighthearted zombie escape game. The player wakes up after 
 
 ### Run After the Party button
 This button starts or restarts the programme.
+
 ![alt-text](assets/images/run_button.png)
+
 ### Terminal Area
 The first screen of the program showing the opening screen.
 
 ![alt-text](assets/images/screen1.png)
+
+
 A screenshot showing player choosing to 'open' the camping box and the contents list is displayed from which the player selects an item.
+
+
 ![alt-text](assets/images/screen2.png)
+
+
 The third screenshot shows one way that a player could win.
+
+
 ![alt-text](assets/images/screen3.png)
+
+
 The fourth screenshot shows one way that a player has died.
+
+
 ![alt-text](assets/images/screen4.png)
+
 
 ### Program Structure
 The flowchart created during the planning stage can be viewed [here](https://github.com/siobhanlgorman/After-the-Party/blob/main/assets/images/flowchart.png)
