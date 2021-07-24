@@ -160,7 +160,7 @@ def bedroom():
             landing()
             break
         else:
-            print(input("Please enter left or right\n"))
+            print("You can't just stand there!!\n")
             time.sleep(0.5)
             continue
 
@@ -357,7 +357,7 @@ def say_hi(friend_name, camping_box):
                       " around and jab them in the \nforehead. More slime.\n")
                 time.sleep(1.5)
                 print("Quickly. Back out of this room anyway before Erin gets"
-                      " out. Have to find a way out\n")
+                      " out. Have to find a way \nout\n")
                 time.sleep(1.5)
                 landing2(camping_box)
                 break
