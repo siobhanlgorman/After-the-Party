@@ -201,7 +201,7 @@ If you wish to fork the repository to make changes without affecting the origina
 2. Click the 'Fork' button at the top right of the page.
 3. A forked copy of the repository will appear in your Repositories page.
 ### Cloning the Repository
-1. On [GitHub](https://github.com/siobhanlgorman/After-the-Party) navigate to the main page of the repository.
+1. On [Github](https://github.com/) navigate to the main page of the [After the Party](https://github.com/siobhanlgorman/After-the-Party).
 2. Above the list of files click the dropdown code menu.
 3. Select the https option and copy the link.
 4. Open the terminal.
