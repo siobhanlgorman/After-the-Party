@@ -435,7 +435,7 @@ def landing2(camping_box):
     # Loop through updated camping box list
     for x in camping_box:
         print(x)
-    time.sleep(1.5)
+        time.sleep(0.2)
 
     # While loop checks for valid player input and repeats prompt if not
     while True:
