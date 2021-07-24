@@ -93,7 +93,9 @@ After the Party is a lighthearted zombie escape game which runs in a mock termin
 ## Data Model
 The data model used in this game is a list. A list of camping box items (`camping_box`) is provided from which the player selects an item twice and each time the item is removed from the camping box list (`camping_box`) and then added to the player's inventory. This item is then used to generate various option in the game which depend on the item selected.
 The game also stores three 'name' objects (`player_name`, `friend_name`, and `host_name`) inputted by the player which are then used as characters at different points in the game story.
-The main design model of the game is to generate `print` story statements which are determined by the the player input.
+
+
+The main design model of the game is to generate `print` story statements which are determined by the player input.
 
 ### Program Structure
 The flowchart created during the planning stage can be viewed [here](https://github.com/siobhanlgorman/After-the-Party/blob/main/assets/images/flowchart.png). 
