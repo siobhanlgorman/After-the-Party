@@ -43,9 +43,6 @@ Incorrect name entered:
 ![alt-text](assets/images/screen8.png)
 
 
-
-
-
 * The player chooses items from a camping box, most of which then assist in winning the game in various different ways. The player must choose a valid item from the box to continue. The player can choose a second item from the box at a later point and the first item has been removed from the choice offered.
 
 This shows the player choosing to 'open' the camping box. They could also 'look' or 'see' inside the box. The contents list is displayed from which the player selects an item. The programme then confirms the player's choice and continues the story path:
@@ -84,6 +81,11 @@ This screenshot shows one way that a player has died.
 * The yes/no questions were refactored into one helper function as they were the majority of the input options. In the future the functions to check the validity of the three names. Currently the player is prevented from entering an empty string or a space and is not able to continue without enterring valid text. This would be done in by calling one function for all names.
 * More rooms, more weapons/tools and more scenarios for escaping/dying using the different weapons/tools could be added to extend the experience.
 * Ascii art could be added to enhance user experience in particular for the 'You Win' and 'You Die' messages.
+
+## Data Model
+The data model used in this game is a list. A list of camping box items (`camping_box`) is provided from which the player selects an item twice and each time the item is removed from the camping box list (`camping_box`) and then added to the player's inventory. This item is then used to generate various option in the game which depend on the item selected.
+The game also stores three 'name' objects (`player_name`, `friend_name`, and `host_name`) inputted by the player which are then used as characters at different points in the game story.
+The main design model of the game is to generate `print` story statements which are determined by the the player input.
 
 ### Program Structure
 The flowchart created during the planning stage can be viewed [here](https://github.com/siobhanlgorman/After-the-Party/blob/main/assets/images/flowchart.png). 
