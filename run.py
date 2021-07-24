@@ -75,8 +75,8 @@ def intro():
     while True:
         global host_name
         # Player inputs name.
-        host_name = (input(f"{player_name} who was the host of the "
-                     "party?\n").capitalize())
+        host_name = input(f"{player_name} who was the host of the "
+                          "party?\n").capitalize()
         if not host_name.isalpha():
             print("You can't play if you don't enter a name!")
             continue

@@ -101,7 +101,9 @@ The flowchart created during the planning stage can be viewed [here](https://git
 * [Heroku](http://heroku.com/) is a containier-based cloud Platform as a service used to deploy, manage and scale modern applications. Heroku was used to deploy this game application.
 * [The Google Chrome browser](https://www.google.com/intl/en_ie/chrome/) was used to view the app
 * [Diagrams](https://www.diagrams.net/) was used to create the flowchart for this application.
+
 ## Known Issues/Bugs
+
 * Left/Right option: sometimes won't accept 'Right' or 'right' input but accepts second time and sometimes it accepts first time as expected. The cause has not been determined as is intermttent so a fix cannot be identified currently. Update: Fixed - removed additional input from `else` statement in `while` loop.
 
 Not accepting 'right':
@@ -117,21 +119,19 @@ Accepting 'right':
 * In the landing function user answer is incorrect if more than one word entered which is not in list of accepted words or strings e.g 'I would open it' instead of just open so added prompt 'enter one word (hint: open)'. This could be changed in the future if it proved to be problematic for users I would change the function but wanted a little variety and to allow the user a little freer choice. Testers have no problem with this.
 
 ## Testing
-### Validation
-Validation of the Python code was carried out by [PEP8](http://pep8online.com/). No errors were found.
-![alt-text](assets/images/pep8.png)
-
 
 ### Manual Testing
-1. Manual testing was carried out extensively both in the terminal and also in the browser. Once testing in the browser was conducted a lot of additional line breaks were needed to compensate for the width of the screen.
-2. The options and flow were checked manually and all passed. The list of these tests can be seen [here:](https://docs.google.com/spreadsheets/d/1NUVHJ0VQ0orWFZ3Bh9MgGXAYShW9a5Ki2Rw6T_ssCLE/edit?usp=sharing)
+1. The code was passed through the [PEP8](http://pep8online.com/) linter and no errors were found.
+![alt-text](assets/images/pep8.png)
+2. Manual testing was carried out extensively both in the local Gitpod terminal and also in the Heroku terminal in the Chrome browser. Once testing in the Heroku terminal was conducted line breaks were added to compensate for the width of the screen. The screen width was later adjusted in the css file xterm.css.
+3. The options and flow were checked manually and all passed. The list of these tests can be seen [here:](https://docs.google.com/spreadsheets/d/1NUVHJ0VQ0orWFZ3Bh9MgGXAYShW9a5Ki2Rw6T_ssCLE/edit?usp=sharing)
 
 
 ![alt-text](assets/images/test_sheet.png)
 
 
 3. In testing some users had difficulty with the prompt to open the box in the landing function so I added a "hint: open" to the text to avoid frustration
-4. In testing it was apparent that a player could enter a space or hit return to enter a player name and still continue. To prevent this I added a function checking for a name and only space (`str.isspace()`) But this allowed the player to enter e.g. 555 or ??? so I changed the method to `str.isalpha`. It is recognised however that were a player to have a squiggle or other novel element in their name (like the artist formerly known as Prince did) they would not be able to enter this. If this was proven to be an issue it could be addressed in future versions of the game. 
+4. In early testing it was apparent that a player could enter a space or hit return to enter a player name and still continue. To prevent this I added a function checking for a name and only space (`str.isspace()`) But this allowed the player to enter e.g. 555 or ??? so I changed the method to `str.isalpha()`. It is recognised however that were a player to have a squiggle or other novel element in their name (like the artist formerly known as Prince did) they would not be able to enter this. If this was proven to be an issue it could be addressed in future versions of the game. 
 5. The game was tested on various sized screens and browsers including a Dell 15" laptop, 24" monitor, iPhone SE2 and Moto G8+ with no issues.
 
 
