@@ -1,5 +1,7 @@
 # After the Party
 After the Party Live Link [here](https://after-the-party.herokuapp.com/)
+
+
 Mockup:
 
 ![alt-text](assets/images/responsive.png)
