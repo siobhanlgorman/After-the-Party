@@ -14,19 +14,19 @@ After the Party is a text-based adventure game where the player is inputs their 
 ## Features
 ### Existing Features
 ### Run After the Party button
-This button starts or restarts the programme. The button was customised from the default 'Run Program' text to 'Run After the Party' in the `index.html` file
+1. This button starts or restarts the programme. The button was customised from the default 'Run Program' text to 'Run After the Party' in the `index.html` file
 
 ![alt-text](assets/images/run_button.png)
 
 
-* The game opens with the title and welcome followed by a request for the player to input their name.
+2. The game opens with the title and welcome followed by a request for the player to input their name.
 
 The opening screen of the program showing the title and the player's first input which is their player name:
 
 ![alt-text](assets/images/screen1.png)
 
 
-* The player chooses the name of the party host and the friend they came to the party with. These people then appear later in the story. This is intended to be a source of amusement to engage the user. All three name inputs (Player, Host and Friend) must be in valid text form and cannot be a space or empty or characters other than text. If the player enters a lower case first letter for the name this is accepted and converted to a capital first letter to be grammatically correct. A name must be entered to continue.
+3. The player chooses the name of the party host and the friend they came to the party with. These people then appear later in the story. This is intended to be a source of amusement to engage the user. All three name inputs (Player, Host and Friend) must be in valid text form and cannot be a space or empty or characters other than text. If the player enters a lower case first letter for the name this is accepted and converted to a capital first letter to be grammatically correct. A name must be entered to continue.
 
 
 ![alt-text](assets/images/screen6.png)
@@ -43,7 +43,7 @@ Incorrect name entered:
 ![alt-text](assets/images/screen8.png)
 
 
-* The player chooses items from a camping box, most of which then assist in winning the game in various different ways. The player must choose a valid item from the box to continue. The player can choose a second item from the box at a later point and the first item has been removed from the choice offered.
+4. The player chooses items from a camping box, most of which then assist in winning the game in various different ways. The player must choose a valid item from the box to continue. The player can choose a second item from the box at a later point and the first item has been removed from the choice offered.
 
 This shows the player choosing to 'open' the camping box. They could also 'look' or 'see' inside the box. The contents list is displayed from which the player selects an item. The programme then confirms the player's choice and continues the story path:
 
@@ -57,15 +57,17 @@ Further on in the game the player chooses another item from the box where the or
 ![alt-text](assets/images/screen5.png)
 
 
-* The different rooms the player enters have different paths to win or lose according to their answer choices. 
+5. The different rooms the player enters have different paths to win or lose according to their answer choices. 
+
 This shows the player choosing to open the door and finding themselves in the bathroom:
+
 
 ![alt-text](assets/images/screen7.png)
 
 
-* Winning is escaping from the house and losing is dying or being killed. The means of winning or losing is told to the player at the end of the game.
+6. Winning is escaping from the house and losing is dying or being killed. The means of winning or losing is told to the player at the end of the game.
 
-This shows one way that a player could win.
+This shows one way that a player could win:
 
 
 ![alt-text](assets/images/screen3.png)
