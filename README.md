@@ -120,7 +120,7 @@ The flowchart created during the planning stage can be viewed [here](https://git
 ### Other Technologies and Libraries
 * [Github](https://github.com/) and [Git](https://git-scm.com/) were used for version control. Github provides the web interface for the Git code repository.
 * [Gitpod](https://gitpod.io/) was used as the cloud-based IDE for this project.
-* [Heroku](http://heroku.com/) is a containier-based cloud Platform as a service used to deploy, manage and scale modern applications. Heroku was used to deploy this game application.
+* [Heroku](http://heroku.com/) is a container-based cloud Platform as a service used to deploy, manage and scale modern applications. Heroku was used to deploy this game application.
 * [The Google Chrome browser](https://www.google.com/intl/en_ie/chrome/) was used to view the app
 * [Diagrams](https://www.diagrams.net/) was used to create the flowchart for this application.
 
