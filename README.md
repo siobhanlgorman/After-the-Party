@@ -26,6 +26,8 @@ This shows the player choosing to 'open' the camping box. The contents list is d
 
 ![alt-text](assets/images/screen2.png)
 
+Further on in the game the player chooses another item from the box where the original has been removed.
+
 
 ![alt-text](assets/images/screen5.png)
 
@@ -42,24 +44,24 @@ This screenshot shows one way that a player has died.
 ![alt-text](assets/images/screen4.png)
 
 ### Future Features
-* I refactored a lot of code but in the future would also refactor the functions to check the validity of the names. Currently the player is prevented from entering an empty string or a space and is not able to continue without enterring valid text. I would like to find a way to do this by calling one function.
-* I would add more rooms, more weapons/tools and more scenarios for escaping/dying.
+* I refactored the yes/no questions into one helper function as they were the majority of the input options. In the future I would also refactor the functions to check the validity of the three names. Currently the player is prevented from entering an empty string or a space and is not able to continue without enterring valid text. I would like to find a way to do this for all of them by calling one function.
+* I would add more rooms, more weapons/tools and more scenarios for escaping/dying using the different weapons/tools.
 * I would add some ascii art to enhance user experience
 
 ### Program Structure
-The flowchart created during the planning stage can be viewed [here](https://github.com/siobhanlgorman/After-the-Party/blob/main/assets/images/flowchart.png)
+The flowchart created during the planning stage can be viewed [here](https://github.com/siobhanlgorman/After-the-Party/blob/main/assets/images/flowchart.png). 
 
 ![alt-text](assets/images/flowchart.png)
 
 ## Technologies
 ### Languages.. 
-* [Python](https://www.python.org/) is a widely used general-purpose, versatile and powerful programming language used for example for web development, machine learning and data science. Python was used to create the command line interface for this text-based game. Version 3
+* [Python](https://www.python.org/) is an interpreted, object-oriented, versatile and powerful programming language used for example for web development, machine learning and data science. Python3 was used to create the command line interface for this text-based game.
 ### Other Technologies and Libraries
-* [Github](https://github.com/) and [Git](https://git-scm.com/) were used for version control
-* [Gitpod](https://gitpod.io/) was used as a cloud-based IDE
-* [Heroku](http://heroku.com/) was used to deploy the app
+* [Github](https://github.com/) and [Git](https://git-scm.com/) were used for version control. Github provides the web interface for the Git code repository.
+* [Gitpod](https://gitpod.io/) was used as the cloud-based IDE for this project.
+* [Heroku](http://heroku.com/) is a containier-based cloud Platform as a service used to deploy, manage and scale modern applications. Heroku was used to deploy this game application.
 * [The Google Chrome browser](https://www.google.com/intl/en_ie/chrome/) was used to view the app
-* [Diagrams](https://www.diagrams.net/) was used to create the flowchart
+* [Diagrams](https://www.diagrams.net/) was used to create the flowchart for this application.
 ## Known Issues/Bugs
 * Left/Right option: sometimes won't accept 'Right' or 'right' input but accepts second time and sometimes it accepts first time as expected. The cause has not been determined as is intermttent so a fix cannot be identified currently. Update: Fixed - removed additional input from `else` statement in `while` loop.
 

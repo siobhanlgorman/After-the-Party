@@ -357,7 +357,7 @@ def say_hi(friend_name, camping_box):
                       " around and jab them in the \nforehead. More slime.\n")
                 time.sleep(1.5)
                 print("Quickly. Back out of this room anyway before Erin gets"
-                      " out. Have to find a way \nout\n")
+                      " out. Have to find a way out.\n")
                 time.sleep(1.5)
                 landing2(camping_box)
                 break
@@ -564,7 +564,7 @@ def output():
     print("You battle your way bravely with your last "
           "drop of energy and clear a path.\n")
     time.sleep(1.5)
-    print("You reach the front door")
+    print("You reach the front door.")
     time.sleep(1.5)
     print("Thank the lord!!\n")
     time.sleep(1.5)
