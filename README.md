@@ -4,9 +4,9 @@ After the Party Live Link [here](https://after-the-party.herokuapp.com/)
 After the Party is a lighthearted zombie escape game. The player wakes up after a party in an unfamiliar house where everyone else seems to have turned into zombies. The player navigates their way around the house trying to get out safely, choosing to enter different rooms. The player also selects items from a box which help to win the game. There may be red herrings in the box so choose carefully! There may also be unexpected ways to win!
 ## Features
 ### Existing Features
-* The player chooses the name of whose party they are at and who they came to the party with. These people then appear later in the story.
-* The player chooses items from a camping box which then assist in winning the game in various different ways
-* The different rooms the player enters have different paths to win or lose 
+* The player chooses the name of the party host and the friend they came to the party with. These people then appear later in the story. This is intended to be a source of amusement to engage the user.
+* The player chooses items from a camping box, most of which then assist in winning the game in various different ways.
+* The different rooms the player enters have different paths to win or lose according to their answer choices. 
 * Winning is escaping from the house and losing is dying or being killed. The means of winning or losing is told to the player at the end of the game.
 
 
