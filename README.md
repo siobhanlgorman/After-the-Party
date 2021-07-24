@@ -1,12 +1,18 @@
 # After the Party
 After the Party Live Link [here](https://after-the-party.herokuapp.com/)
+Mockup:
+
+![alt-text](assets/images/responsive.png)
+
+
 ## Overview
-After the Party is a lighthearted zombie escape game. The player wakes up after a party in an unfamiliar house where everyone else seems to have turned into zombies. The player navigates their way around the house trying to get out safely, choosing to enter different rooms. The player also selects items from a box which help to win the game. There may be red herrings in the box so choose carefully! There may also be unexpected ways to win!
+After the Party is a lighthearted zombie escape game which runs in a mock terminal on Heroku. The player wakes up after a party in an unfamiliar house where everyone else seems to have turned into zombies. 
+
+## How to Play
+After the Party is a text-based adventure game where the player is inputs their answers based on choices prompted in order to navigate their way around the house trying to get out safely. The player chooses Yes/No to open doors to different rooms, turn left/right, attack/run. The player also selects items from a box which help to win the game. There may be red herrings in the box so choose carefully! There may also be unexpected ways to win!
+
 ## Features
 ### Existing Features
-
-
-
 ### Run After the Party button
 This button starts or restarts the programme.
 
@@ -123,9 +129,6 @@ Validation of the Python code was carried out by [PEP8](http://pep8online.com/).
 4. In testing it was apparent that a player could enter a space or hit return to enter a player name and still continue. To prevent this I added a function checking for a name and only space (`str.isspace()`) But this allowed the player to enter e.g. 555 or ??? so I changed the method to `str.isalpha`. It is recognised however that were a player to have a squiggle or other novel element in their name (like the artist formerly known as Prince did) they would not be able to enter this. If this was proven to be an issue it could be addressed in future versions of the game. 
 5. The game was tested on various sized screens and browsers including a Dell 15" laptop, 24" monitor, iPhone SE2 and Moto G8+ with no issues.
 
-Mockup:
-
-![alt-text](assets/images/responsive.png)
 
 IPhoneSE2:
 
