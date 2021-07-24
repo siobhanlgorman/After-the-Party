@@ -73,7 +73,7 @@ After the Party is a lighthearted zombie escape game which runs in a mock termin
 
 6. Winning is escaping from the house and losing is dying or being killed. The means of winning or losing is told to the player at the end of the game.
 
-* This shows one way that a player could win:
+* This shows one way that a player could win with the how they won explained:
 
 
 ![alt-text](assets/images/screen3.png)
@@ -84,6 +84,18 @@ After the Party is a lighthearted zombie escape game which runs in a mock termin
 
 ![alt-text](assets/images/screen4.png)
 
+7. At the end of the game the player is asked if they would like to play again. If they do they game restarts and if not the game stops. Both choices generate a message.
+
+
+* Here the player chooses to play again:
+
+![alt-text](assets/images/screen10.png)
+
+
+* Here the player chooses not to play again.
+
+
+![alt-text](assets/images/screen11.png)
 
 ### Future Features
 * The yes/no questions were refactored into one helper function as they were the majority of the input options. In the future the functions to check the validity of the three names could happen through one function. Currently the player is prevented from entering an empty string or a space and is not able to continue without entering valid text. This could be done in future by calling one function for all names and more characters could be added.
