@@ -30,7 +30,7 @@ The opening screen of the program showing the title and the player's first input
 ![alt-text](assets/images/screen1.png)
 
 
-3. The player chooses the name of the party host and the friend they came to the party with. These people then appear later in the story. This is intended to be a source of amusement to engage the user. All three name inputs (Player, Host and Friend) must be in valid text form and cannot be a space or empty or characters other than text. If the player enters a lower case first letter for the name this is accepted and converted to a capital first letter to be grammatically correct. A name must be entered to continue.
+3. The player chooses the name of the party host and the friend they came to the party with. These people then appear later in the story. This is intended to be a source of amusement to engage the user. All three name inputs (Player, Host and Friend) must be in valid text form and cannot be a space or empty or characters other than text. If the player enters a lower case first letter for the name this is accepted and converted to a capital first letter to be grammatically correct. A name must be entered to continue. If an invalid name is entered the prompt is repeated until a valid name is entered.
 
 
 ![alt-text](assets/images/screen6.png)
