@@ -120,6 +120,8 @@ Accepting 'right':
 
 * In the living_room function when the player died and declined to play again, after ending the programme generated a fight/run request from a different part of the game. This was because of incorrect indentation which was fixed.
 
+There are no remaining bugs.
+
 ## Testing
 
 ### Manual Testing
