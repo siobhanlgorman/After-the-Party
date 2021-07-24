@@ -9,7 +9,8 @@ Mockup:
 After the Party is a lighthearted zombie escape game which runs in a mock terminal on Heroku. The player wakes up after a party in an unfamiliar house where everyone else seems to have turned into zombies. 
 
 ## How to Play
-After the Party is a text-based adventure game where the player inputs their answers based on choices prompted in order to navigate their way around the house trying to get out safely. The player chooses Yes/No to open doors to different rooms, turn left/right, attack/run. The player also selects items from a box which help to win the game. There may be red herrings in the box so choose carefully! There may also be unexpected ways to win!
+* After the Party is a text-based adventure game where the player inputs their based on prompts. The player then navigates their way around the house trying to get out safely. The player chooses Yes/No to open doors to different rooms, turn left/right, attack/run. 
+* The player also selects items from a box which help to win the game. There may be red herrings in the box so choose carefully! There may also be unexpected ways to win!
 
 ## Features
 ### Existing Features
