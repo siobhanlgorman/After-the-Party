@@ -715,6 +715,8 @@ def play_again():
         time.sleep(1.5)
         welcome()
     elif y_or_n == "no":
+        print("You picked no\n")
+        time.sleep(1)
         print("No worries. Come back soon!")
 
 
