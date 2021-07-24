@@ -32,16 +32,18 @@ After the Party is a lighthearted zombie escape game which runs in a mock termin
 
 3. The player chooses the name of the party host and the friend they came to the party with. These people then appear later in the story. This is intended to be a source of amusement to engage the user. All three name inputs (Player, Host and Friend) must be in valid text form and cannot be a space or empty or characters other than text. If the player enters a lower case first letter for the name this is accepted and converted to a capital first letter to be grammatically correct. A name must be entered to continue. If an invalid name is entered the prompt is repeated until a valid name is entered.
 
+* Here the player chooses a friend called 'Jane':
+
 
 ![alt-text](assets/images/screen6.png)
 
 
-* Name converts to initial capital letter:
+* Name converts 'siobhan' to initial capital letter 'Siobhan':
 
 ![alt-text](assets/images/screen9.png)
 
 
-* Incorrect name entered:
+* Here an invalid name has been entered, not accepted and the prompt repeated:
 
 
 ![alt-text](assets/images/screen8.png)
@@ -49,13 +51,13 @@ After the Party is a lighthearted zombie escape game which runs in a mock termin
 
 4. The player chooses items from a camping box, most of which then assist in winning the game in various different ways. The player must choose a valid item from the box to continue. The player can choose a second item from the box at a later point and the first item has been removed from the choice offered.
 
-* This shows the player choosing to 'open' the camping box. They could also 'look' or 'see' inside the box. The contents list is displayed from which the player selects an item. The programme then confirms the player's choice and continues the story path:
+* This shows the player choosing to 'open' the camping box. They could also 'look' or 'see' inside the box. The contents list is displayed from which the player selects an item. Here the player choose 'rope'. The programme then confirms the player's choice and continues the story path:
 
 
 ![alt-text](assets/images/screen2.png)
 
 
-* Further on in the game the player chooses another item from the box where the original has been removed as shown here:
+* Further on in the game the player chooses another item from the box where the original 'rope' has been removed as shown here:
 
 
 ![alt-text](assets/images/screen5.png)
@@ -77,7 +79,7 @@ After the Party is a lighthearted zombie escape game which runs in a mock termin
 ![alt-text](assets/images/screen3.png)
 
 
-* This screenshot shows one way that a player has died.
+* This screenshot shows one way that a player dies.
 
 
 ![alt-text](assets/images/screen4.png)
