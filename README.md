@@ -100,7 +100,7 @@ After the Party is a lighthearted zombie escape game which runs in a mock termin
 ### Future Features
 * The yes/no questions were refactored into one helper function as they were the majority of the input options. In the future the functions to check the validity of the three names could happen through one function. Currently the player is prevented from entering an empty string or a space and is not able to continue without entering valid text. This could be done in future by calling one function for all names and more characters could be added.
 * More rooms, more weapons/tools and more scenarios for escaping/dying using the different weapons/tools could be added to extend the experience.
-* Ascii art could be added to enhance user experience in particular for the 'You Win' and 'You Die' messages.
+* ASCII art could be added to enhance user experience in particular for the 'You Win' and 'You Die' messages.
 
 ## Data Model
 The data model used in this game is a list. A list of camping box items (`camping_box`) is provided from which the player selects an item twice and each time the item is removed from the camping box list (`camping_box`) and then added to the player's inventory. This item is then used to generate various option in the game which depend on the item selected.
