@@ -114,7 +114,7 @@ The flowchart created during the planning stage can be viewed [here](https://git
 
 ## Known Issues/Bugs
 
-* Left/Right option: sometimes won't accept 'Right' or 'right' input but accepts second time and sometimes it accepts first time as expected. The cause has not been determined as is intermttent so a fix cannot be identified currently. Update: Fixed - removed additional input from `else` statement in `while` loop.
+* Left/Right option: sometimes 'Right' or 'right' inputs are not accepted until the second time and sometimes they are accepted the first time as expected. The cause has not been determined as it is intermttent so a fix cannot be identified currently. Update: Fixed - removed additional input from `else` statement in `while` loop.
 
 Not accepting 'right':
 
@@ -124,9 +124,9 @@ Accepting 'right':
 
 ![alt-text](assets/images/error2not.png)
 
-* Player was able to continue with game after hitting return instead of entering a valid player name. This was fixed with a while loop and `if not player_name:`. But the player was still able to enter spaces. I experimented with several ways but eventually fixed this by adding an elif statement and the `isspace()` method. In the end to eliminate player inputting e.g.??? I changed this to the `isalpha()` method.
+* Player was able to continue with game after hitting return instead of entering a valid player name. This was fixed with a while loop and `if not player_name:`. But the player was still able to enter spaces. I experimented with several ways but eventually fixed this by adding an elif statement and the `isspace()` method. In the end to eliminate player inputting e.g.??? I changed I reduced this to the `isalpha()` method instead to fix this.
 
-* In the landing function user answer is incorrect if more than one word entered which is not in list of accepted words or strings e.g 'I would open it' instead of just open so added prompt 'enter one word (hint: open)'. This could be changed in the future if it proved to be problematic for users I would change the function but wanted a little variety and to allow the user a little freer choice. Testers have no problem with this.
+* In the landing function user answer is incorrect if more than one word entered which is not in list of accepted words or strings e.g 'I would open it' instead of just open so added prompt 'enter one word (hint: open)'. This could be changed in the future if it proved to be problematic for users I would change the function to limit the options but wanted a little variety and to allow the user a little freer choice. Testers had no problem with this in its current form.
 
 * In the living_room function when the player died and declined to play again, after ending the programme generated a fight/run request from a different part of the game. This was because of incorrect indentation which was fixed.
 
