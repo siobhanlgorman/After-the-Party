@@ -16,13 +16,14 @@ After the Party is a lighthearted zombie escape game which runs in a mock termin
 
 ## Features
 ### Existing Features
-### Run After the Party button
-1. This button starts or restarts the programme. The button was customised from the default 'Run Program' text to 'Run After the Party' in the `index.html` file
+1. Run After the Party button: 
+
+This button starts or restarts the programme. The button was customised from the default 'Run Program' text to 'Run After the Party' in the `index.html` file
 
 ![alt-text](assets/images/run_button.png)
 
 
-2. The game opens with the title and welcome followed by a request for the player to input their name.
+2. The game opens with the title and welcome followed by a request for the player to input their name. The programme then greets the player by name.
 
 The opening screen of the program showing the title and the player's first input which is their player name:
 
