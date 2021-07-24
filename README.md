@@ -4,6 +4,15 @@ After the Party Live Link [here](https://after-the-party.herokuapp.com/)
 After the Party is a lighthearted zombie escape game. The player wakes up after a party in an unfamiliar house where everyone else seems to have turned into zombies. The player navigates their way around the house trying to get out safely, choosing to enter different rooms. The player also selects items from a box which help to win the game. There may be red herrings in the box so choose carefully! There may also be unexpected ways to win!
 ## Features
 ### Existing Features
+
+
+
+### Run After the Party button
+This button starts or restarts the programme.
+
+![alt-text](assets/images/run_button.png)
+
+
 * The game opens with the title and welcome followed by a request for the player to imput their name.
 
 The opening screen of the program showing the title and the player's first input which is their player name:
@@ -13,31 +22,29 @@ The opening screen of the program showing the title and the player's first input
 
 * The player chooses the name of the party host and the friend they came to the party with. These people then appear later in the story. This is intended to be a source of amusement to engage the user. All three name inputs (Player, Host and Friend) must be in text form and cannot be a space or empty or characters other than text. If the player enters a lower case first letter for the name this is accepted and converted to a capital first letter to be grammatically correct. A name must be entered to continue.
 
+
 ![alt-text](assets/images/screen6.png)
 
+
 * The player chooses items from a camping box, most of which then assist in winning the game in various different ways. The player must choose an item from the box to continue. The player can choose a second item from the box at a later point and the first item has been removed from the choice offered.
-* The different rooms the player enters have different paths to win or lose according to their answer choices. 
-* 
-* Winning is escaping from the house and losing is dying or being killed. The means of winning or losing is told to the player at the end of the game.
-
-
-### Run After the Party button
-This button starts or restarts the programme.
-
-![alt-text](assets/images/run_button.png)
-
-### Terminal Area
-
 
 This shows the player choosing to 'open' the camping box. The contents list is displayed from which the player selects an item. The prgramme then confirms the player's choice and continues the story path.
 
 
 ![alt-text](assets/images/screen2.png)
 
+
 Further on in the game the player chooses another item from the box where the original has been removed.
 
 
 ![alt-text](assets/images/screen5.png)
+
+
+* The different rooms the player enters have different paths to win or lose according to their answer choices. 
+
+
+* Winning is escaping from the house and losing is dying or being killed. The means of winning or losing is told to the player at the end of the game.
+
 
 
 This shows one way that a player could win.
@@ -51,10 +58,11 @@ This screenshot shows one way that a player has died.
 
 ![alt-text](assets/images/screen4.png)
 
+
 ### Future Features
-* I refactored the yes/no questions into one helper function as they were the majority of the input options. In the future I would also refactor the functions to check the validity of the three names. Currently the player is prevented from entering an empty string or a space and is not able to continue without enterring valid text. I would like to find a way to do this for all of them by calling one function.
-* I would add more rooms, more weapons/tools and more scenarios for escaping/dying using the different weapons/tools.
-* I would add some ascii art to enhance user experience
+* The yes/no questions were refactored into one helper function as they were the majority of the input options. In the future the functions to check the validity of the three names. Currently the player is prevented from entering an empty string or a space and is not able to continue without enterring valid text. This would be done in by calling one function for all names.
+* More rooms, more weapons/tools and more scenarios for escaping/dying using the different weapons/tools could be added to extend the experience.
+* Ascii art could be added to enhance user experience in particular for the 'You Win' and 'You Die' messages.
 
 ### Program Structure
 The flowchart created during the planning stage can be viewed [here](https://github.com/siobhanlgorman/After-the-Party/blob/main/assets/images/flowchart.png). 
