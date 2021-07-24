@@ -86,7 +86,7 @@ After the Party is a lighthearted zombie escape game which runs in a mock termin
 
 
 ### Future Features
-* The yes/no questions were refactored into one helper function as they were the majority of the input options. In the future the functions to check the validity of the three names. Currently the player is prevented from entering an empty string or a space and is not able to continue without enterring valid text. This would be done in by calling one function for all names.
+* The yes/no questions were refactored into one helper function as they were the majority of the input options. In the future the functions to check the validity of the three names could happen through one function. Currently the player is prevented from entering an empty string or a space and is not able to continue without entering valid text. This could be done in future by calling one function for all names and more characters could be added.
 * More rooms, more weapons/tools and more scenarios for escaping/dying using the different weapons/tools could be added to extend the experience.
 * Ascii art could be added to enhance user experience in particular for the 'You Win' and 'You Die' messages.
 
