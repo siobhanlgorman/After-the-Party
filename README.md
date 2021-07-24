@@ -217,7 +217,7 @@ If you wish to fork the repository to make changes without affecting the origina
 
 ### Code
 
-[Stack Overflow](https://stackoverflow.com/) was useful for looking up various solutions to bugs e.g. [whitespace only strings](https://stackoverflow.com/questions/2405292/check-if-string-contains-only-whitespace)
+[Stack Overflow](https://stackoverflow.com/) was useful for looking up various solutions in coding and bug fixing e.g. [whitespace only strings](https://stackoverflow.com/questions/2405292/check-if-string-contains-only-whitespace)
 
 This tutorial was useful for inspiration: [Learn Python by making a text-based adventure game](https://coding-grace-guide.readthedocs.io/en/latest/guide/lessonplans/beginners-python-text-based-adventure.html)
 
