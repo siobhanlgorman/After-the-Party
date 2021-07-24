@@ -159,7 +159,7 @@ Moto G8+:
 ## Deployment
 This application uses Heroku for deployment
 
-### To create the application:
+### Create the application
 1. First create the requirements file the Heroku will use to import the dependencies required for deployment: type `pip3 freeze > requirements.txt`. For this project the requirements.txt file is empty as no libraries or modules were imported other than from the standard python library.
 2. Navigate to the [Heroku](https://www.heroku.com/) website
 3. create an account by entering your email address and a password
