@@ -118,6 +118,8 @@ Accepting 'right':
 
 * In the landing function user answer is incorrect if more than one word entered which is not in list of accepted words or strings e.g 'I would open it' instead of just open so added prompt 'enter one word (hint: open)'. This could be changed in the future if it proved to be problematic for users I would change the function but wanted a little variety and to allow the user a little freer choice. Testers have no problem with this.
 
+* In the living_room function when the player died and declined to play again, after ending the programme generated a fight/run request from a different part of the game. This was because of incorrect indentation which was fixed.
+
 ## Testing
 
 ### Manual Testing
