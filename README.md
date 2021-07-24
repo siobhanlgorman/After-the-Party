@@ -26,26 +26,33 @@ The opening screen of the program showing the title and the player's first input
 ![alt-text](assets/images/screen6.png)
 
 
+Incorrect name entered:
+
+
+![alt-text](assets/images/screen8.png)
+
+
 * The player chooses items from a camping box, most of which then assist in winning the game in various different ways. The player must choose an item from the box to continue. The player can choose a second item from the box at a later point and the first item has been removed from the choice offered.
 
-This shows the player choosing to 'open' the camping box. The contents list is displayed from which the player selects an item. The prgramme then confirms the player's choice and continues the story path.
+This shows the player choosing to 'open' the camping box. The contents list is displayed from which the player selects an item. The programme then confirms the player's choice and continues the story path:
 
 
 ![alt-text](assets/images/screen2.png)
 
 
-Further on in the game the player chooses another item from the box where the original has been removed.
+Further on in the game the player chooses another item from the box where the original has been removed as shown here:
 
 
 ![alt-text](assets/images/screen5.png)
 
 
 * The different rooms the player enters have different paths to win or lose according to their answer choices. 
+This shows the player choosing to open the door and finding themselves in the bathroom:
+
+![alt-text](assets/images/screen7.png)
 
 
 * Winning is escaping from the house and losing is dying or being killed. The means of winning or losing is told to the player at the end of the game.
-
-
 
 This shows one way that a player could win.
 
