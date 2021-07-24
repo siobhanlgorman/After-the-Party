@@ -148,7 +148,7 @@ def bedroom():
     # While loop ensures input is valid and repeats prompt if not.
     while True:
         # Player chooses left or right door.
-        door_choice = input("Which do you choose? Left or Right\n").lower()
+        door_choice = input("Which do you choose? Left or Right?\n").lower()
         if door_choice == "left":
             print("You chose the door on the left\n")
             time.sleep(1.5)

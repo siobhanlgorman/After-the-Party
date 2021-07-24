@@ -16,15 +16,18 @@ This button starts or restarts the programme.
 ![alt-text](assets/images/run_button.png)
 
 ### Terminal Area
-The opening screen of the program showing the title and the player's first input.
+The opening screen of the program showing the title and the player's first input which is their player name.
 
 ![alt-text](assets/images/screen1.png)
 
 
-This shows the player choosing to 'open' the camping box. The contents list is displayed from which the player selects an item.
+This shows the player choosing to 'open' the camping box. The contents list is displayed from which the player selects an item. The prgramme then confirms the player's choice and continues the story path.
 
 
 ![alt-text](assets/images/screen2.png)
+
+
+![alt-text](assets/images/screen5.png)
 
 
 This shows one way that a player could win.
