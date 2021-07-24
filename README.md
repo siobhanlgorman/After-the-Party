@@ -4,9 +4,20 @@ After the Party Live Link [here](https://after-the-party.herokuapp.com/)
 After the Party is a lighthearted zombie escape game. The player wakes up after a party in an unfamiliar house where everyone else seems to have turned into zombies. The player navigates their way around the house trying to get out safely, choosing to enter different rooms. The player also selects items from a box which help to win the game. There may be red herrings in the box so choose carefully! There may also be unexpected ways to win!
 ## Features
 ### Existing Features
-* The player chooses the name of the party host and the friend they came to the party with. These people then appear later in the story. This is intended to be a source of amusement to engage the user.
-* The player chooses items from a camping box, most of which then assist in winning the game in various different ways.
+* The game opens with the title and welcome followed by a request for the player to imput their name.
+
+The opening screen of the program showing the title and the player's first input which is their player name:
+
+![alt-text](assets/images/screen1.png)
+
+
+* The player chooses the name of the party host and the friend they came to the party with. These people then appear later in the story. This is intended to be a source of amusement to engage the user. All three name inputs (Player, Host and Friend) must be in text form and cannot be a space or empty or characters other than text. If the player enters a lower case first letter for the name this is accepted and converted to a capital first letter to be grammatically correct. A name must be entered to continue.
+
+![alt-text](assets/images/screen6.png)
+
+* The player chooses items from a camping box, most of which then assist in winning the game in various different ways. The player must choose an item from the box to continue. The player can choose a second item from the box at a later point and the first item has been removed from the choice offered.
 * The different rooms the player enters have different paths to win or lose according to their answer choices. 
+* 
 * Winning is escaping from the house and losing is dying or being killed. The means of winning or losing is told to the player at the end of the game.
 
 
@@ -16,9 +27,6 @@ This button starts or restarts the programme.
 ![alt-text](assets/images/run_button.png)
 
 ### Terminal Area
-The opening screen of the program showing the title and the player's first input which is their player name.
-
-![alt-text](assets/images/screen1.png)
 
 
 This shows the player choosing to 'open' the camping box. The contents list is displayed from which the player selects an item. The prgramme then confirms the player's choice and continues the story path.
