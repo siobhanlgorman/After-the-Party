@@ -55,7 +55,7 @@ def welcome():
 def intro():
     """
     Sets the opening scene.
-    Get party host's name from player for global use.
+    Gets party host's name from player for global use.
 
     """
     print("You wake up in an unfamiliar room as dawn is breaking.")
@@ -205,7 +205,8 @@ def left_bathroom():
 
 def landing():
     """
-    Player is prompted to open camping box
+    Prompts player to open camping box.
+    Loops through items in box.
     """
     # Camping_box contents assigned
     camping_box = [
