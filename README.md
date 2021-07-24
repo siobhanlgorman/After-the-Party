@@ -18,14 +18,14 @@ After the Party is a lighthearted zombie escape game which runs in a mock termin
 ### Existing Features
 1. Run After the Party button: 
 
-This button starts or restarts the programme. The button was customised from the default 'Run Program' text to 'Run After the Party' in the `index.html` file
+* This button starts or restarts the programme. The button was customised from the default 'Run Program' text to 'Run After the Party' in the `index.html` file
 
 ![alt-text](assets/images/run_button.png)
 
 
 2. The game opens with the title and welcome followed by a request for the player to input their name. The programme then greets the player by name.
 
-The opening screen of the program showing the title and the player's first input which is their player name:
+* The opening screen of the program showing the title and the player's first input which is their player name:
 
 ![alt-text](assets/images/screen1.png)
 
@@ -36,12 +36,12 @@ The opening screen of the program showing the title and the player's first input
 ![alt-text](assets/images/screen6.png)
 
 
-Name converts to initial capital letter:
+* Name converts to initial capital letter:
 
 ![alt-text](assets/images/screen9.png)
 
 
-Incorrect name entered:
+* Incorrect name entered:
 
 
 ![alt-text](assets/images/screen8.png)
@@ -49,13 +49,13 @@ Incorrect name entered:
 
 4. The player chooses items from a camping box, most of which then assist in winning the game in various different ways. The player must choose a valid item from the box to continue. The player can choose a second item from the box at a later point and the first item has been removed from the choice offered.
 
-This shows the player choosing to 'open' the camping box. They could also 'look' or 'see' inside the box. The contents list is displayed from which the player selects an item. The programme then confirms the player's choice and continues the story path:
+* This shows the player choosing to 'open' the camping box. They could also 'look' or 'see' inside the box. The contents list is displayed from which the player selects an item. The programme then confirms the player's choice and continues the story path:
 
 
 ![alt-text](assets/images/screen2.png)
 
 
-Further on in the game the player chooses another item from the box where the original has been removed as shown here:
+* Further on in the game the player chooses another item from the box where the original has been removed as shown here:
 
 
 ![alt-text](assets/images/screen5.png)
@@ -63,7 +63,7 @@ Further on in the game the player chooses another item from the box where the or
 
 5. The different rooms the player enters have different paths to win or lose according to their answer choices. 
 
-This shows the player choosing to open the door and finding themselves in the bathroom:
+* This shows the player choosing to open the door and finding themselves in the bathroom:
 
 
 ![alt-text](assets/images/screen7.png)
@@ -71,13 +71,13 @@ This shows the player choosing to open the door and finding themselves in the ba
 
 6. Winning is escaping from the house and losing is dying or being killed. The means of winning or losing is told to the player at the end of the game.
 
-This shows one way that a player could win:
+* This shows one way that a player could win:
 
 
 ![alt-text](assets/images/screen3.png)
 
 
-This screenshot shows one way that a player has died.
+* This screenshot shows one way that a player has died.
 
 
 ![alt-text](assets/images/screen4.png)
