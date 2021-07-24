@@ -26,6 +26,11 @@ The opening screen of the program showing the title and the player's first input
 ![alt-text](assets/images/screen6.png)
 
 
+Name converts to initial capital letter:
+
+![alt-text](assets/images/screen9.png)
+
+
 Incorrect name entered:
 
 
