@@ -26,7 +26,7 @@ The opening screen of the program showing the title and the player's first input
 ![alt-text](assets/images/screen1.png)
 
 
-* The player chooses the name of the party host and the friend they came to the party with. These people then appear later in the story. This is intended to be a source of amusement to engage the user. All three name inputs (Player, Host and Friend) must be in text form and cannot be a space or empty or characters other than text. If the player enters a lower case first letter for the name this is accepted and converted to a capital first letter to be grammatically correct. A name must be entered to continue.
+* The player chooses the name of the party host and the friend they came to the party with. These people then appear later in the story. This is intended to be a source of amusement to engage the user. All three name inputs (Player, Host and Friend) must be in valid text form and cannot be a space or empty or characters other than text. If the player enters a lower case first letter for the name this is accepted and converted to a capital first letter to be grammatically correct. A name must be entered to continue.
 
 
 ![alt-text](assets/images/screen6.png)
@@ -43,9 +43,12 @@ Incorrect name entered:
 ![alt-text](assets/images/screen8.png)
 
 
-* The player chooses items from a camping box, most of which then assist in winning the game in various different ways. The player must choose an item from the box to continue. The player can choose a second item from the box at a later point and the first item has been removed from the choice offered.
 
-This shows the player choosing to 'open' the camping box. The contents list is displayed from which the player selects an item. The programme then confirms the player's choice and continues the story path:
+
+
+* The player chooses items from a camping box, most of which then assist in winning the game in various different ways. The player must choose a valid item from the box to continue. The player can choose a second item from the box at a later point and the first item has been removed from the choice offered.
+
+This shows the player choosing to 'open' the camping box. They could also 'look' or 'see' inside the box. The contents list is displayed from which the player selects an item. The programme then confirms the player's choice and continues the story path:
 
 
 ![alt-text](assets/images/screen2.png)
