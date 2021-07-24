@@ -150,12 +150,12 @@ def bedroom():
         # Player chooses left or right door.
         door_choice = input("Which do you choose? Left or Right?\n").lower()
         if door_choice == "left":
-            print("You chose the door on the left\n")
+            print("You chose the door on the left.\n")
             time.sleep(1.5)
             left_bathroom()
             break
         elif door_choice == "right":
-            print("You chose the door on the right")
+            print("You chose the door on the right.")
             time.sleep(1.5)
             landing()
             break
@@ -185,7 +185,7 @@ def left_bathroom():
     # y_n_check function is called.
     y_or_n = y_n_check("Do you open the curtain? (Yes or No)\n")
     if y_or_n == "yes":
-        print("You picked yes\n")
+        print("You picked yes.\n")
         print(f"Looks like you found {friend_name}...\n")
         time.sleep(1.5)
         print(f"except it’s not {friend_name} any more...\n")
@@ -198,7 +198,7 @@ def left_bathroom():
     elif y_or_n == "no":
         print("You picked no. \n")
         time.sleep(1.5)
-        print("You go back into the bedroom and open the other door")
+        print("You go back into the bedroom and open the other door.")
         landing()
         time.sleep(1.5)
 
@@ -213,9 +213,9 @@ def landing():
         'knife', 'hammer', 'rope', 'hairpin', 'peg',
         'screwdriver']
     print("You come out of the bedroom onto the landing\n")
-    print("From behind you, you hear a crash and a groan")
+    print("From behind you, you hear a crash and a groan.")
     time.sleep(1.5)
-    print("Sounds like someone's in the bathroom\n")
+    print("Sounds like someone's in the bathroom.\n")
     time.sleep(1.5)
     print(f"{friend_name}??\n")
     time.sleep(1.5)
@@ -223,21 +223,21 @@ def landing():
     time.sleep(1.5)
     print("Their skin is green and ....rotting...euch...")
     time.sleep(1.5)
-    print("and their eyes... rolling in their sockets")
+    print("and their eyes... rolling in their sockets.")
     time.sleep(1.5)
     print("Their arms are outstretched and \nit is not for a warm hug "
-          "by the looks of it\n")
+          "by the looks of it!\n")
     time.sleep(1.5)
     print("ARRRRRGGGGGHHHHH\n")
     print("That virus .... household gatherings .... should have "
           "listened...")
     time.sleep(1.5)
-    print("No time to think about that now. Need a weapon\n")
+    print("No time to think about that now. Need a weapon.\n")
     time.sleep(1.5)
     print("You see a cardboard box marked 'camping equipment' "
           "just by the door.\n")
     time.sleep(1.5)
-    print("The box might have something useful in it")
+    print("The box might have something useful in it.")
     time.sleep(0.5)
     print("What do you want to do?")
 
@@ -311,7 +311,7 @@ def bedroom1(camping_box):
     # y_n_check function is called.
     y_or_n = y_n_check("Do you say 'Hi'? (Yes or No)\n")
     if y_or_n == "yes":
-        print("You picked yes\n")
+        print("You picked yes.\n")
         say_hi(friend_name, camping_box)
     elif y_or_n == "no":
         print("You picked no. \n")
@@ -352,7 +352,7 @@ def say_hi(friend_name, camping_box):
                 print("You stab Denis between the eyes and green goo pours "
                       "out. ")
                 print("\nEuchh. \nDenis falls on top of Erin and she"
-                      " is trapped\n")
+                      " is trapped.\n")
                 time.sleep(1.5)
                 print(f"{friend_name} grabs your arm from behind and you swing"
                       " around and jab them in the \nforehead. More slime.\n")
@@ -369,35 +369,35 @@ def say_hi(friend_name, camping_box):
                 print("You stab Denis between the eyes and green goo pours "
                       "out.\n ")
                 print("\nEuchh. \nDenis falls on top of Erin and she"
-                      " is trapped\n")
+                      " is trapped.\n")
                 time.sleep(1.5)
                 print(f"{friend_name} grabs your arm from behind and you swing"
                       " around and jab them in the \nforehead. More slime.\n")
                 time.sleep(1.5)
                 print("Quickly. Back out of this room anyway before Erin gets"
-                      " out. Have to find a way out\n")
+                      " out. Have to find a way out.\n")
                 time.sleep(1.5)
                 landing2(camping_box)
                 break
             elif "hammer" in inventory:
-                print("You slam the hammer into Denis's head")
+                print("You slam the hammer into Denis's head.")
                 print(" and his head disintegrates into small pieces of "
                       "bone and strings of goo.")
                 time.sleep(1.5)
                 print("\nDenis falls on top of Erin and she"
-                      " is trapped\n")
+                      " is trapped.\n")
                 time.sleep(1.5)
                 print(f"{friend_name} grabs your arm from behind and you swing"
                       " around and smash her in the \nforehead. More slime.\n")
                 time.sleep(1.5)
                 print("Quickly. Back out of this room anyway before Erin gets"
-                      " out. Have to \nfind a way out")
+                      " out. Have to \nfind a way out.")
                 time.sleep(1.5)
                 landing2(camping_box)
             else:
                 you_die("\nYou don't have a weapon! Erin and Denis grab you "
                         "and take chunks of \nflesh out of your face. "
-                        "\nYOU DIE\n")
+                        "\nYOU DIE!!\n")
                 break
         elif user_answer.lower() == "run":
             print("\nYou don't want to fight. Oh dear. Hope you have a better"
@@ -407,9 +407,9 @@ def say_hi(friend_name, camping_box):
             time.sleep(1.5)
             print("\nAnd Erin and Dennis are standing up...\n")
             time.sleep(1.5)
-            print("There's no way out....but wait")
+            print("There's no way out....but wait...")
             time.sleep(1.5)
-            print("There's a window past the bed. You make a run for it")
+            print("There's a window past the bed. You make a run for it.")
             time.sleep(1.5)
             print("\nIt's open! (That was lucky!)\n")
             time.sleep(1.5)
@@ -430,7 +430,7 @@ def landing2(camping_box):
 
     print("Back out on the landing\n")
     time.sleep(1.5)
-    print("Better grab something else from the camping box\n")
+    print("Better grab something else from the camping box.\n")
     print("Inside the box there's a:")
 
     # Loop through updated camping box list
@@ -461,12 +461,12 @@ def landing2(camping_box):
     # y_n_check function is called
     y_or_n = y_n_check("Do you open the door? (Yes or No)\n")
     if y_or_n == "yes":
-        print("You picked yes\n")
+        print("You picked yes.\n")
         bedroom2()
     elif y_or_n == "no":
         print("You picked no. \n")
         time.sleep(1.5)
-        print("You turn to the stairs")
+        print("You turn to the stairs.")
         time.sleep(1.5)
         stairs()
 
@@ -479,7 +479,7 @@ def bedroom2():
     If no player continues to stairs
 
     """
-    print("You open the door cautiously. Something white flies at you\n")
+    print("You open the door cautiously. Something white flies at you.\n")
     time.sleep(1.5)
     print("What the ....!!!\n")
     time.sleep(1.5)
@@ -487,11 +487,11 @@ def bedroom2():
           "when \nthe party got crazy. \n"
           "At least there's no dead people anyway.\n")
     time.sleep(1.5)
-    print("The dog starts barking\n")
+    print("The dog starts barking.\n")
     time.sleep(1.5)
     print("Noooo! Sssshhh!\n")
     time.sleep(1.5)
-    print("Too late. You hear more footsteps on the stairs")
+    print("Too late. You hear more footsteps on the stairs.")
     print("What are you going to do?\n")
     time.sleep(1.5)
     print("You look around the room. There's a window.")
@@ -522,7 +522,7 @@ def stairs():
     print("You are on the stairs")
     time.sleep(1.5)
     print("Dead party-goers are trooping up the stairs.\nThe first one is"
-          " at the top\n")
+          " at the top.\n")
     time.sleep(1.5)
 
     # y_n_check function is called
@@ -584,9 +584,9 @@ def living_room():
     If chooses no player dies
     """
 
-    print("You are in the living room and can see the front door")
+    print("You are in the living room and can see the front door.")
     time.sleep(1.5)
-    print("But the way is blocked by a good dozen dead creatures")
+    print("But the way is blocked by a good dozen dead creatures.")
     time.sleep(1.5)
     print("They haven't seen you yet.")
     time.sleep(1.5)
@@ -597,7 +597,7 @@ def living_room():
     y_or_n = y_n_check("Do you have the energy to fight your way "
                        "through? (Yes or No)\n")
     if y_or_n == "yes":
-        print("You picked yes\n")
+        print("You picked yes.\n")
         if "hammer" in inventory:
             output()
         elif "knife" in inventory:
@@ -647,15 +647,15 @@ def front_door():
         print("\nYou're out of energy and ideas.")
         time.sleep(1.5)
         print("Maybe a rest will help before you tackle the rest "
-              "of the dead\n")
+              "of the dead.\n")
         time.sleep(1.5)
-        print("There's a cupboard over there. With a latch on the outside")
+        print("There's a cupboard over there. With a latch on the outside.")
 
         # y_n_check function is called
         y_or_n = y_n_check("You could rest in there. Do you open it? "
                            "Yes or No?\n")
         if y_or_n == "yes":
-            print("You picked yes\n")
+            print("You picked yes.\n")
             time.sleep(1.5)
             cupboard()
         elif y_or_n == "no":
@@ -709,14 +709,14 @@ def play_again():
     # y_n_check function is called
     y_or_n = y_n_check("Do you want to play again?\nYes or No?\n")
     if y_or_n == "yes":
-        print("You picked yes\n")
+        print("You picked yes.\n")
         print("Great!\n")
         time.sleep(1)
         print("Good luck!\n")
         time.sleep(1.5)
         welcome()
     elif y_or_n == "no":
-        print("You picked no\n")
+        print("You picked no.\n")
         time.sleep(1)
         print("No worries. Come back soon!")
 
