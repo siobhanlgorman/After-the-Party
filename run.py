@@ -701,7 +701,7 @@ def you_die(reason):
 # Function to ask user to play game again
 def play_again():
     """
-    function to ask if player wants to play again.
+    Function to ask if player wants to play again.
     If player inputs yes game restarts.
     If player inputs no game ends.
     """
