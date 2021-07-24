@@ -14,12 +14,12 @@ After the Party is a text-based adventure game where the player is inputs their 
 ## Features
 ### Existing Features
 ### Run After the Party button
-This button starts or restarts the programme.
+This button starts or restarts the programme. The button was customised from the default 'Run Program' text to 'Run After the Party' in the `index.html` file
 
 ![alt-text](assets/images/run_button.png)
 
 
-* The game opens with the title and welcome followed by a request for the player to imput their name.
+* The game opens with the title and welcome followed by a request for the player to input their name.
 
 The opening screen of the program showing the title and the player's first input which is their player name:
 
@@ -170,7 +170,7 @@ This application uses Heroku for deployment
 1. In the top menu bar select 'Deploy'.
 2. In the 'Deployment method' section select 'Github' and click the connect to Github button to confirm.
 3. In the 'search' box enter the Github repository name for the project. Click search and then click connect to link the heroku app with the Github repository. The box will confirm that heroku is connected to the repository which in this case is [After the Party](https://github.com/siobhanlgorman/After-the-Party).
-4. Scroll down to select either automatic or manual deployment. For this project automatic deployment was selected. If you wish to select automatic deployment select the button 'Enable Automatic Deploys'. This will rebuild the app every time a change is pushed to Github. If you wish to manually deploy click the button 'Deploy Branch'. The default 'Master' option in the dropdown menu should be selected in both cases.
+4. Scroll down to select either automatic or manual deployment. For this project automatic deployment was selected. If you wish to choose automatic deployment select the button 'Enable Automatic Deploys'. This will rebuild the app every time a change is pushed to Github. If you wish to manually deploy click the button 'Deploy Branch'. The default 'Master' option in the dropdown menu should be selected in both cases.
 5. When the app is deployed a message 'Your app was successfully deployed' will be shown. Click 'view' to see the deployed app in the browser. The live deployment of the project can be seen [here](https://after-the-party.herokuapp.com/)
 6. The app starts automatically and can be restarted by pressing the 'Run Program' button.
 ### Forking the Repository
@@ -192,8 +192,16 @@ If you wish to fork the repository to make changes without affecting the origina
 
 ### Code
 
+[Stack Overflow](https://stackoverflow.com/) was useful for looking up various solutions to bugs e.g. [whitespace only strings](https://stackoverflow.com/questions/2405292/check-if-string-contains-only-whitespace)
+
 This tutorial was useful for inspiration: [Learn Python by making a text-based adventure game](https://coding-grace-guide.readthedocs.io/en/latest/guide/lessonplans/beginners-python-text-based-adventure.html)
 
-[Stack Overflow](https://stackoverflow.com/) was useful for looking up various solutions to bugs e.g. [whitespace only strings](https://stackoverflow.com/questions/2405292/check-if-string-contains-only-whitespace)
+
+[Code Institute for the deployment terminal](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/e3b664e16366444c8d722c5d8340b340/)
+
 ## Content
 The story content was developed by this author [Siobhan Gorman](https://github.com/siobhanlgorman).
+
+## Images
+
+[Techsini](https://techsini.com/multi-mockup/index.php) was used to generate the [mockup](https://github.com/siobhanlgorman/After-the-Party/blob/main/assets/images/responsive.png) image
