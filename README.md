@@ -166,6 +166,9 @@ IPhoneSE2:
 ![alt-text](assets/images/iphone_se2_1.jpg)
 
 
+IPhone SE2 landscape view:
+
+
 ![alt-text](assets/images/iphone_se2_2.jpg)
 
 Moto G8+:
