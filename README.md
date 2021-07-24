@@ -11,7 +11,7 @@ Mockup:
 After the Party is a lighthearted zombie escape game which runs in a mock terminal on Heroku. The player wakes up after a party in an unfamiliar house where everyone else seems to have turned into zombies. They have to find a way to safety out of the house through various rooms and using various weapons or tools.
 
 ## How to Play
-* After the Party is a text-based adventure game where the player inputs their choice based on prompts. The player then navigates their way around the house trying to get out safely. The player chooses Yes or No to open doors to different rooms, turn left or right, and choose attack or run. 
+* After the Party is a text-based adventure game where the player inputs their choice based on prompts. The player then navigates their way around the house trying to get out safely. The player chooses 'Yes' or 'No' to open doors to different rooms, turn 'left' or 'right', and choose 'attack' or 'run'. 
 * The player also selects items from a box which help to win the game. There may be red herrings in the box so choose carefully! There may also be unexpected ways to win!
 
 ## Features
@@ -38,7 +38,7 @@ After the Party is a lighthearted zombie escape game which runs in a mock termin
 ![alt-text](assets/images/screen6.png)
 
 
-* Name converts 'siobhan' to initial capital letter 'Siobhan':
+* Here the input 'siobhan' is converted to initial capital letter 'Siobhan':
 
 ![alt-text](assets/images/screen9.png)
 
@@ -49,7 +49,7 @@ After the Party is a lighthearted zombie escape game which runs in a mock termin
 ![alt-text](assets/images/screen8.png)
 
 
-4. The player chooses items from a camping box, most of which then assist in winning the game in various different ways. The player must choose a valid item from the box to continue. The player can choose a second item from the box at a later point and the first item has been removed from the choice offered.
+4. The player chooses items from a camping box, most of which then assist in winning the game in various different ways. The player must choose a valid item from the box spelled correctly to continue. The player can choose a second item from the box at a later point and the first item has been removed from the choice offered.
 
 * This shows the player choosing to 'open' the camping box. They could also 'look' or 'see' inside the box. The contents list is displayed from which the player selects an item. Here the player choose 'rope'. The programme then confirms the player's choice and continues the story path:
 
