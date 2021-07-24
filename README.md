@@ -57,7 +57,7 @@ After the Party is a lighthearted zombie escape game which runs in a mock termin
 ![alt-text](assets/images/screen2.png)
 
 
-* Further on in the game the player chooses another item from the box where the original 'rope' has been removed as shown here:
+* Further on in the game the player chooses another item from the box where the first choice has been removed. This shows 'rope' has been removed as selected above:
 
 
 ![alt-text](assets/images/screen5.png)
