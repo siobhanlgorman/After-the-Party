@@ -73,7 +73,7 @@ After the Party is a lighthearted zombie escape game which runs in a mock termin
 
 6. Winning is escaping from the house and losing is dying or being killed. The means of winning or losing is told to the player at the end of the game.
 
-* This shows one way that a player could win with the how they won explained:
+* This shows one way that a player could win with how they won explained:
 
 
 ![alt-text](assets/images/screen3.png)
