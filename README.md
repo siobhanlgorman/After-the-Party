@@ -1,7 +1,7 @@
 # After the Party
 After the Party Live Link [here](https://after-the-party.herokuapp.com/)
 ## Overview
-After the Party is a lighthearted zombie escape game. The player wakes up after a party in an unfamiliar house where everyone else seems to have turned into zombies. The player navigates their way around the house trying to get out safely, choosing to enter different rooms. The player also selects items from a box which help to win the game.
+After the Party is a lighthearted zombie escape game. The player wakes up after a party in an unfamiliar house where everyone else seems to have turned into zombies. The player navigates their way around the house trying to get out safely, choosing to enter different rooms. The player also selects items from a box which help to win the game. There may be red herrings in the box so choose carefully! There may also be unexpected ways to win!
 ## Features
 ### Existing Features
 * The player chooses the name of whose party they are at and who they came to the party with. These people then appear later in the story.
@@ -58,7 +58,7 @@ The flowchart created during the planning stage can be viewed [here](https://git
 * [The Google Chrome browser](https://www.google.com/intl/en_ie/chrome/) was used to view the app
 * [Diagrams](https://www.diagrams.net/) was used to create the flowchart
 ## Known Issues/Bugs
-* Left/Right option: sometimes won't accept 'Right' or 'right' input but accepts second time and sometimes it accepts first time as expected. The cause has not been determined as is intermttent so a fix cannot be identified currently.
+* Left/Right option: sometimes won't accept 'Right' or 'right' input but accepts second time and sometimes it accepts first time as expected. The cause has not been determined as is intermttent so a fix cannot be identified currently. Update: Fixed - removed additional input from `else` statement in `while` loop.
 
 Not accepting 'right':
 
@@ -70,7 +70,7 @@ Accepting 'right':
 
 * Player was able to continue with game after hitting return instead of entering a valid player name. This was fixed with a while loop and `if not player_name:`. But the player was still able to enter spaces. I experimented with several ways but eventually fixed this by adding an elif statement and the `isspace()` method. In the end to eliminate player inputting e.g.??? I changed this to the `isalpha()` method.
 
-* in landing function user answer is incorrect if more than one word entered which is not in list of accepted words or strings e.g 'I would open it' instead of just open so added prompt 'enter one word (hint: open)'. If this proved very problematic for users I would change the function but wanted a little variety and to allow the user a little freer choice.
+* In the landing function user answer is incorrect if more than one word entered which is not in list of accepted words or strings e.g 'I would open it' instead of just open so added prompt 'enter one word (hint: open)'. This could be changed in the future if it proved to be problematic for users I would change the function but wanted a little variety and to allow the user a little freer choice. Testers have no problem with this.
 
 ## Testing
 ### Validation
